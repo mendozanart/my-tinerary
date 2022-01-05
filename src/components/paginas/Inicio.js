@@ -28,6 +28,7 @@ const inicio = () => {
   <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
+    <h2> Consigue lo mejor para ti </h2>
   </button>
 </div>
         </div>
