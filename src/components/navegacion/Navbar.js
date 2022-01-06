@@ -1,30 +1,35 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link as Linkrouter}  from 'react-router-dom'
+import logo from '../../img/logo.jpg'
+import person from '../../img/person.svg'
 
 const navbar = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
-    <Link to='/'>
-        <img src='./styles/img/logo.png' width='50' alt='logo' />
-    </Link>
+    <Linkrouter to='/'>
+        <img src={logo} width='100' alt='logo' />
+    </Linkrouter>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav">
+      <ul className="navbar-nav m-auto">
         <li className="nav-item">
-          <Link className="nav-link active" to='/'>Home</Link>
+          <Linkrouter className="nav-link active" to='/inicio'>Home</Linkrouter>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/'>Cities</Link>
+          <Linkrouter className="nav-link" to='/ciudades'>Ciudades</Linkrouter>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/'>Contact</Link>
+          <Linkrouter className="nav-link" to='/usuarios'>Usuarios</Linkrouter>
         </li>
       </ul>
     </div>
+    <Linkrouter to='/'>
+        <img src={person} width='35' alt='logo' />
+    </Linkrouter>
   </div>
 </nav>
         </div>

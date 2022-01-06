@@ -1,34 +1,52 @@
 import React from 'react'
+import Carousel from '../carousel/Carousel'
+import paris from '../../img/paris.jpg'
+import bsas from '../../img/bsas.jpg'
+import miami from '../../img/miami.jpg'
+
 
 const inicio = () => {
     return (
         <div>
-                        <h1> ¡Bienvenidos a Mytinerary! </h1>
-            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="..." className="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="..." className="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="..." className="d-block w-100" alt="..."/>
+          <Carousel/>
+          <h1 className='titulo mt-3 mb-4'> ¡Bienvenidos a Mytinerary! </h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src={paris} class="card-img-top" alt="paris"/>
+      <div class="card-body">
+        <h5 class="card-title">Paris</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
     </div>
   </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
+  <div class="col">
+    <div class="card h-100">
+      <img src={bsas} class="card-img-top" alt="bsas"/>
+      <div class="card-body">
+        <h5 class="card-title">Buenos Aires</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src={miami} class="card-img-top" alt="miami"/>
+      <div class="card-body">
+        <h5 class="card-title">Miami</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
 </div>
         </div>
     )
