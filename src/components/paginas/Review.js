@@ -6,18 +6,19 @@ import person3 from '../../img/person3.jpg'
 import star from '../../img/star.png'
 
 
+
 const review = () => {
     return (
         <div>
             <Carousel/>
-            <h1 className='titulo mb-4 mt-4'> REVIEWS </h1>
+            <h1 className='titulo mb-2 mt-4'> REVIEWS </h1>
 
             
-            <div className='row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 infobanners'>
+            <div className='row row-cols-1 row-cols-md-6 g-4 mt-2 infobanners'>
         <div className='infocard1 m-5'>
           <img src={person1} width='250' alt="infocard" style={{borderRadius:'200px', margin:'10px'}}/>
           <h5 className="card-title">Alejandro Massari</h5>
-          <p className="card-text">"Increible la oportunidad que me brindó mytinerary. Pude disfrutar al máximo mi estadía en Miami."</p>
+          <p className="card-text">"Incredible the opportunity that mytinerary gave me. I was able to enjoy my stay in Miami to the fullest."</p>
           <div className='stars'>
             <img src={star} width='30' alt="star"/>
             <img src={star} width='30' alt="star"/>
@@ -29,7 +30,7 @@ const review = () => {
         <div className='infocard2 m-5'>
         <img src={person2} width='250' alt="infocard" style={{borderRadius:'200px', margin:'10px'}}/>
           <h5 className="card-title">Flor Venaruzzo</h5>
-          <p className="card-text">"Me hubiese gustado tener muchos más días libres para poder conocer todo lo que me recomendaron."</p>
+          <p className="card-text">"I would have liked to have many more days off to be able to know everything that was recommended to me."</p>
           <div className='stars'>
             <img src={star} width='30' alt="star"/>
             <img src={star} width='30' alt="star"/>
@@ -41,7 +42,7 @@ const review = () => {
         <div className='infocard3 m-5'>
         <img src={person3} width='250' alt="infocard" style={{borderRadius:'200px', margin:'10px'}}/>
           <h5 className="card-title">Rafa Machado</h5>
-          <p className="card-text">"Ya sea sobre lugares, restaurantes, bares, música.. consigue lo que buscas. Seguramente vuelva a utilizarlo."</p>
+          <p className="card-text">"Whether about places, restaurants, bars, music ... get what you are looking for. I will surely use it again."</p>
           <div className='stars'>
             <img src={star} width='30' alt="star"/>
             <img src={star} width='30' alt="star"/>
@@ -51,7 +52,6 @@ const review = () => {
           </div>
         </div>
       </div>
-            
 
         </div>
     )

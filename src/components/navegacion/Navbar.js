@@ -17,10 +17,10 @@ const navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav m-auto">
         <li className="nav-item">
-          <Linkrouter className="nav-link active" to='/inicio'>Home</Linkrouter>
+          <Linkrouter className="nav-link" to='/inicio'>Home</Linkrouter>
         </li>
         <li className="nav-item">
-          <Linkrouter className="nav-link" to='/ciudades'>Ciudades</Linkrouter>
+          <Linkrouter className="nav-link" to='/ciudades'>Cities</Linkrouter>
         </li>
         <li className="nav-item">
           <Linkrouter className="nav-link" to='/review'>Reviews</Linkrouter>
