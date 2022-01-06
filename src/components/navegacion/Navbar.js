@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link as Linkrouter}  from 'react-router-dom'
-import logo from '../../img/logo.jpg'
+import logo from '../../img/logo.png'
 import person from '../../img/person.svg'
 
 const navbar = () => {
