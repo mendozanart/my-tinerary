@@ -14,13 +14,13 @@ code {
 
 .titulo{
   text-align: center;
-  color: rgb(163, 137, 137);
+  color: rgb(70, 155, 155);
 }
 
 
 .tfooter{
   color: aliceblue;
-  background-color: rgb(163, 137, 137);
+  background-color: rgb(87, 190, 190);
   font-size: 1vw;
   text-align: center;
   padding: 3%;
@@ -30,7 +30,7 @@ code {
 }
 
 .ifooter {
-  background-color: rgb(163, 137, 137);
+  background-color: rgb(87, 190, 190);
   justify-content: center;
   padding-left: 45%;
 }
@@ -38,4 +38,30 @@ code {
 .footer {
   display: flex;
   flex-direction: column;
+}
+
+
+.infobanners {
+  justify-content: center;
+}
+
+.infocard1{
+  color: rgb(148, 148, 148);
+  text-align: center;
+}
+
+.infocard2{
+  color: rgb(148, 148, 148);
+  text-align: center;
+}
+
+.infocard3{
+  color: rgb(148, 148, 148);
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
