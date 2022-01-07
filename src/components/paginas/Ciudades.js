@@ -1,14 +1,26 @@
 import React from 'react'
 import paris from '../../img/paris.jpg'
-import Carousel from '../carousel/Carousel'
 import bsas from '../../img/bsas.jpg'
 import miami from '../../img/miami.jpg'
+import {Link as Linkrouter}  from 'react-router-dom'
+import plane from '../../img/plane.png'
+
 
 const ciudades = () => {
     return (
         <div>
-            <Carousel/>
-            <h1 className='titulo mb-3 mt-3'> CITIES </h1>
+
+        <div className='header col-12'>
+            <div className='textoheader col-4'>
+              <h1 className='tituloheader'>GET MORE INFORMATION</h1>
+              <h4 className='subtituloheader'>About the CITIES you want to visit</h4>
+            </div>
+            <div className='imgheader col-4'>
+            <img src={plane} className="d-block w-100" alt="..."/>
+            </div>
+          </div>
+
+
 
             
           <div class="container mb-4 mt-4">
@@ -20,53 +32,55 @@ const ciudades = () => {
 </div>
 
 
-<div className="card mb-3 m-auto" style={{width: "540px"}}>
-  <div className="row g-0">
-    <div className="col-md-4">
-      <img src={paris} className="img-fluid rounded-start" alt="paris"/>
+
+
+<div className="container">
+    <div className="row">
+        <div className="col-md-4">
+          <div>
+            <div className="content"> <Linkrouter to='/'>
+                    <div className="content-overlay"></div> <img className="imgcard content-image" src={paris} alt="img"/>
+                    <div className="content-details fadeIn-bottom">
+                        <h3 className="content-title">More info</h3>
+                        <p className="content-text"><i className="fa fa-map-marker"></i>Click here</p>
+                    </div>
+                </Linkrouter>
+                </div>
+                <h3 className='titulo'>Paris</h3>
+                <p className='subtitulo'>France</p>
+                </div>
+        </div>
+        <div className="col-md-4">
+          <div>
+            <div className="content"> <Linkrouter to='/'>
+                    <div className="content-overlay"></div> <img className="imgcard content-image" src={miami} alt="img"/>
+                    <div className="content-details fadeIn-bottom">
+                        <h3 className="content-title">More info</h3>
+                        <p className="content-text"><i className="fa fa-map-marker"></i>Click here</p>
+                    </div>
+                </Linkrouter> </div>
+                <h3 className='titulo'>Miami</h3>
+                <p className='subtitulo'>United States</p>
+                </div>
+        </div>
+        <div className="col-md-4">
+          <div>
+            <div className="content"> <Linkrouter to='/ciudad'>
+                    <div className="content-overlay"></div> <img className="imgcard content-image" src={bsas} alt="img"/>
+                    <div className="content-details fadeIn-bottom">
+                        <h3 className="content-title">More info</h3>
+                        <p className="content-text"><i className="fa fa-map-marker"></i>Click here</p>
+                    </div>
+                </Linkrouter> </div>
+                <h3 className='titulo'>Buenos Aires</h3>
+                <p className='subtitulo'>Argentina</p>
+                </div>
+        </div>
     </div>
-    <div className="col-md-8">
-      <div className="card-body">
-        <h4 className="card-title">PARIS</h4>
-        <h6 className="card-subtitle">Francia</h6>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
 </div>
 
-<div className="card mb-3 m-auto" style={{width: "540px"}}>
-  <div className="row g-0">
-    <div className="col-md-4">
-      <img src={bsas} className="img-fluid rounded-start" alt="bsas"/>
-    </div>
-    <div className="col-md-8">
-      <div className="card-body">
-        <h4 className="card-title">BUENOS AIRES</h4>
-        <h6 className="card-subtitle">Argentina</h6>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div className="card mb-3 m-auto" style={{width: "540px"}}>
-  <div className="row g-0">
-    <div className="col-md-4">
-      <img src={miami} className="img-fluid rounded-start" alt="miami"/>
-    </div>
-    <div className="col-md-8">
-      <div className="card-body">
-        <h4 className="card-title">MIAMI</h4>
-        <h6 className="card-subtitle">U.S</h6>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
+
         </div>
     )
 }
