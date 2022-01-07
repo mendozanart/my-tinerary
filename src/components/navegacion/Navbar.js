@@ -29,13 +29,13 @@ const navbar = () => {
     </div>
 
 
-    <div className="dropdown">
-  <button className="btn btn-transparency" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <div className="dropdown dropstart">
+  <button className="btn btn-transparency dropstart" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
   <Linkrouter to='/usuarios'>
       <img src={person} width='35' alt='logo' />
   </Linkrouter>
   </button>
-  <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <ul className="dropdown-menu dropstart" aria-labelledby="dropdownMenuButton1">
   <div className="mb-3 col-10 m-auto">
     <label for="exampleInputEmail1" className="form-label">Email</label>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
