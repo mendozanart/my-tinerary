@@ -14,13 +14,43 @@ code {
 
 .titulo{
   text-align: center;
-  color: rgb(70, 155, 155);
+  color: rgb(79, 53, 163);
+}
+
+.subtitulo {
+  text-align: center;
+  color: rgb(99, 99, 99); 
+}
+
+.tituloheader{
+  text-align: left;
+  color:rgb(79, 53, 163) ;
+}
+
+.subtituloheader{
+  text-align: left;
+  color:rgb(148, 148, 148) ;
+  margin-top: 2vh;
+}
+
+.tituloreview {
+  color: rgba(226, 92, 30, 0.7) ;
+}
+
+.tituloslide {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  border-radius: 2vh;
+  border-top-left-radius: 2vh !important;
+  border-top-right-radius: 2vh !important;
 }
 
 
 .tfooter{
   color: aliceblue;
-  background-color: rgb(87, 190, 190);
+  background-color: rgb(79, 53, 163);
   font-size: 1vw;
   text-align: center;
   padding: 3%;
@@ -30,7 +60,7 @@ code {
 }
 
 .ifooter {
-  background-color: rgb(87, 190, 190);
+  background-color: rgb(79, 53, 163);
   justify-content: center;
   padding-left: 47%;
 }
@@ -66,6 +96,69 @@ code {
   justify-content: center;
 }
 
+.titulocard{
+  text-align: left;
+  color: rgb(79, 53, 163);
+}
+
+.subtitulocard{
+  text-align: left;
+  color: rgb(99, 99, 99); 
+}
+
+
+.imgtop {
+  border-radius: 2vh;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgheader {
+  margin-left: 15vw;
+  margin-top: 5vh;
+}
+
+.textoheader {
+  margin-top: 20vh;
+  margin-left: 10vw;
+}
+
+.slidecards {
+  display: flex;
+  flex-direction: row;
+}
+
+.regform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+.formulario{
+  background-color: rgba(79, 53, 163, 0.164);
+  border-radius: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  margin-left: 36vw;
+  width: 25vw;
+  height: 90vh;
+
+}
+
+.imagenform{
+  margin-left: 40vw;
+}
+
+
+
+
+
+
+
 
 
 
@@ -90,10 +183,11 @@ code {
 }
 
 .content .content-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(226, 92, 30, 0.7);
   position: absolute;
   height: 99%;
   width: 100%;
+  border-radius: 2vh;
   left: 0;
   top: 0;
   bottom: 0;
@@ -112,8 +206,8 @@ code {
   width: 100%
 }
 
-img {
-  border-radius: 5px
+.imgcard {
+  border-radius: 2vh
 }
 
 .content-details {
