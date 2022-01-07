@@ -36,6 +36,9 @@ const carousel = () => {
 
 <Carousel responsive={responsive}
           draggable={true}
+          autoPlaySpeed={1000}
+          transitionDuration={500}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
 >
   <div>
   <div className="content nodraggable"> <Linkrouter to='/' className='nodraggable'>
