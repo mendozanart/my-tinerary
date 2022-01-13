@@ -53,16 +53,15 @@ code {
   background-color: rgb(79, 53, 163);
   font-size: 1vw;
   text-align: center;
-  padding: 3%;
-  padding: 1%;
+  padding: 1vw;
   margin-bottom: 0;
-  margin-top: 2%;
+  margin-top: 1vh;
 }
 
 .ifooter {
   background-color: rgb(79, 53, 163);
   justify-content: center;
-  padding-left: 47%;
+  padding-left: 46vw;
 }
 
 .footer {
@@ -94,6 +93,11 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.stars2 {
+  display: flex;
+  flex-direction: row;
 }
 
 .titulocard{
@@ -133,27 +137,38 @@ code {
 }
 
 .regform{
-  display: flex;
-  flex-direction: column;
   justify-content: center !important;
 }
 
 .formulario{
-  background-color: rgba(79, 53, 163, 0.164);
   border-radius: 10vh;
   padding-top: 3vh;
   padding-bottom: 3vh;
-  margin-left: 36vw;
+  margin-left: 38vw;
   width: 25vw;
   height: 90vh;
 
 }
 
-.imagenform{
-  margin-left: 40vw;
+.ciudadreview {
+  display: flex;
+  flex-direction: row;
 }
 
+.textociudad{
+  text-align: justify;
+}
 
+.fotociudad{
+  border-radius: 1vh;
+  margin-bottom: 2vh;
+}
+
+.botonlike {
+   border-radius: 20vh;
+   border-color: #1a1a1a46;
+   margin-right: 1vw;
+}
 
 
 
@@ -165,19 +180,19 @@ code {
 
 
 .container {
-  margin: 70px
+  margin: 12vh
 }
 
 .title {
   color: #1a1a1a;
   text-align: center;
-  margin-bottom: 10px
+  margin-bottom: 1vh;
 }
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 400px;
+  width: 27vw;
+  max-width: 400vw;
   margin: auto;
   overflow: hidden
 }
@@ -185,9 +200,9 @@ code {
 .content .content-overlay {
   background: rgba(226, 92, 30, 0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
-  border-radius: 2vh;
+  border-radius: 5%;
   left: 0;
   top: 0;
   bottom: 0;
@@ -199,23 +214,23 @@ code {
 }
 
 .content:hover .content-overlay {
-  opacity: 1
+  opacity: 1;
 }
 
 .content-image {
-  width: 100%
+  width: 27vw;
 }
 
 .imgcard {
-  border-radius: 2vh
+  border-radius: 2vh;
 }
 
 .content-details {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -236,16 +251,16 @@ code {
 .content-details h3 {
   color: #fff;
   font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
+  letter-spacing: 0.15vw;
+  margin-bottom: 0.5vh;
   text-transform: uppercase
 }
 
 .content-details p {
   color: #fff;
-  font-size: 0.8em
+  font-size: 2vh;
 }
 
 .fadeIn-bottom {
-  top: 80%
+  top: 80%;
 }
