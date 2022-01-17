@@ -10,7 +10,7 @@ const footer = () => {
     <footer className="footer2">
     <div className="container mb-0">
         <div className="row justify-content-center">
-            <div className="col-sm-6 col-md-12 text-center">
+            <div className="col-sm-12 col-md-12 col-lg-12 text-center">
                 <p className="menu mt-3 mb-2">
                     <Linkrouter to="/inicio" className="fmenu">Home</Linkrouter>
                     <Linkrouter to="/ciudades" className="fmenu">Cities</Linkrouter>
@@ -23,7 +23,7 @@ const footer = () => {
             </div>
         </div>
         <div className="row mt-4">
-            <div className="col-sm-6 col-md-12 text-center">
+            <div className="col-sm-12 col-md-12 col-lg-12 text-center">
                 <p className="copyright">© 2013 Mytinerary. All rights reserved.</p>
             </div>
         </div>

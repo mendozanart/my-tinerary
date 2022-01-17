@@ -68,7 +68,7 @@ function Navbar2() {
               aria-expanded="false"
             >
               <LinkRouter to="/usuarios">
-                <img src={person} width="35" alt="person" />
+                <img src={person} width="35" alt="logo" />
               </LinkRouter>
             </button>
             <ul
