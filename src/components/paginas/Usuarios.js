@@ -1,10 +1,33 @@
 import React from "react";
+import registro from "../../img/header/registro.png";
 
 const usuarios = () => {
   return (
     <div>
-      <h1 className="titulo mb-4 mt-4"> SIGN UP </h1>
 
+<div className="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div className="content-header">
+          <div className="textoheader col-5">
+            <h1 className="tituloheader2">
+              SIGN UP
+            </h1>
+            <h4 className="subtituloheader">
+            9 out of 10 people use Mytinerary to plan their trip
+            </h4>
+            <h4 className="subtituloheader">
+            Join and enjoy!
+            </h4>
+          </div>
+          <div className="imgheader2 col-5">
+            <img src={registro} className="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      
       <div className=" col-10 regform">
         <div className="col-sm-10 col-md-12 formulario">
           <form>
@@ -14,7 +37,7 @@ const usuarios = () => {
               </label>
               <input
                 type="email"
-                className="form-control"
+                className="form-control bradio"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -27,8 +50,8 @@ const usuarios = () => {
                 Name
               </label>
               <input
-                type="Name"
-                className="form-control"
+                type="name"
+                className="form-control bradio"
                 id="exampleInputName1"
               />
             </div>
@@ -39,7 +62,7 @@ const usuarios = () => {
               </label>
               <input
                 type="lastName"
-                className="form-control"
+                className="form-control bradio"
                 id="exampleInputLastName1"
               />
             </div>
@@ -49,7 +72,7 @@ const usuarios = () => {
               </label>
               <input
                 type="password"
-                className="form-control"
+                className="form-control bradio"
                 id="exampleInputPassword1"
               />
             </div>
@@ -60,12 +83,12 @@ const usuarios = () => {
               </label>
               <input
                 type="rpassword"
-                className="form-control"
+                className="form-control bradio"
                 id="exampleInputRPassword1"
               />
             </div>
             <div className="mb-3 col-sm-10 col-md-12 m-auto">
-              <button type="submit" className="btn btn-warning mt-3 m-auto">
+              <button type="submit" className="btn btn-warning mt-3 m-auto bradio2">
                 Sign up
               </button>
             </div>

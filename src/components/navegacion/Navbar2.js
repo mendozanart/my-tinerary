@@ -1,16 +1,33 @@
-import React from "react";
-import { Link as Linkrouter } from "react-router-dom";
+import React, { useState } from "react";
+import { Link as LinkRouter } from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
 
-const navbar = () => {
+
+function Navbar2() {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 10) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
+
   return (
-    <div>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <>
+      <nav
+        className={
+          colorChange
+            ? "navbar navbar-expand-lg navbar-dark bg-warning fixed-top"
+            : "colorChange navbar navbar-expand-lg navbar-light fixed-top"
+        }
+      >
         <div className="container-fluid">
-          <Linkrouter to="/inicio">
+          <LinkRouter to="/inicio">
             <img src={logo} width="100" alt="logo" />
-          </Linkrouter>
+          </LinkRouter>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,19 +42,19 @@ const navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav m-auto">
               <li className="nav-item">
-                <Linkrouter className="nav-link" to="/inicio">
+                <LinkRouter className="nav-link" to="/inicio">
                   Home
-                </Linkrouter>
+                </LinkRouter>
               </li>
               <li className="nav-item">
-                <Linkrouter className="nav-link" to="/ciudades">
+                <LinkRouter className="nav-link" to="/ciudades">
                   Cities
-                </Linkrouter>
+                </LinkRouter>
               </li>
               <li className="nav-item">
-                <Linkrouter className="nav-link" to="/review">
+                <LinkRouter className="nav-link" to="/review">
                   Reviews
-                </Linkrouter>
+                </LinkRouter>
               </li>
             </ul>
           </div>
@@ -50,9 +67,9 @@ const navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <Linkrouter to="/usuarios">
-                <img src={person} width="35" alt="logo" />
-              </Linkrouter>
+              <LinkRouter to="/usuarios">
+                <img src={person} width="35" alt="person" />
+              </LinkRouter>
             </button>
             <ul
               className="dropdown-menu dropstart"
@@ -89,16 +106,17 @@ const navbar = () => {
               </div>
               <div className="mb-3 col-10 m-auto">
                 <p>You don't have an account?</p>
-                <Linkrouter className="btn btn-warning" to="/usuarios">
+                <LinkRouter className="btn btn-warning" to="/usuarios">
                   Sign up
-                </Linkrouter>
+                </LinkRouter>
               </div>
             </ul>
           </div>
         </div>
       </nav>
-    </div>
-  );
-};
 
-export default navbar;
+
+    </>
+  );
+}
+export default Navbar2;

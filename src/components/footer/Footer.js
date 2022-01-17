@@ -1,7 +1,7 @@
 import React from "react";
-import instagram from "../../img/instagram.png";
-import facebook from "../../img/facebook.png";
-import whatsapp from "../../img/whatsapp.png";
+import instagram from "../../img/icons/instagram.png";
+import facebook from "../../img/icons/facebook.png";
+import whatsapp from "../../img/icons/whatsapp.png";
 
 const footer = () => {
   return (
