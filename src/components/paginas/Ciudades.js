@@ -43,6 +43,7 @@ const ciudades = () => {
           </div>
         </div>
       </div>
+      
 
       <div className="filtrociudades m-auto d-flex justify-content-center align-items-center col-sm-12 col-md-12 col-lg-12">
       <div className="form-check form-switch fswitch col-sm-1 col-md-3 col-lg-1">

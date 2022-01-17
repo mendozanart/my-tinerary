@@ -72,20 +72,20 @@ function Navbar2() {
               </LinkRouter>
             </button>
             <ul
-              className="dropdown-menu dropstart"
+              className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
-              <div className="mb-3 col-10 m-auto">
+              <div className="mb-3 col-10 mt-3 m-auto">
                 <label for="exampleInputEmail1" className="form-label">
                   Email
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control bradio"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
-                <div id="emailHelp" className="form-text">
+                <div id="emailHelp" className="form-text text-white">
                   We will not share your email with anyone.
                 </div>
               </div>
@@ -95,18 +95,18 @@ function Navbar2() {
                 </label>
                 <input
                   type="password"
-                  className="form-control"
+                  className="form-control bradio"
                   id="exampleInputPassword1"
                 />
               </div>
               <div className="mb-3 col-10 m-auto">
-                <button type="submit" className="btn btn-primary mt-3 m-auto">
+                <button type="submit" className="btn btn-warning text-white bradio mt-3 m-auto">
                   Log-in
                 </button>
               </div>
               <div className="mb-3 col-10 m-auto">
                 <p>You don't have an account?</p>
-                <LinkRouter className="btn btn-warning" to="/usuarios">
+                <LinkRouter className="btn btn-warning bradio4 text-white " to="/usuarios">
                   Sign up
                 </LinkRouter>
               </div>

@@ -53,6 +53,24 @@ code {
   color: rgb(112, 25, 25);
 }
 
+.navd {
+  width: 50vw;
+  height: 70vh;
+  margin: 10vw;
+  border-style: none;
+  border-radius: 2vw;
+  align-items: center;
+  justify-content: center;
+  background: rgb(137, 0, 250);
+  color: #fff;
+  
+}
+
+.bradio4{
+  border-radius: 5vw;
+  background-color: #e26d00;
+  border-style: none;
+}
 
 
 
@@ -295,6 +313,7 @@ code {
 }
 
 
+
 /* *********************** paginas - ciudad ***************************/
 
 
@@ -383,6 +402,9 @@ code {
   padding-left: 1vw;
 }
 
+.motorb {
+  padding-left: 10vw;
+}
 
 
 /* *********************** paginas - review  ***************************/

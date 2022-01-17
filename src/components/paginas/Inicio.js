@@ -27,7 +27,7 @@ const inicio = () => {
             <h4 className="subtituloheader">
               Plan the best vacations of your life
             </h4>
-            <Linkrouter className="btn btn-danger mt-3 bradio mb-2" to="/usuarios">
+            <Linkrouter className="btn btn-danger mt-3 bradio4 mb-2" to="/usuarios">
               Sign up
             </Linkrouter>
           </div>
@@ -37,7 +37,7 @@ const inicio = () => {
         </div>
       </div>
 
-      <div class="container col-sm-8 col-md-7 col-lg-7 mb-5 mt-5 m-auto">
+      <div class="container motorb col-sm-8 col-md-8 col-lg-10 mb-5 mt-5 m-auto">
         <div className="row height d-flex justify-content-center align-items-center">
           <div className="col-md-6">
             <div className="form">
@@ -51,7 +51,7 @@ const inicio = () => {
                 placeholder="Search cities, restaurants.."
               />{" "}
                 </div>
-                <div className="bbusqueda col-sm-2 col-md-4 col-lg-4 m-auto mt-1">
+                <div className="bbusqueda col-sm-2 col-md-4 col-lg-5 mt-1">
                 <button type="button" class="btn btn-warning bradio2">let's go!</button>
                 </div>
               
