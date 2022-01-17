@@ -9,21 +9,21 @@ const review = () => {
   return (
     <div>
       <div className="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
-      <div className="header col-sm-6 col-md-12">
-        <div className="textoheader3 col-4">
+      <div className="header">
+        <div className="textoheader3 col-sm-12 col-md-6 col-lg-5">
           <h1 className="tituloheader">REVIEWS</h1>
           <h4 className="subtituloheader">
             Get to know what people said about Mytinerary
           </h4>
         </div>
-        <div className="imgheader2 col-4">
-          <img src={lugagge} className="d-block w-70" alt="..." />
+        <div className="imagen">
+          <img src={lugagge} className="d-block w-100 imgheader2 col-sm-12 col-md-6 col-lg-6 col-lg-5" alt="..." />
         </div>
       </div>
       </div>
 
       <div className="row row-cols-1 row-cols-md-6 g-4 mt-2 infobanners">
-        <div className="infocard1 m-5">
+        <div className="infocard1 col-sm-10 col-md-7 col-lg-2 m-5">
           <img
             src={person1}
             width="250"
@@ -44,7 +44,7 @@ const review = () => {
             <img src={star} width="30" alt="star" />
           </div>
         </div>
-        <div className="infocard2 m-5">
+        <div className="infocard2 col-sm-10 col-md-7 col-lg-2 m-5">
           <img
             src={person2}
             width="250"
@@ -64,7 +64,7 @@ const review = () => {
             <img src={star} width="30" alt="star" />
           </div>
         </div>
-        <div className="infocard3 m-5">
+        <div className="infocard3 col-sm-10 col-md-7 col-lg-2 m-5">
           <img
             src={person3}
             width="250"

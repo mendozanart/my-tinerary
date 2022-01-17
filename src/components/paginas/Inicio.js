@@ -17,7 +17,7 @@ const inicio = () => {
 
 <div className="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
         <div className="content-header">
-          <div className="textoheader col-5">
+          <div className="textoheader col-sm-12 col-md-6 col-lg-5">
             <h1 className="tituloheader">
               <strong>PLAN YOUR NEXT VACATIONS</strong>
             </h1>
@@ -27,18 +27,18 @@ const inicio = () => {
             <h4 className="subtituloheader">
               Plan the best vacations of your life
             </h4>
-            <Linkrouter className="btn btn-danger mt-3 bradio" to="/usuarios">
+            <Linkrouter className="btn btn-danger mt-3 bradio4 mb-2" to="/usuarios">
               Sign up
             </Linkrouter>
           </div>
-          <div className="imgheader col-5">
-            <img src={girl} className="d-block w-100" alt="..." />
+          <div className="imgheader col-sm-12 col-md-6 col-lg-6 col-lg-5">
+            <img src={girl} className="d-block w-100 mt-5" alt="..." />
           </div>
         </div>
       </div>
 
-      <div class="container col-sm-6 col-md-12 mb-5">
-        <div className="row height d-flex justify-content-center align-items-center m-auto">
+      <div class="container motorb col-sm-8 col-md-8 col-lg-10 mb-5 mt-5 m-auto">
+        <div className="row height d-flex justify-content-center align-items-center">
           <div className="col-md-6">
             <div className="form">
               {" "}
@@ -51,7 +51,7 @@ const inicio = () => {
                 placeholder="Search cities, restaurants.."
               />{" "}
                 </div>
-                <div className="bbusqueda">
+                <div className="bbusqueda col-sm-2 col-md-4 col-lg-5 mt-1">
                 <button type="button" class="btn btn-warning bradio2">let's go!</button>
                 </div>
               
@@ -63,21 +63,21 @@ const inicio = () => {
       </div>
 
       <div className="row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 infobanners">
-        <div className="infocard1 m-5">
+        <div className="infocard1 col-sm-2 col-md-4 col-lg-3 m-5">
           <img src={hand1} width="70" alt="infocard" />
           <h5 className="card-title mt-5"><strong>SAVE TIME</strong></h5>
           <p className="card-text binfo">
             Learn about the best options for your trip, from the best of them.
           </p>
         </div>
-        <div className="infocard2 m-5">
+        <div className="infocard2 col-sm-2 col-md-4 col-lg-3 m-5">
           <img src={handl} width="85" alt="infocard" />
           <h5 className="card-title mt-5"><strong>PLAN</strong></h5>
           <p className="card-text binfo">
             Plan your vacations, so that they are perfect.
           </p>
         </div>
-        <div className="infocard3 m-5">
+        <div className="infocard3 col-sm-2 col-md-4 col-lg-3 m-5">
           <img src={hando} width="85" alt="infocard" />
           <h5 className="card-title mt-5"><strong>OPINIONS</strong></h5>
           <p className="card-text binfo">

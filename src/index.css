@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   font-family: 'Poppins', sans-serif;
   /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,6 +13,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* responsive-movil */
+
+@media (max-width: 576px) and (max-width: 767px){
+
+}
+
+/* responsive-tablet */
+
+@media (max-width: 768px) and (max-width: 991px){
+
+}
+
+/* responsive-pc */
+
+@media (max-width: 992px){
+
+  
+
+}
+
 
 
 /* *********************** navegacion ***************************/
@@ -30,6 +53,24 @@ code {
   color: rgb(112, 25, 25);
 }
 
+.navd {
+  width: 50vw;
+  height: 70vh;
+  margin: 10vw;
+  border-style: none;
+  border-radius: 2vw;
+  align-items: center;
+  justify-content: center;
+  background: rgb(137, 0, 250);
+  color: #fff;
+  
+}
+
+.bradio4{
+  border-radius: 5vw;
+  background-color: #e26d00;
+  border-style: none;
+}
 
 
 
@@ -47,25 +88,28 @@ code {
 .tituloheader{
   text-align: left;
   color:rgb(79, 53, 163) ;
-  font-size: 50px;
+  font-size: 5vh;
+
 }
 
 .subtituloheader{
   text-align: left;
   color:rgb(99,99,99) ;
   margin-top: 2vh;
+  font-size: 3vh;
 }
 
 .titulo{
   text-align: center;
   color: rgb(79, 53, 163);
+  font-size: 5vh;
 }
 
 .subtitulo {
   text-align: center;
-  color: rgb(99, 99, 99); 
+  color: rgb(99, 99, 99);
+  font-size: 3vh; 
 }
-
 
 
 .imgtop {
@@ -96,9 +140,21 @@ code {
 
 
 .imgheader2 {
-  margin-left: 15vw;
-  margin-top: 20vh;
-  max-width: 300vw;
+  margin-left: 5vw !important;
+  margin-top: 30vh;
+  width: 35vw;
+}
+
+.imgheader3 {
+  margin-left: 5vw !important;
+  margin-top: 15vh;
+  width: 35vw;
+}
+
+.imgheader4 {
+  margin-left: 5vw !important;
+  margin-top: 8vh;
+  width: 27vw;
 }
 
 .textoheader2 {
@@ -107,8 +163,13 @@ code {
 }
 
 .textoheader3 {
-  margin-top: 30vh;
-  margin-left: 15vw;
+  margin-top: 25vh;
+  margin-left: 5vw;
+}
+
+.textoheader4 {
+  margin-top: 20vh;
+  margin-left: 5vw;
 }
 
 .titulo2 {
@@ -236,20 +297,6 @@ code {
   justify-content: center;
 }
 
-.infocard1{
-  color: rgb(97, 97, 97);
-  text-align: center;
-}
-
-.infocard2{
-  color: rgb(97, 97, 97);
-  text-align: center;
-}
-
-.infocard3{
-  color: rgb(97, 97, 97);
-  text-align: center;
-}
 
 .titulocard{
   text-align: left;
@@ -262,8 +309,9 @@ code {
 }
 
 .binfo {
-  text-align: left;
+  text-align: center;
 }
+
 
 
 /* *********************** paginas - ciudad ***************************/
@@ -282,6 +330,7 @@ code {
 
 .textociudad{
   text-align: justify;
+  font-size: 5vh;
 }
 
 .fotociudad{
@@ -338,7 +387,7 @@ code {
 }
 
 .fswitch{
-  padding-left: 4vw;
+  padding-left: 2vw;
 }
 
 .mbusqueda{
@@ -346,13 +395,16 @@ code {
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  padding-left: 8vw;
+  
 }
 
 .bbusqueda {
   padding-left: 1vw;
 }
 
+.motorb {
+  padding-left: 10vw;
+}
 
 
 /* *********************** paginas - review  ***************************/
@@ -367,6 +419,7 @@ code {
 
 .tituloreview {
   color: rgba(226, 92, 30, 0.7) ;
+  font-size: 3vh;
 }
 
 .stars {
@@ -380,27 +433,50 @@ code {
   flex-direction: row;
 }
 
+.infocard1{
+  color: rgb(97, 97, 97);
+  text-align: center;
+  font-size: 2vh;
+}
+
+.infocard2{
+  color: rgb(97, 97, 97);
+  text-align: center;
+  font-size: 2vh;
+}
+
+.infocard3{
+  color: rgb(97, 97, 97);
+  text-align: center;
+  font-size: 2vh;
+}
+
 
 /* *********************** paginas - usuarios  ***************************/
 
 .regform{
   justify-content: center !important;
+  padding-bottom: 10vh;
 }
 
 .formulario{
   border-radius: 10vh;
   padding-top: 3vh;
   padding-bottom: 3vh;
-  margin-left: 38vw;
-  width: 25vw;
+  margin-left: 5vw;
+  width: 40vw;
   height: 90vh;
 
+}
+
+.btnsign {
+  margin-left: 17vw;
 }
 
 .imgheader2 {
   margin-left: 8vw;
   margin-top: 5vh;
-  width: 30vw;
+
 }
 
 
@@ -442,6 +518,8 @@ code {
   color: #fff;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
 }
 
 .fmenu {

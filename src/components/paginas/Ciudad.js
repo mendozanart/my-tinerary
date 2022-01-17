@@ -18,7 +18,7 @@ const ciudad = () => {
         <div className="p-4">
         <div className="textocuidad">
         <h3>Buenos Aires a city to visit</h3>
-        <p>
+        <h6>
             Buenos Aires a city that I choose to visit two or three times per
             year, since I love it and I live in Uruguay. City always in
             movementb, great places to visit, an ideal city where You find
@@ -26,13 +26,13 @@ const ciudad = () => {
             shopping, fairs or avenida avellaneda or the eleven . At night you
             have beautiful places to eat, theater, cinemas and night to go out
             to dance, like the City for those over 35 years
-          </p>
-          <p>
+          </h6>
+          <h6>
             <strong>Date of experience:</strong> May/2018
-          </p>
-          <p>
+          </h6>
+          <h6>
             <strong>Trip type:</strong> Traveled as a couple
-          </p>
+          </h6>
           <div className="col-3">
           <div className="stars2">
             <img src={star} width="20" alt="star" />
@@ -62,15 +62,15 @@ const ciudad = () => {
         <div className="p-4">
         <div className="textocuidad">
         <h3>Buenos Aires is such a beautiful city</h3>
-        <p>
+        <h6>
         Buenos Aires is a beautiful and very complete city. I would love to go back and visit many more places
-          </p>
-          <p>
+          </h6>
+          <h6>
             <strong>Date of experience:</strong> June/2016
-          </p>
-          <p>
+          </h6>
+          <h6>
             <strong>Trip type:</strong> Business trip
-          </p>
+          </h6>
           <div className="col-3">
           <div className="stars2">
             <img src={star} width="20" alt="star" />
