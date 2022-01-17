@@ -1,7 +1,7 @@
 import React from "react";
-import paris from "../../img/paris.jpg";
-import bsas from "../../img/bsas.jpg";
-import miami from "../../img/miami.jpg";
+import paris from "../../img/cities/paris.jpg";
+import bsas from "../../img/cities/bsas.jpg";
+import miami from "../../img/cities/miami.jpg";
 import { Link as Linkrouter } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -34,7 +34,7 @@ const carousel = () => {
         draggable={true}
         autoPlaySpeed={1000}
         transitionDuration={500}
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        
       >
         <div>
           <div className="content nodraggable">
