@@ -6,10 +6,12 @@ import usuario from "../../img/persons/usuario.jpg";
 import Carousel from "../carousel/Carousel";
 import Like from "../like/Like";
 
+
 const ciudad = () => {
   return (
     <div>
       <img src={bsas} className=" d-block w-100" alt="..." />
+
 
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
         <div className="p-4">
