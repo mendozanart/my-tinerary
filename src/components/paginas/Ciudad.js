@@ -4,6 +4,7 @@ import mural1 from "../../img/itinerary/mural1.jpg";
 import mural2 from "../../img/itinerary/mural2.jpg";
 import like from "../../img/icons/like1.png";
 import usuario from "../../img/persons/usuario.jpg"
+import Carousel from "../carousel/Carousel";
 
 
 const ciudad = () => {
@@ -15,7 +16,7 @@ const ciudad = () => {
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
         <div className="p-4">
         <p className="txtlike">1310</p>
-        <img src={like} className="icolike d-block w-100" alt="..." />
+        <img src={like} className="icolike btn d-block w-100" alt="..." />
           <div className="ubicity">
             <h2 className="titulocity">
               <strong>Buenos Aires</strong>
@@ -78,7 +79,12 @@ const ciudad = () => {
         </div>
 
 
+
       </div>
+
+      <h1 className="titulo mt-5 mb-5"> Find more cities </h1>
+        <Carousel/>
+
     </div>
   );
 };

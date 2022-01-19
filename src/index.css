@@ -393,15 +393,15 @@ code {
 .txtlike {
   width: 2vw !important;
   position: absolute;
-  margin-left: 77.1vw;
-  margin-top: 4vh;
+  margin-left: 76.1vw;
+  margin-top: 6vh;
   font-size: 2vh;
 }
 
 .icolike {
-  width: 2vw !important;
+  width: 4vw !important;
   position: absolute;
-  margin-left: 77vw;
+  margin-left: 75vw;
 }
 
 
