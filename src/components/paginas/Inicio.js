@@ -170,14 +170,14 @@ const inicio = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <h1 className="titulo mt-4 mb-4"> Find your activities </h1>
+      <h1 className="titulo mt-5 mb-4"> Find your activities </h1>
 
-      <div className="row row-cols-1 row-cols-md-3 col-10 m-auto mt-4 mb-4 g-4">
+      <div className="row row-cols-1 row-cols-md-3 col-10 m-auto mt-3 mb-4 g-4">
         <div className="col">
           <div className="card h-100">
             <img src={van} className="imgtop card-img-top" alt="van" />
             <div className="card-body">
-              <h4 className="titulocard card-title">Travel by car</h4>
+              <h4 className="titulocard card-title">Road trip</h4>
               <p className="subtitulocard card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -205,7 +205,7 @@ const inicio = () => {
           <div className="card h-100">
             <img src={camp} className="imgtop card-img-top" alt="camp" />
             <div className="card-body">
-              <h4 className="titulocard card-title">Best places to camp</h4>
+              <h4 className="titulocard card-title">Best place to camp</h4>
               <p className="subtitulocard card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content

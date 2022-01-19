@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link as LinkRouter } from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
+import Login from "./Login";
 
 
 function Navbar2() {
@@ -99,16 +100,19 @@ function Navbar2() {
                   id="exampleInputPassword1"
                 />
               </div>
-              <div className="mb-3 col-10 m-auto">
-                <button type="submit" className="btn btn-warning text-white bradio mt-3 m-auto">
+              <div className="blogin mb-1 col-10 m-auto">
+                <button type="submit" className="btn btn-warning text-white bradio5 mt-3 m-auto">
                   Log-in
                 </button>
               </div>
               <div className="mb-3 col-10 m-auto">
-                <p>You don't have an account?</p>
-                <LinkRouter className="btn btn-warning bradio4 text-white " to="/usuarios">
+              <Login/>
+              </div>
+              <p className="google mt-5 col-10 m-auto">You don't have an account?</p>
+              <div className="blogin2 mb-3 col-10">
+                <LinkRouter className="btn btn-warning bradio5 text-white mt-2 " to="/usuarios">
                   Sign up
-                </LinkRouter>
+                </LinkRouter>  
               </div>
             </ul>
           </div>

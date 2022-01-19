@@ -54,15 +54,15 @@ code {
 }
 
 .navd {
-  width: 50vw;
-  height: 70vh;
+  width: 40vw;
+  height: 90vh;
   margin: 10vw;
   border-style: none;
   border-radius: 2vw;
   align-items: center;
   justify-content: center;
-  background: rgb(116,53,163);
-  background: linear-gradient(343deg, rgba(116,53,163,1) 40%, rgba(79,53,163,1) 100%); 
+  background: rgb(173,64,255);
+  background: linear-gradient(343deg, rgba(173,64,255,1) 2%, rgba(79,53,163,1) 100%); 
   color: #fff;
   
 }
@@ -73,8 +73,24 @@ code {
   border-style: none;
 }
 
+.google {
+  text-align: center;
+}
 
+.bradio5{
+  
+  border-radius: 5vw;
+  background-color: #e29a00;
+  border-style: none;
+}
 
+.blogin {
+  padding-left: 14vw;
+}
+
+.blogin2 {
+  padding-left: 17vw;
+}
 
 /* *********************** header ***************************/
 
@@ -437,7 +453,6 @@ border-radius: 4vh !important;
   padding-left: 74vw;
   position: absolute;
 }
-
 
 /* *********************** paginas - ciudades  ***************************/
 
