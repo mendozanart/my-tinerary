@@ -434,7 +434,7 @@ border-radius: 4vh !important;
 .likes {
   display: flex;
   flex-direction: column;
-  padding-left: 72vw;
+  padding-left: 74vw;
   position: absolute;
 }
 

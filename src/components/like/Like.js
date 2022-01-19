@@ -5,7 +5,7 @@ export default class Like extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            isLiked : false,
+            isLiked : true,
         }
         
     }

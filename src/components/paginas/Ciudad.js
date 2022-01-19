@@ -2,23 +2,18 @@ import React from "react";
 import bsas from "../../img/cities/bsas2.PNG";
 import mural1 from "../../img/itinerary/mural1.jpg";
 import mural2 from "../../img/itinerary/mural2.jpg";
-import usuario from "../../img/persons/usuario.jpg"
+import usuario from "../../img/persons/usuario.jpg";
 import Carousel from "../carousel/Carousel";
-import Like from "../like/Like"
-
+import Like from "../like/Like";
 
 const ciudad = () => {
   return (
     <div>
       <img src={bsas} className=" d-block w-100" alt="..." />
 
-      
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
         <div className="p-4">
-
-        <Like/>
-
-
+          <Like />
 
           <div className="ubicity">
             <h2 className="titulocity">
@@ -27,7 +22,9 @@ const ciudad = () => {
             <h5 className="locationcity">Argentina, Latin America.</h5>
           </div>
           <div className="textocuidad">
-            <h4><strong>A city to visit</strong></h4>
+            <h4>
+              <strong>A city to visit</strong>
+            </h4>
             <h6>
               Buenos Aires a city that I choose to visit two or three times per
               year, since I love it and I live in Uruguay. City always in
@@ -51,23 +48,32 @@ const ciudad = () => {
             </h6>
             <div className="col-3">
               <div className="stars2 mt-5">
-              <img src={mural1} className="fciudad d-block w-100 p-2" alt="..." />
-              <img src={mural2} className="fciudad  d-block w-100 p-2" alt="..." />
+                <img
+                  src={mural1}
+                  className="fciudad d-block w-100 p-2"
+                  alt="..."
+                />
+                <img
+                  src={mural2}
+                  className="fciudad  d-block w-100 p-2"
+                  alt="..."
+                />
               </div>
             </div>
           </div>
 
-
           <div className="usuariocity mb-5">
             <div className="icousuario">
-            <img src={usuario} className="icousuario d-block w-100" alt="..." />
+              <img
+                src={usuario}
+                className="icousuario d-block w-100"
+                alt="..."
+              />
             </div>
             <div className="txtusuario">
-            <h6>Natalie Burgess</h6>
+              <h6>Natalie Burgess</h6>
             </div>
-
           </div>
-
 
           <div className="ciudadcomentario">
             <input
@@ -80,14 +86,10 @@ const ciudad = () => {
             </button>
           </div>
         </div>
-
-
-
       </div>
 
       <h1 className="titulo mt-5 mb-5"> Find more cities </h1>
-        <Carousel/>
-
+      <Carousel />
     </div>
   );
 };
