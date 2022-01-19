@@ -2,9 +2,9 @@ import React from "react";
 import bsas from "../../img/cities/bsas2.PNG";
 import mural1 from "../../img/itinerary/mural1.jpg";
 import mural2 from "../../img/itinerary/mural2.jpg";
-import like from "../../img/icons/like1.png";
 import usuario from "../../img/persons/usuario.jpg"
 import Carousel from "../carousel/Carousel";
+import Like from "../like/Like"
 
 
 const ciudad = () => {
@@ -12,11 +12,14 @@ const ciudad = () => {
     <div>
       <img src={bsas} className=" d-block w-100" alt="..." />
 
-
+      
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
         <div className="p-4">
-        <p className="txtlike">1310</p>
-        <img src={like} className="icolike btn d-block w-100" alt="..." />
+
+        <Like/>
+
+
+
           <div className="ubicity">
             <h2 className="titulocity">
               <strong>Buenos Aires</strong>
