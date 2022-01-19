@@ -88,7 +88,7 @@ code {
 .tituloheader{
   text-align: left;
   color:rgb(79, 53, 163) ;
-  font-size: 5vh;
+  font-size: 7vh;
 
 }
 
@@ -364,6 +364,62 @@ code {
   border-radius: 8vw;
 }
 
+.fotociudad {
+  display: flex !important;
+  flex-direction: row;
+}
+
+.fciudad {
+  width: 40vw !important;
+  height: 40vh;
+  border-radius: 1vw;
+}
+
+.locationcity {
+  padding-bottom: 4vh;
+}
+
+.stars2 {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4vh;
+}
+
+.titulocity{
+  color: rgb(79, 53, 163) ;
+}
+
+.txtlike {
+  width: 2vw !important;
+  position: absolute;
+  margin-left: 77.1vw;
+  margin-top: 4vh;
+  font-size: 2vh;
+}
+
+.icolike {
+  width: 2vw !important;
+  position: absolute;
+  margin-left: 77vw;
+}
+
+
+.usuariocity{
+  display: flex;
+  flex-direction: row;
+}
+
+.icousuario {
+width: 57px;
+height: 57px;
+border-radius: 4vh !important;
+}
+
+.txtusuario{
+  padding-left: 1vw;
+  padding-top: 3vh;
+}
+
 
 
 
@@ -516,10 +572,6 @@ code {
 .footer2 {
   background-color: rgb(79, 53, 163) ;
   color: #fff;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  margin-right: 0 !important;
-  padding-right: 0 !important;
 }
 
 .fmenu {

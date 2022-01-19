@@ -46,24 +46,24 @@ const ciudades = () => {
       
 
       <div className="filtrociudades m-auto d-flex justify-content-center align-items-center col-sm-12 col-md-12 col-lg-12">
-      <div className="form-check form-switch fswitch col-sm-1 col-md-3 col-lg-1">
-  <input className="form-check-input col-sm-1 col-md-3 col-lg-1" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label col-sm-1 col-md-3 col-lg-1" for="flexSwitchCheckDefault">America</label>
+      <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label className="form-check-label" for="flexSwitchCheckDefault">America</label>
 </div>
 
-<div className="form-check form-switch fswitch col-sm-1 col-md-3 col-lg-1">
-  <input className="form-check-input col-sm-1 col-md-3 col-lg-1" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label col-sm-1 col-md-3 col-lg-1" for="flexSwitchCheckDefault">Europe</label>
+<div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label className="form-check-label" for="flexSwitchCheckDefault">Europe</label>
 </div>
 
-<div className="form-check form-switch fswitch col-sm-1 col-md-3 col-lg-1">
-  <input className="form-check-input col-sm-1 col-md-3 col-lg-1" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label col-sm-1 col-md-3 col-lg-1" for="flexSwitchCheckDefault">Asia</label>
+<div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label className="form-check-label" for="flexSwitchCheckDefault">Asia</label>
 </div>
 
-<div className="form-check form-switch fswitch col-sm-1 col-md-3 col-lg-1">
-  <input className="form-check-input col-sm-1 col-md-3 col-lg-1" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label col-sm-1 col-md-3 col-lg-1" for="flexSwitchCheckDefault">Oceania</label>
+<div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label className="form-check-label" for="flexSwitchCheckDefault">Oceania</label>
 </div>
 
 
