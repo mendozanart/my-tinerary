@@ -578,27 +578,6 @@ border-radius: 4vh !important;
 
 /* *********************** footer  ***************************/
 
-.tfooter{
-  color: aliceblue;
-  background-color: rgb(79, 53, 163);
-  font-size: 1vw;
-  text-align: center;
-  padding: 1vw;
-  margin-bottom: 0;
-  margin-top: 1vh;
-}
-
-.ifooter {
-  background-color: rgb(79, 53, 163);
-  justify-content: center;
-  padding-left: 46vw;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-}
-
 
 .footer2 {
   background-color: rgb(79, 53, 163) ;
