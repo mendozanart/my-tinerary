@@ -421,7 +421,22 @@ border-radius: 4vh !important;
   padding-top: 3vh;
 }
 
+.icobut {
+  width: 4vw !important;
+}
 
+.textolike {
+  height: 5vh !important;
+  padding-left: 4vh;
+
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  padding-left: 72vw;
+  position: absolute;
+}
 
 
 /* *********************** paginas - ciudades  ***************************/
