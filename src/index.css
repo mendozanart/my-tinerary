@@ -61,8 +61,8 @@ code {
   border-radius: 2vw;
   align-items: center;
   justify-content: center;
-  background: rgb(116,53,163);
-  background: linear-gradient(343deg, rgba(116,53,163,1) 40%, rgba(79,53,163,1) 100%); 
+  background: rgb(173,64,255);
+  background: linear-gradient(343deg, rgba(173,64,255,1) 2%, rgba(79,53,163,1) 100%); 
   color: #fff;
   
 }
@@ -453,7 +453,6 @@ border-radius: 4vh !important;
   padding-left: 74vw;
   position: absolute;
 }
-
 
 /* *********************** paginas - ciudades  ***************************/
 

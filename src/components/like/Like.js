@@ -21,7 +21,7 @@ export default class Like extends React.Component {
         return (
             <div>
                 <div className="likes">
-                <button className="btn btn-transparency" onClick={this.buttonLike}><Icon gustar={this.state.isLiked}/></button>
+                <button className="likes2 btn btn-transparency" onClick={this.buttonLike}><Icon gustar={this.state.isLiked}/></button>
                 <p className="textolike">1310</p>
                 </div>
             </div>
