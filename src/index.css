@@ -55,7 +55,7 @@ code {
 
 .navd {
   width: 40vw;
-  height: 70vh;
+  height: 90vh;
   margin: 10vw;
   border-style: none;
   border-radius: 2vw;
@@ -73,8 +73,24 @@ code {
   border-style: none;
 }
 
+.google {
+  text-align: center;
+}
 
+.bradio5{
+  
+  border-radius: 5vw;
+  background-color: #e29a00;
+  border-style: none;
+}
 
+.blogin {
+  padding-left: 14vw;
+}
+
+.blogin2 {
+  padding-left: 17vw;
+}
 
 /* *********************** header ***************************/
 
