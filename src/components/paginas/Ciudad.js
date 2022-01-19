@@ -21,7 +21,7 @@ const ciudad = () => {
             <h2 className="titulocity">
               <strong>Buenos Aires</strong>
             </h2>
-            <h5 className="locationcity">Argentina, Latin America.</h5>
+            <h5 className="locationcity">Argentina, South America.</h5>
           </div>
           <div className="textocuidad">
             <h4>
