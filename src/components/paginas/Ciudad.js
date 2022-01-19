@@ -2,6 +2,8 @@ import React from "react";
 import bsas from "../../img/cities/bsas2.PNG";
 import mural1 from "../../img/itinerary/mural1.jpg";
 import mural2 from "../../img/itinerary/mural2.jpg";
+import like from "../../img/icons/like1.png";
+import usuario from "../../img/persons/usuario.jpg"
 
 
 const ciudad = () => {
@@ -12,6 +14,8 @@ const ciudad = () => {
 
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
         <div className="p-4">
+        <p className="txtlike">1310</p>
+        <img src={like} className="icolike d-block w-100" alt="..." />
           <div className="ubicity">
             <h2 className="titulocity">
               <strong>Buenos Aires</strong>
@@ -19,7 +23,7 @@ const ciudad = () => {
             <h5 className="locationcity">Argentina, Latin America.</h5>
           </div>
           <div className="textocuidad">
-            <h4>A city to visit</h4>
+            <h4><strong>A city to visit</strong></h4>
             <h6>
               Buenos Aires a city that I choose to visit two or three times per
               year, since I love it and I live in Uruguay. City always in
@@ -36,10 +40,10 @@ const ciudad = () => {
               <strong>Prices:</strong> $$$
             </h6>
             <h6>
-              <strong>Date of experience:</strong> May/2018
+              <strong>Trip type:</strong> Traveled as a couple
             </h6>
             <h6>
-              <strong>Trip type:</strong> Traveled as a couple
+              <strong>Date of experience:</strong> May/2018
             </h6>
             <div className="col-3">
               <div className="stars2 mt-5">
@@ -48,6 +52,19 @@ const ciudad = () => {
               </div>
             </div>
           </div>
+
+
+          <div className="usuariocity mb-5">
+            <div className="icousuario">
+            <img src={usuario} className="icousuario d-block w-100" alt="..." />
+            </div>
+            <div className="txtusuario">
+            <h6>Natalie Burgess</h6>
+            </div>
+
+          </div>
+
+
           <div className="ciudadcomentario">
             <input
               type="text"

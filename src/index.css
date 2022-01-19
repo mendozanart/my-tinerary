@@ -372,6 +372,7 @@ code {
 .fciudad {
   width: 40vw !important;
   height: 40vh;
+  border-radius: 1vw;
 }
 
 .locationcity {
@@ -387,6 +388,40 @@ code {
 .titulocity{
   color: rgb(79, 53, 163) ;
 }
+
+.txtlike {
+  width: 2vw !important;
+  position: absolute;
+  margin-left: 77.1vw;
+  margin-top: 4vh;
+  font-size: 2vh;
+}
+
+.icolike {
+  width: 2vw !important;
+  position: absolute;
+  margin-left: 77vw;
+}
+
+
+.usuariocity{
+  display: flex;
+  flex-direction: row;
+}
+
+.icousuario {
+width: 57px;
+height: 57px;
+border-radius: 4vh !important;
+}
+
+.txtusuario{
+  padding-left: 1vw;
+  padding-top: 3vh;
+}
+
+
+
 
 /* *********************** paginas - ciudades  ***************************/
 
