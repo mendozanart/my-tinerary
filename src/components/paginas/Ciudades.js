@@ -2,7 +2,7 @@ import React from "react";
 import plane from "../../img/header/plane.png";
 import Carousel from "../carousel/Carousel";
 
-const ciudades = () => {
+const Ciudades = () => {
   return (
     <div>
       <div className="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
@@ -77,4 +77,4 @@ const ciudades = () => {
   );
 };
 
-export default ciudades;
+export default Ciudades;

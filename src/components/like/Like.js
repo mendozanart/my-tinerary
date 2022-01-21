@@ -1,12 +1,12 @@
 import React from "react";
 import Icon from "../like/Icon"
-
+import Text from "../like/Text"
 
 export default class Like extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            isLiked : true,
+            isLiked : false,
         }
         
     }
@@ -22,7 +22,7 @@ export default class Like extends React.Component {
             <div>
                 <div className="likes">
                 <button className="likes2 btn btn-transparency" onClick={this.buttonLike}><Icon gustar={this.state.isLiked}/></button>
-                <p className="textolike">1310</p>
+                <p className="textolike"><Text isLiked={this.state.isLiked}/></p>
                 </div>
             </div>
         )

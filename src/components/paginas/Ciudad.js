@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import bsas from "../../img/cities/bsas2.PNG";
 import mural1 from "../../img/itinerary/mural1.jpg";
 import mural2 from "../../img/itinerary/mural2.jpg";
@@ -7,7 +7,13 @@ import Carousel from "../carousel/Carousel";
 import Like from "../like/Like";
 
 
-const ciudad = () => {
+const Ciudad = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
+
   return (
     <div>
       <img src={bsas} className=" d-block w-100" alt="..." />
@@ -96,4 +102,4 @@ const ciudad = () => {
   );
 };
 
-export default ciudad;
+export default Ciudad;

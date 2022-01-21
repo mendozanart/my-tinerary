@@ -1,26 +1,20 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
-const useCounter = () => {
-    const [counter, setCounter] = useState(0);
 
-    const increase = () => setCounter (counter + 1)
-    const reset = () => setCounter (0)
+export default function Texto ({isLiked}) {
 
-    return {
-        counter,
-        increase,
-        reset
-    }
-}
+    const [counter, setCounter] = useState(1310);
 
-export default function Texto () {
-    const { counter, increase, reset} = useCounter();
+    useEffect(() => {
+        setCounter(isLiked ? counter + 1 : counter - 1)
+      }, [isLiked])
 
+    
+
+    console.log (isLiked)
     return (
         <div>
-            <div><p className="textolike">{counter}</p></div>
-            <button onClick={increase}>+</button>
-            <button onClick={reset}>zero</button>
+            <div><p>{counter}</p></div>
         </div>
     );
 }
