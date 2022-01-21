@@ -7,11 +7,11 @@ export default function icon({ gustar }) {
     <div>
       {gustar ? (
         <span>
-          <img src={like} className="icobut btn d-block w-100" alt="..." />
+          <img src={like2} className="icobut btn d-block w-100" alt="..." />
         </span>
       ) : (
         <span>
-          <img src={like2} className="icobut btn d-block w-100" alt="..." />
+          <img src={like} className="icobut btn d-block w-100" alt="..." />
         </span>
       )}
     </div>
