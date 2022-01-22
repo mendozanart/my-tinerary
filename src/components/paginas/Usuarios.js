@@ -1,7 +1,7 @@
 import React from "react";
 import registro from "../../img/header/registro.png";
 
-const usuarios = () => {
+const Usuarios = () => {
   return (
     <div>
 
@@ -100,4 +100,4 @@ const usuarios = () => {
   );
 };
 
-export default usuarios;
+export default Usuarios;

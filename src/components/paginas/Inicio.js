@@ -11,7 +11,7 @@ import handl from "../../img/cards/handl.png";
 import hando from "../../img/cards/hando.png";
 import girl from "../../img/header/girl.png";
 
-const inicio = () => {
+const Inicio = () => {
   return (
     <div>
 
@@ -19,13 +19,10 @@ const inicio = () => {
         <div className="content-header">
           <div className="textoheader col-sm-12 col-md-6 col-lg-5">
             <h1 className="tituloheader">
-              <strong>PLAN YOUR NEXT VACATIONS</strong>
+              <strong>Plan your next vacations</strong>
             </h1>
             <h4 className="subtituloheader">
               Get to know people's favorite places around the world
-            </h4>
-            <h4 className="subtituloheader">
-              Plan the best vacations of your life
             </h4>
             <Linkrouter className="btn btn-danger mt-3 bradio4 mb-2" to="/usuarios">
               Sign up
@@ -219,4 +216,4 @@ const inicio = () => {
   );
 };
 
-export default inicio;
+export default Inicio;
