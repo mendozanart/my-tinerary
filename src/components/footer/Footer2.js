@@ -5,7 +5,7 @@ import whatsapp from "../../img/icons/whatsapp.png";
 
 import { Link as Linkrouter } from "react-router-dom";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="footer2">
     <div className="container mb-0">
@@ -33,4 +33,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

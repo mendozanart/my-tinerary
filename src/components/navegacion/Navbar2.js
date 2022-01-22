@@ -76,7 +76,7 @@ function Navbar2() {
               className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
-              <div className="mb-3 col-10 mt-3 m-auto">
+              <div className="col-sm-10 col-md-10 col-lg-10 mb-3 mt-3 m-auto">
                 <label for="exampleInputEmail1" className="form-label">
                   Email
                 </label>
@@ -90,7 +90,7 @@ function Navbar2() {
                   We will not share your email with anyone.
                 </div>
               </div>
-              <div className="mb-3 col-10 m-auto">
+              <div className="col-sm-10 col-md-10 col-lg-10 mb-3 m-auto">
                 <label for="exampleInputPassword1" className="form-label">
                   Password
                 </label>
@@ -100,17 +100,17 @@ function Navbar2() {
                   id="exampleInputPassword1"
                 />
               </div>
-              <div className="blogin mb-1 col-10 m-auto">
-                <button type="submit" className="btn btn-warning text-white bradio5 mt-3 m-auto">
+              <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
+                <button type="submit" className="btn btn-warning text-white bradio5 mt-3">
                   Log-in
                 </button>
               </div>
-              <div className="mb-3 col-10 m-auto">
+              <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
               <Login/>
               </div>
-              <p className="google mt-5 col-10 m-auto">You don't have an account?</p>
-              <div className="blogin2 mb-3 col-10">
-                <LinkRouter className="btn btn-warning bradio5 text-white mt-2 " to="/usuarios">
+              <p className="google col-sm-10 col-md-10 col-lg-10 mt-5 m-auto">You don't have an account?</p>
+              <div className="blogin2 m-auto mb-3 col-10">
+                <LinkRouter className="btn btn-warning col-sm-10 col-md-10 col-lg-10 bradio5 text-white mt-2 " to="/usuarios">
                   Sign up
                 </LinkRouter>  
               </div>

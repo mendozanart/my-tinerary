@@ -5,7 +5,7 @@ import person2 from "../../img/persons/person2.jpg";
 import person3 from "../../img/persons/person3.jpg";
 import star from "../../img/icons/star.png";
 
-const review = () => {
+const Review = () => {
   return (
     <div>
       <div className="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
@@ -89,4 +89,4 @@ const review = () => {
   );
 };
 
-export default review;
+export default Review;
