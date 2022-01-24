@@ -8,7 +8,7 @@ import { Link as Linkrouter } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer2">
-    <div className="container mb-0">
+    <div className="container mb-0 mr-0">
         <div className="row justify-content-center">
             <div className="col-sm-12 col-md-12 col-lg-12 text-center">
                 <p className="menu mt-3 mb-2">
