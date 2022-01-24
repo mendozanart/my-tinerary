@@ -5,7 +5,7 @@ const Usuarios = () => {
   return (
     <div>
 
-<div className="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
+<div className="banner-image4 w-100 vh-100 d-flex justify-content-center align-items-center">
         <div className="content-header">
           <div className="textoheader4 col-sm-6 col-md-6 col-lg-5">
             <h1 className="tituloheader2 ">

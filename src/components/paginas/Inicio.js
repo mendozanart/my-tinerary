@@ -34,9 +34,9 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div class="container motorb col-sm-8 col-md-8 col-lg-10 mb-5 mt-5 m-auto">
+      <div class="container motorb col-sm-8 col-md-10 col-lg-10 mb-5 mt-5 m-auto">
         <div className="row height d-flex justify-content-center align-items-center">
-          <div className="col-md-6">
+          <div className="col-sm-4 col-md-10 col-lg-5">
             <div className="form">
               {" "}
               <i className="fa fa-search"></i>{" "}
@@ -48,7 +48,7 @@ const Inicio = () => {
                 placeholder="Search cities, restaurants.."
               />{" "}
                 </div>
-                <div className="bbusqueda col-sm-2 col-md-4 col-lg-5 mt-1">
+                <div className="bbusqueda col-sm-4 col-md-3 col-lg-5 mt-1">
                 <button type="button" class="btn btn-warning bradio2">let's go!</button>
                 </div>
               
@@ -60,21 +60,21 @@ const Inicio = () => {
       </div>
 
       <div className="row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 infobanners">
-        <div className="infocard1 col-sm-2 col-md-4 col-lg-3 m-5">
+        <div className="infocard col-sm-2 col-md-2 col-lg-3 m-5">
           <img src={hand1} width="70" alt="infocard" />
           <h5 className="card-title mt-5"><strong>SAVE TIME</strong></h5>
           <p className="card-text binfo">
             Learn about the best options for your trip, from the best of them.
           </p>
         </div>
-        <div className="infocard2 col-sm-2 col-md-4 col-lg-3 m-5">
+        <div className="infocard col-sm-2 col-md-2 col-lg-3 m-5">
           <img src={handl} width="85" alt="infocard" />
           <h5 className="card-title mt-5"><strong>PLAN</strong></h5>
           <p className="card-text binfo">
             Plan your vacations, so that they are perfect.
           </p>
         </div>
-        <div className="infocard3 col-sm-2 col-md-4 col-lg-3 m-5">
+        <div className="infocard col-sm-2 col-md-2 col-lg-3 m-5">
           <img src={hando} width="85" alt="infocard" />
           <h5 className="card-title mt-5"><strong>OPINIONS</strong></h5>
           <p className="card-text binfo">
