@@ -7,7 +7,7 @@ const Usuarios = () => {
 
 <div className="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
         <div className="content-header">
-          <div className="textoheader4 col-sm-12 col-md-6 col-lg-5">
+          <div className="textoheader4 col-sm-6 col-md-6 col-lg-5">
             <h1 className="tituloheader2 ">
               SIGN UP
             </h1>
@@ -18,8 +18,8 @@ const Usuarios = () => {
             Join and enjoy!
             </h4>
           </div>
-          <div className="imgheader4">
-            <img src={registro} className="d-block w-100 imgheader4 col-sm-12 col-md-6 col-lg-6 col-lg-5" alt="..." />
+          <div className="imgheader4 col-sm-6 col-md-6 col-lg-6 col-lg-5">
+            <img src={registro} className="d-block w-100 imgheader4 " alt="..." />
           </div>
         </div>
       </div>

@@ -589,6 +589,7 @@ border-radius: 4vh !important;
 .regform{
   justify-content: center !important;
   padding-bottom: 10vh;
+  
 }
 
 .formulario{
@@ -598,7 +599,7 @@ border-radius: 4vh !important;
   margin-left: 5vw;
   width: 40vw;
   height: 90vh;
-
+  
 }
 
 .btnsign {

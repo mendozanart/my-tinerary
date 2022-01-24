@@ -17,7 +17,7 @@ const Inicio = () => {
 
 <div className="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
         <div className="content-header">
-          <div className="textoheader col-sm-12 col-md-6 col-lg-5">
+          <div className="textoheader col-sm-6 col-md-6 col-lg-5">
             <h1 className="tituloheader">
               <strong>Plan your next vacations</strong>
             </h1>
@@ -28,7 +28,7 @@ const Inicio = () => {
               Sign up
             </Linkrouter>
           </div>
-          <div className="imgheader col-sm-12 col-md-6 col-lg-6 col-lg-5">
+          <div className="imgheader col-sm-6 col-md-6 col-lg-6 col-lg-5">
             <img src={girl} className="d-block w-100 mt-5" alt="..." />
           </div>
         </div>
