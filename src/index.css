@@ -40,10 +40,292 @@ code {
     padding-left: 9vw !important;
   }
 
+  /*********************************** header *******************************/
 
+  .banner-image{
+    background: rgb(255,163,34);
+    background: linear-gradient(90deg, rgba(255,163,34,1) 0%, rgba(255,204,34,1) 62%); 
+    background-size: cover;
+    max-height: 72vh !important;
+  }
+
+  .textoheader {
+    margin-top: 5vh !important;
+    margin-left: 8vw;
+  }
+
+  .tituloheader{
+    text-align: left;
+    color:rgb(113, 0, 165) ;
+    font-size: 4vh !important;
+  
+  }
+  
+  .subtituloheader{
+    text-align: left;
+    color:rgba(85, 85, 85, 0.644) ;
+    margin-top: 2vh;
+    font-size: 2vh !important;
+  }
+
+
+  .imgheader {
+    margin-left: 8vw;
+    margin-top: 5vh;
+    width: 50vw !important;
+  }
+
+  /************************** inicio ***************************************/
+
+  .titulo{
+    text-align: center;
+    color: rgb(79, 53, 163);
+    font-size: 3vh !important;
+  }
+
+  .subtitulo {
+    text-align: center;
+    color: rgb(99, 99, 99);
+    font-size: 1.5vh !important; 
+  }
+
+  .tituloslide {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+  }
+  
+  .card {
+    border-radius: 2vh;
+    border-top-left-radius: 2vh !important;
+    border-top-right-radius: 2vh !important;
+  }
+  
+  .infobanners {
+    justify-content: center;
+  }
+  
+  
+  .titulocard{
+    text-align: left;
+    color: rgb(79, 53, 163);
+  }
+  
+  .subtitulocard{
+    text-align: left;
+    color: rgb(99, 99, 99); 
+  }
+  
+  .binfo {
+    text-align: center;
+    font-size: 1.5vh !important;
+  }
+
+
+
+
+  /*************************** ciudades ************************************/
+
+
+  .banner-image2{
+    background: rgb(255,204,34);
+    background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+    background-size: cover;
+    max-height: 55vh !important;
+  }
+
+  .textoheader2 {
+    margin-top: 5vh !important;
+    margin-left: 8vw;
+  }
+
+  .tituloheader{
+    text-align: left;
+    color:rgb(113, 0, 165) ;
+    font-size: 4vh !important;
+  
+  }
+  
+  .subtituloheader{
+    text-align: left;
+    color:rgba(85, 85, 85, 0.644) ;
+    margin-top: 2vh;
+    font-size: 2vh !important;
+  }
+
+
+  .imgheader3 {
+    margin-left: 8vw;
+    margin-top: 5vh;
+    width: 50vw !important;
+  }
+
+
+
+    /*************************** review ************************************/
+
+
+    .banner-image3{
+      background: rgb(255,204,34);
+      background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+      background-size: cover;
+      max-height: 70vh !important;
+    }
+  
+    .textoheader3 {
+      margin-top: 5vh !important;
+      margin-left: 8vw;
+    }
+  
+    .tituloheader{
+      text-align: left;
+      color:rgb(113, 0, 165) ;
+      font-size: 4vh !important;
+    
+    }
+    
+    .subtituloheader{
+      text-align: left;
+      color:rgba(85, 85, 85, 0.644) ;
+      margin-top: 2vh;
+      font-size: 2vh !important;
+    }
+  
+  
+    .imgheader2 {
+      margin-left: 8vw;
+      margin-top: 5vh;
+      width: 50vw !important;
+    }
   
 
+    .tituloreview {
+      color: rgba(226, 92, 30, 0.7) ;
+      font-size: 2.5vh !important;
+    }
+
+    .treview {
+      font-size: 1.5vh !important;
+    }
+
+
+
+      /*************************** usuarios ************************************/
+
+
+      .banner-image4{
+        background: rgb(255,204,34);
+        background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+        background-size: cover;
+        max-height: 55vh !important;
+      }
+    
+      .textoheader4 {
+        margin-top: 5vh !important;
+        margin-left: 8vw;
+      }
+    
+      .tituloheader2{
+        text-align: left;
+        color:rgb(113, 0, 165) ;
+        font-size: 4vh !important;
+      
+      }
+      
+      .subtituloheader{
+        text-align: left;
+        color:rgba(85, 85, 85, 0.644) ;
+        margin-top: 2vh;
+        font-size: 2vh !important;
+      }
+    
+    
+      .imgheader4 {
+        margin-left: 8vw;
+        margin-top: 5vh;
+        width: 50vw !important;
+      }
+
+
+      .regform{
+        justify-content: center !important;
+        
+        
+      }
+      
+      .formulario{
+        border-radius: 10vh;
+        padding-top: 7vh !important;
+        padding-bottom: 3vh;
+        margin-left: 5vw;
+        width: 40vw;
+        height: 90vh;
+        
+      }
+      
+      .btnsign {
+        margin-left: 17vw;
+      }
+      
+
+
+  /*************************** ciudad **************************************/
+
+
+  .fciudad {
+    width: 40vw !important;
+    border-radius: 2vh;
+  }
+
+  .icobut {
+    width: 12vw !important;
+  }
+  
+  .textolike {
+    height: 5vh !important;
+    padding-left: 5vw;
+    font-size: 1.5vh;
+  }
+  
+  .likes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 70vw;
+  }
+
+
+  
+/* *********************** footer  ***************************/
+
+
+.footer2 {
+  background-color:rgb(113, 0, 165) ;
+  color: #fff;
 }
+
+.fmenu {
+  padding-top: 1vh;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1vw;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive-tablet */
 
@@ -70,7 +352,293 @@ code {
     padding-left: 4vw !important;
   }
 
+
+/*********************************** header *******************************/
+
+.banner-image{
+  background: rgb(255,163,34);
+  background: linear-gradient(90deg, rgba(255,163,34,1) 0%, rgba(255,204,34,1) 62%); 
+  background-size: cover;
+  max-height: 72vh !important;
 }
+
+.textoheader {
+  margin-top: 5vh !important;
+  margin-left: 8vw;
+}
+
+.tituloheader{
+  text-align: left;
+  color:rgb(113, 0, 165) ;
+  font-size: 4vh !important;
+
+}
+
+.subtituloheader{
+  text-align: left;
+  color:rgba(85, 85, 85, 0.644) ;
+  margin-top: 2vh;
+  font-size: 2vh !important;
+}
+
+
+.imgheader {
+  margin-left: 8vw;
+  margin-top: 5vh;
+  width: vw !important;
+}
+
+
+
+/*************************** inicio **************************************/
+
+.titulo{
+  text-align: center;
+  color: rgb(79, 53, 163);
+  font-size: 3vh !important;
+}
+
+.subtitulo {
+  text-align: center;
+  color: rgb(99, 99, 99);
+  font-size: 1.5vh !important; 
+}
+
+.tituloslide {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vh !important;
+}
+
+.card {
+  border-radius: 2vh;
+  border-top-left-radius: 2vh !important;
+  border-top-right-radius: 2vh !important;
+}
+
+.infobanners {
+  justify-content: center;
+}
+
+
+.titulocard{
+  text-align: left;
+  color: rgb(79, 53, 163);
+}
+
+.subtitulocard{
+  text-align: left;
+  color: rgb(99, 99, 99); 
+}
+
+.binfo {
+  text-align: center;
+  font-size: 1vh !important;
+}
+
+
+
+
+/*************************** ciudades ************************************/
+
+
+.banner-image2{
+  background: rgb(255,204,34);
+  background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+  background-size: cover;
+  max-height: 55vh !important;
+}
+
+.textoheader2 {
+  margin-top: 5vh !important;
+  margin-left: 7vw !important;
+}
+
+.tituloheader{
+  text-align: left;
+  color:rgb(113, 0, 165) ;
+  font-size: 4vh !important;
+
+}
+
+.subtituloheader{
+  text-align: left;
+  color:rgba(85, 85, 85, 0.644) ;
+  margin-top: 2vh;
+  font-size: 2vh !important;
+}
+
+
+.imgheader3 {
+  margin-left: 8vw;
+  margin-top: 4vh !important;
+  width: 30vw !important;
+}
+
+
+
+  /*************************** review ************************************/
+
+
+  .banner-image3{
+    background: rgb(255,204,34);
+    background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+    background-size: cover;
+    max-height: 70vh !important;
+  }
+
+  .textoheader3 {
+    margin-top: 2vh !important;
+    margin-left: 8vw;
+  }
+
+  .tituloheader{
+    text-align: left;
+    color:rgb(113, 0, 165) ;
+    font-size: 4vh !important;
+  
+  }
+  
+  .subtituloheader{
+    text-align: left;
+    color:rgba(85, 85, 85, 0.644) ;
+    margin-top: 2vh;
+    font-size: 2vh !important;
+  }
+
+
+  .imgheader2 {
+    margin-left: 8vw;
+    margin-top: 2vh !important;
+    width: 30vw !important;
+  }
+
+
+  .tituloreview {
+    color: rgba(226, 92, 30, 0.7) ;
+    font-size: 2.5vh !important;
+  }
+
+  .treview {
+    font-size: 1.5vh !important;
+  }
+
+
+
+
+
+    /*************************** usuarios ************************************/
+
+
+    .banner-image4{
+      background: rgb(255,204,34);
+      background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+      background-size: cover;
+      max-height: 55vh !important;
+    }
+  
+    .textoheader4 {
+      margin-top: 5vh !important;
+      margin-left: 8vw;
+    }
+  
+    .tituloheader2{
+      text-align: left;
+      color:rgb(113, 0, 165) ;
+      font-size: 4vh !important;
+    
+    }
+    
+    .subtituloheader{
+      text-align: left;
+      color:rgba(85, 85, 85, 0.644) ;
+      margin-top: 2vh;
+      font-size: 2vh !important;
+    }
+  
+  
+    .imgheader4 {
+      margin-left: 8vw;
+      margin-top: 5vh;
+      width: 30vw !important;
+    }
+
+    .regform{
+      justify-content: center !important;
+      
+      
+    }
+    
+    .formulario{
+      border-radius: 10vh;
+      padding-top: 7vh !important;
+      padding-bottom: 3vh;
+      margin-left: 5vw;
+      width: 40vw;
+      height: 90vh;
+      
+    }
+    
+    .btnsign {
+      margin-left: 17vw;
+    }
+    
+
+
+/*************************** ciudad **************************************/
+
+
+.fciudad {
+  width: 30vw !important;
+  border-radius: 2vh;
+}
+
+.icobut {
+  width: 6vw !important;
+}
+
+.textolike {
+  height: 5vh !important;
+  padding-left: 3vw;
+  font-size: 1vh;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding-left: 70vw;
+}
+
+/* *********************** footer  ***************************/
+
+
+.footer2 {
+  background-color:rgb(113, 0, 165) ;
+  color: #fff;
+}
+
+.fmenu {
+  padding-top: 1vh;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1vw;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive-pc */
 
@@ -98,9 +666,47 @@ code {
   .blogin2 {
     padding-left: 3vw;
   }
-    
+
+
+  /************************ ciudad *****************************/
+
+  .fciudad {
+    width: 20vw !important;
+    border-radius: 2vh;
+  }
+   
+  .icobut {
+    width: 4vw !important;
+  }
+  
+  .textolike {
+    height: 5vh !important;
+    padding-left: 4vh;
+  
+  }
+  
+  .likes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 74vw;
+    position: absolute;
+  }
 
 }
+
+
+
+
+
+
+
+/* FINAL MEDIA QUERY */
+
+
+
+
+
+
 
 
 
@@ -373,6 +979,18 @@ code {
   text-align: center;
 }
 
+.mbusqueda{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+.bbusqueda {
+  padding-left: 1vw;
+}
+
 
 
 /* *********************** paginas - ciudad ***************************/
@@ -430,11 +1048,6 @@ code {
   flex-direction: row;
 }
 
-.fciudad {
-  width: 40vw !important;
-  height: 40vh;
-  border-radius: 1vw;
-}
 
 .locationcity {
   padding-bottom: 4vh;
@@ -481,22 +1094,6 @@ border-radius: 4vh !important;
   padding-top: 3vh;
 }
 
-.icobut {
-  width: 4vw !important;
-}
-
-.textolike {
-  height: 5vh !important;
-  padding-left: 4vh;
-
-}
-
-.likes {
-  display: flex;
-  flex-direction: column;
-  padding-left: 74vw;
-  position: absolute;
-}
 
 /* *********************** paginas - ciudades  ***************************/
 
@@ -521,17 +1118,6 @@ border-radius: 4vh !important;
   padding-left: 2vw;
 }
 
-.mbusqueda{
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  
-}
-
-.bbusqueda {
-  padding-left: 1vw;
-}
 
 .motorb {
   padding-left: 10vw;
@@ -545,7 +1131,7 @@ border-radius: 4vh !important;
   background: rgb(255,204,34);
   background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
   background-size: cover;
-  max-height: 80vh;
+  max-height: 100vh;
   
 }
 
@@ -565,36 +1151,33 @@ border-radius: 4vh !important;
   flex-direction: row;
 }
 
-.infocard1{
+.infocard{
   color: rgb(97, 97, 97);
   text-align: center;
   font-size: 2vh;
 }
 
-.infocard2{
-  color: rgb(97, 97, 97);
-  text-align: center;
-  font-size: 2vh;
-}
-
-.infocard3{
-  color: rgb(97, 97, 97);
-  text-align: center;
-  font-size: 2vh;
-}
 
 
 /* *********************** paginas - usuarios  ***************************/
 
+
+.banner-image4{
+  background: rgb(255,204,34);
+  background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+  background-size: cover;
+  max-height: 70vh !important;
+}
+
 .regform{
   justify-content: center !important;
-  padding-bottom: 10vh;
+  
   
 }
 
 .formulario{
   border-radius: 10vh;
-  padding-top: 3vh;
+  padding-top: 7vh !important;
   padding-bottom: 3vh;
   margin-left: 5vw;
   width: 40vw;
@@ -637,6 +1220,15 @@ border-radius: 4vh !important;
   text-align: center;
   margin: 1vw;
 }
+
+
+
+
+
+
+
+
+
 
 
 

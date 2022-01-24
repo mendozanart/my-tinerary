@@ -23,7 +23,7 @@ const Review = () => {
       </div>
 
       <div className="row row-cols-1 row-cols-md-6 g-4 mt-2 infobanners">
-        <div className="infocard1 col-sm-10 col-md-7 col-lg-2 m-5">
+        <div className="infocard col-sm-10 col-md-7 col-lg-2 m-5">
           <img
             src={person1}
             width="250"
@@ -31,7 +31,7 @@ const Review = () => {
             style={{ borderRadius: "200px", margin: "10px" }}
           />
           <h5 className="tituloreview card-title">Alejandro Massari</h5>
-          <p className="card-text">
+          <p className="treview card-text">
             "Incredible the opportunity that mytinerary gave me. I was able to
             enjoy my stay in Miami to the fullest."
           </p>
@@ -44,7 +44,7 @@ const Review = () => {
             <img src={star} width="30" alt="star" />
           </div>
         </div>
-        <div className="infocard2 col-sm-10 col-md-7 col-lg-2 m-5">
+        <div className="infocard col-sm-10 col-md-7 col-lg-2 m-5">
           <img
             src={person2}
             width="250"
@@ -52,7 +52,7 @@ const Review = () => {
             style={{ borderRadius: "200px", margin: "10px" }}
           />
           <h5 className="tituloreview card-title">Flor Venaruzzo</h5>
-          <p className="card-text">
+          <p className="treview card-text">
             "I would have liked to have many more days off to be able to know
             everything that was recommended to me."
           </p>
@@ -64,7 +64,7 @@ const Review = () => {
             <img src={star} width="30" alt="star" />
           </div>
         </div>
-        <div className="infocard3 col-sm-10 col-md-7 col-lg-2 m-5">
+        <div className="infocard col-sm-10 col-md-7 col-lg-2 m-5">
           <img
             src={person3}
             width="250"
@@ -72,7 +72,7 @@ const Review = () => {
             style={{ borderRadius: "200px", margin: "10px" }}
           />
           <h5 className="tituloreview card-title">Rafa Machado</h5>
-          <p className="card-text">
+          <p className="treview card-text">
             "Whether about places, restaurants, bars, music ... get what you are
             looking for. I will surely use it again."
           </p>

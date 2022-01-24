@@ -1,9 +1,8 @@
 import React, {useEffect} from "react";
 import bsas from "../../img/cities/bsas2.PNG";
-import mural1 from "../../img/itinerary/mural1.jpg";
-import mural2 from "../../img/itinerary/mural2.jpg";
 import usuario from "../../img/persons/usuario.jpg";
 import Carousel from "../carousel/Carousel";
+import Carouselcity from "../carousel/Carouselcity";
 import Like from "../like/Like";
 
 
@@ -48,29 +47,12 @@ const Ciudad = () => {
             <h6>
               <strong>Prices:</strong> $$$
             </h6>
-            <h6>
-              <strong>Trip type:</strong> Traveled as a couple
-            </h6>
-            <h6>
-              <strong>Date of experience:</strong> May/2018
-            </h6>
-            <div className="col-3">
-              <div className="stars2 mt-5">
-                <img
-                  src={mural1}
-                  className="fciudad d-block w-100 p-2"
-                  alt="..."
-                />
-                <img
-                  src={mural2}
-                  className="fciudad  d-block w-100 p-2"
-                  alt="..."
-                />
-              </div>
+            <div className="col-sm-6 col-md-10 col-lg-10">
+            <Carouselcity/>
             </div>
           </div>
 
-          <div className="usuariocity mb-5">
+          <div className="usuariocity mt-4">
             <div className="icousuario">
               <img
                 src={usuario}
@@ -96,7 +78,7 @@ const Ciudad = () => {
         </div>
       </div>
 
-      <h1 className="titulo mt-5 mb-5"> Find more cities </h1>
+      <h1 className="titulo mt-5 mb-5">Find more cities to visit</h1>
       <Carousel />
     </div>
   );

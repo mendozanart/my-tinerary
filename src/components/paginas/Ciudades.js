@@ -19,9 +19,9 @@ const Ciudades = () => {
       </div>
     </div>
 
-    <div class="container col-sm-8 col-md-7 col-lg-7 mb-5 mt-5 m-auto">
+    <div class="container motorb col-sm-10 col-md-10 col-lg-10 mb-5 mt-5 m-auto">
         <div className="row height d-flex justify-content-center align-items-center">
-          <div className="col-md-6">
+          <div className="col-sm-1 col-md-10 col-lg-5">
             <div className="form">
               {" "}
               <i className="fa fa-search"></i>{" "}
@@ -30,10 +30,10 @@ const Ciudades = () => {
                 <input
                 type="text"
                 className="form-control form-input bradio"
-                placeholder="Search cities.."
+                placeholder="Search cities, restaurants.."
               />{" "}
                 </div>
-                <div className="bbusqueda col-sm-2 col-md-4 col-lg-4 m-auto mt-1">
+                <div className="bbusqueda col-sm-4 col-md-3 col-lg-5 mt-1">
                 <button type="button" class="btn btn-warning bradio2">let's go!</button>
                 </div>
               
