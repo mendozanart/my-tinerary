@@ -40,13 +40,17 @@ code {
     padding-left: 9vw !important;
   }
 
+  .prueba{
+    background-color: rgb(255,163,34) !important;
+  }
+
   /*********************************** header *******************************/
 
   .banner-image{
     background: rgb(255,163,34);
     background: linear-gradient(90deg, rgba(255,163,34,1) 0%, rgba(255,204,34,1) 62%); 
     background-size: cover;
-    max-height: 72vh !important;
+    max-height: 90vh !important;
   }
 
   .textoheader {
@@ -155,8 +159,8 @@ code {
 
   .imgheader3 {
     margin-left: 8vw;
-    margin-top: 5vh;
-    width: 50vw !important;
+    margin-top: 4vh !important;
+    width: 45vw !important;
   }
 
 
@@ -293,6 +297,17 @@ code {
     padding-left: 70vw;
   }
 
+  .icousuario {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 4vh !important;
+    }
+    
+    .txtusuario{
+      padding-left: 2vw !important;
+      padding-top: 1vh !important;
+    }
+
 
   
 /* *********************** footer  ***************************/
@@ -350,6 +365,11 @@ code {
   
   .blogin2 {
     padding-left: 4vw !important;
+  }
+
+  
+  .prueba{
+    background-color: rgb(255,163,34) !important;
   }
 
 
@@ -609,6 +629,17 @@ code {
   padding-left: 70vw;
 }
 
+.icousuario {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 4vh !important;
+  }
+  
+  .txtusuario{
+    padding-left: 2vw !important;
+    padding-top: 1vh !important;
+  }
+
 /* *********************** footer  ***************************/
 
 
@@ -743,6 +774,11 @@ code {
   border-radius: 5vw;
   background-color: #e29a00;
   border-style: none;
+}
+
+
+.prueba{
+  background-color:transparent;
 }
 
 

@@ -9,17 +9,21 @@ const Review = () => {
   return (
     <div>
       <div className="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
-      <div className="header">
-        <div className="textoheader3 col-sm-12 col-md-6 col-lg-5">
-          <h1 className="tituloheader">REVIEWS</h1>
-          <h4 className="subtituloheader">
-            Get to know what people said about Mytinerary
-          </h4>
+        <div className="header">
+          <div className="textoheader3 col-sm-12 col-md-6 col-lg-5">
+            <h1 className="tituloheader">REVIEWS</h1>
+            <h4 className="subtituloheader">
+              Get to know what people said about Mytinerary
+            </h4>
+          </div>
+          <div className="imagen">
+            <img
+              src={lugagge}
+              className="d-block w-100 imgheader2 col-sm-12 col-md-6 col-lg-6 col-lg-5"
+              alt="..."
+            />
+          </div>
         </div>
-        <div className="imagen">
-          <img src={lugagge} className="d-block w-100 imgheader2 col-sm-12 col-md-6 col-lg-6 col-lg-5" alt="..." />
-        </div>
-      </div>
       </div>
 
       <div className="row row-cols-1 row-cols-md-6 g-4 mt-2 infobanners">

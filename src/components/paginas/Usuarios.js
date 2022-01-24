@@ -4,31 +4,25 @@ import registro from "../../img/header/registro.png";
 const Usuarios = () => {
   return (
     <div>
-
-<div className="banner-image4 w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div className="banner-image4 w-100 vh-100 d-flex justify-content-center align-items-center">
         <div className="content-header">
           <div className="textoheader4 col-sm-6 col-md-6 col-lg-5">
-            <h1 className="tituloheader2 ">
-              SIGN UP
-            </h1>
+            <h1 className="tituloheader2 ">SIGN UP</h1>
             <h4 className="subtituloheader">
-            9 out of 10 people use Mytinerary to plan their trip
+              9 out of 10 people use Mytinerary to plan their trip
             </h4>
-            <h4 className="subtituloheader">
-            Join and enjoy!
-            </h4>
+            <h4 className="subtituloheader">Join and enjoy!</h4>
           </div>
           <div className="imgheader4 col-sm-6 col-md-6 col-lg-6 col-lg-5">
-            <img src={registro} className="d-block w-100 imgheader4 " alt="..." />
+            <img
+              src={registro}
+              className="d-block w-100 imgheader4 "
+              alt="..."
+            />
           </div>
         </div>
       </div>
 
-
-      
-
-
-      
       <div className="regform col-sm-10 col-md-10 col-lg-10 m-auto">
         <div className="formulario col-sm-10 col-md-10 col-lg-10 m-auto">
           <form>
@@ -42,7 +36,10 @@ const Usuarios = () => {
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
-              <div id="emailHelp" className="form-text col-sm-10 col-md-10 col-lg-10">
+              <div
+                id="emailHelp"
+                className="form-text col-sm-10 col-md-10 col-lg-10"
+              >
                 We will not share your email with anyone.
               </div>
             </div>
@@ -89,7 +86,10 @@ const Usuarios = () => {
               />
             </div>
             <div className="btnsign">
-              <button type="submit" className="btn btn-warning mt-3 m-auto bradio2">
+              <button
+                type="submit"
+                className="btn btn-warning mt-3 m-auto bradio2"
+              >
                 Sign up
               </button>
             </div>

@@ -4,7 +4,6 @@ import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
 import Login from "./Login";
 
-
 function Navbar2() {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
@@ -15,6 +14,8 @@ function Navbar2() {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
+
+  const [color] = useState("prueba");
 
   return (
     <>
@@ -40,7 +41,10 @@ function Navbar2() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <div
+            className={"collapse navbar-collapse" + color}
+            id="navbarNavDropdown"
+          >
             <ul className="navbar-nav m-auto">
               <li className="nav-item">
                 <LinkRouter className="nav-link" to="/inicio">
@@ -101,25 +105,31 @@ function Navbar2() {
                 />
               </div>
               <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
-                <button type="submit" className="btn btn-warning text-white bradio5 mt-3">
+                <button
+                  type="submit"
+                  className="btn btn-warning text-white bradio5 mt-3"
+                >
                   Log-in
                 </button>
               </div>
               <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
-              <Login/>
+                <Login />
               </div>
-              <p className="google col-sm-10 col-md-10 col-lg-10 mt-5 m-auto">You don't have an account?</p>
+              <p className="google col-sm-10 col-md-10 col-lg-10 mt-5 m-auto">
+                You don't have an account?
+              </p>
               <div className="blogin2 m-auto mb-3 col-10">
-                <LinkRouter className="btn btn-warning col-sm-10 col-md-10 col-lg-10 bradio5 text-white mt-2 " to="/usuarios">
+                <LinkRouter
+                  className="btn btn-warning col-sm-10 col-md-10 col-lg-10 bradio5 text-white mt-2 "
+                  to="/usuarios"
+                >
                   Sign up
-                </LinkRouter>  
+                </LinkRouter>
               </div>
             </ul>
           </div>
         </div>
       </nav>
-
-
     </>
   );
 }

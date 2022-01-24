@@ -32,24 +32,26 @@ const Carouselcity = () => {
         draggable={true}
         autoPlaySpeed={1000}
         transitionDuration={500}
-        
       >
-  <div>                <img
-                  src={mural1}
-                  className="fciudad d-block w-100 p-2 mt-4 mb-4"
-                  alt="..."
-                /></div>
-  <div>                <img
-                  src={mural2}
-                  className="fciudad d-block w-100 p-2 mt-4 mb-4"
-                  alt="..."
-                /></div>
+        <div>
+          {" "}
+          <img
+            src={mural1}
+            className="fciudad d-block w-100 p-2 mt-4 mb-4"
+            alt="..."
+          />
+        </div>
+        <div>
+          {" "}
+          <img
+            src={mural2}
+            className="fciudad d-block w-100 p-2 mt-4 mb-4"
+            alt="..."
+          />
+        </div>
       </Carousel>
     </div>
   );
 };
 
 export default Carouselcity;
-
-
-

@@ -34,45 +34,10 @@ const carousel = () => {
         draggable={true}
         autoPlaySpeed={1000}
         transitionDuration={500}
-        
       >
         <div>
           <div className="content nodraggable">
             {" "}
-            <Linkrouter to="/" className="nodraggable">
-              <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={miami} alt="img" />
-              <div className="content-details fadeIn-bottom nodraggable">
-                <h3 className="content-title nodraggable">More info</h3>
-                <p className="content-text nodraggable">
-                  <i className="fa fa-map-marker"></i>Click here!
-                </p>
-              </div>
-            </Linkrouter>{" "}
-          </div>
-          <h3 className="titulo">Miami</h3>
-          <p className="subtitulo">United States</p>
-        </div>
-        <div>
-          <div className="content nodraggable">
-            {" "}
-            <Linkrouter to="/" className="nodraggable">
-              <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={paris} alt="img" />
-              <div className="content-details fadeIn-bottom nodraggable">
-                <h3 className="content-title nodraggable">More info</h3>
-                <p className="content-text nodraggable">
-                  <i className="fa fa-map-marker"></i>Click here!
-                </p>
-              </div>
-            </Linkrouter>{" "}
-          </div>
-          <h3 className="titulo">Paris</h3>
-          <p className="subtitulo">France</p>
-        </div>
-        <div>
-          <div className="content nodraggable">
-            {" "}
             <Linkrouter to="/ciudad" className="nodraggable">
               <div className="content-overlay"></div>{" "}
               <img className="imgcard content-image" src={bsas} alt="img" />
@@ -124,9 +89,9 @@ const carousel = () => {
         <div>
           <div className="content nodraggable">
             {" "}
-            <Linkrouter to="/ciudad" className="nodraggable">
+            <Linkrouter to="/" className="nodraggable">
               <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={bsas} alt="img" />
+              <img className="imgcard content-image" src={miami} alt="img" />
               <div className="content-details fadeIn-bottom nodraggable">
                 <h3 className="content-title nodraggable">More info</h3>
                 <p className="content-text nodraggable">
@@ -135,8 +100,42 @@ const carousel = () => {
               </div>
             </Linkrouter>{" "}
           </div>
-          <h3 className="titulo">Buenos Aires</h3>
-          <p className="subtitulo">Argentina</p>
+          <h3 className="titulo">Miami</h3>
+          <p className="subtitulo">United States</p>
+          <div>
+            <div className="content nodraggable">
+              {" "}
+              <Linkrouter to="/ciudad" className="nodraggable">
+                <div className="content-overlay"></div>{" "}
+                <img className="imgcard content-image" src={bsas} alt="img" />
+                <div className="content-details fadeIn-bottom nodraggable">
+                  <h3 className="content-title nodraggable">More info</h3>
+                  <p className="content-text nodraggable">
+                    <i className="fa fa-map-marker"></i>Click here!
+                  </p>
+                </div>
+              </Linkrouter>{" "}
+            </div>
+            <h3 className="titulo">Buenos Aires</h3>
+            <p className="subtitulo">Argentina</p>
+          </div>
+        </div>
+        <div>
+          <div className="content nodraggable">
+            {" "}
+            <Linkrouter to="/" className="nodraggable">
+              <div className="content-overlay"></div>{" "}
+              <img className="imgcard content-image" src={paris} alt="img" />
+              <div className="content-details fadeIn-bottom nodraggable">
+                <h3 className="content-title nodraggable">More info</h3>
+                <p className="content-text nodraggable">
+                  <i className="fa fa-map-marker"></i>Click here!
+                </p>
+              </div>
+            </Linkrouter>{" "}
+          </div>
+          <h3 className="titulo">Paris</h3>
+          <p className="subtitulo">France</p>
         </div>
       </Carousel>
       ;
