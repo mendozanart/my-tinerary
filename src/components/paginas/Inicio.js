@@ -11,75 +11,80 @@ import handl from "../../img/cards/handl.png";
 import hando from "../../img/cards/hando.png";
 import girl from "../../img/header/girl.png";
 
-const inicio = () => {
+const Inicio = () => {
   return (
     <div>
-
-<div className="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div className="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
         <div className="content-header">
-          <div className="textoheader col-sm-12 col-md-6 col-lg-5">
+          <div className="textoheader col-sm-6 col-md-6 col-lg-5">
             <h1 className="tituloheader">
-              <strong>PLAN YOUR NEXT VACATIONS</strong>
+              <strong>Plan your next vacations</strong>
             </h1>
             <h4 className="subtituloheader">
               Get to know people's favorite places around the world
             </h4>
-            <h4 className="subtituloheader">
-              Plan the best vacations of your life
-            </h4>
-            <Linkrouter className="btn btn-danger mt-3 bradio4 mb-2" to="/usuarios">
+            <Linkrouter
+              className="btn btn-danger mt-3 bradio4 mb-2"
+              to="/usuarios"
+            >
               Sign up
             </Linkrouter>
           </div>
-          <div className="imgheader col-sm-12 col-md-6 col-lg-6 col-lg-5">
+          <div className="imgheader col-sm-6 col-md-6 col-lg-6 col-lg-5">
             <img src={girl} className="d-block w-100 mt-5" alt="..." />
           </div>
         </div>
       </div>
 
-      <div class="container motorb col-sm-8 col-md-8 col-lg-10 mb-5 mt-5 m-auto">
+      <div class="container motorb col-sm-8 col-md-10 col-lg-10 mb-5 mt-5 m-auto">
         <div className="row height d-flex justify-content-center align-items-center">
-          <div className="col-md-6">
+          <div className="col-sm-4 col-md-10 col-lg-5">
             <div className="form">
               {" "}
               <i className="fa fa-search"></i>{" "}
               <div className="mbusqueda">
                 <div className="">
-                <input
-                type="text"
-                className="form-control form-input bradio"
-                placeholder="Search cities, restaurants.."
-              />{" "}
+                  <input
+                    type="text"
+                    className="form-control form-input bradio"
+                    placeholder="Search cities, restaurants.."
+                  />{" "}
                 </div>
-                <div className="bbusqueda col-sm-2 col-md-4 col-lg-5 mt-1">
-                <button type="button" class="btn btn-warning bradio2">let's go!</button>
+                <div className="bbusqueda col-sm-4 col-md-3 col-lg-5 mt-1">
+                  <button type="button" class="btn btn-warning bradio2">
+                    let's go!
+                  </button>
                 </div>
-              
               </div>
-
             </div>
           </div>
         </div>
       </div>
 
       <div className="row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 infobanners">
-        <div className="infocard1 col-sm-2 col-md-4 col-lg-3 m-5">
+        <div className="infocard col-sm-2 col-md-2 col-lg-3 m-5">
           <img src={hand1} width="70" alt="infocard" />
-          <h5 className="card-title mt-5"><strong>SAVE TIME</strong></h5>
+          <h5 className="card-title mt-5">
+            <strong>SAVE TIME</strong>
+          </h5>
           <p className="card-text binfo">
             Learn about the best options for your trip, from the best of them.
           </p>
         </div>
-        <div className="infocard2 col-sm-2 col-md-4 col-lg-3 m-5">
+        <div className="infocard col-sm-2 col-md-2 col-lg-3 m-5">
           <img src={handl} width="85" alt="infocard" />
-          <h5 className="card-title mt-5"><strong>PLAN</strong></h5>
+          <h5 className="card-title mt-5">
+            <strong>PLAN</strong>
+          </h5>
           <p className="card-text binfo">
             Plan your vacations, so that they are perfect.
           </p>
         </div>
-        <div className="infocard3 col-sm-2 col-md-4 col-lg-3 m-5">
+        <div className="infocard col-sm-2 col-md-2 col-lg-3 m-5">
           <img src={hando} width="85" alt="infocard" />
-          <h5 className="card-title mt-5"><strong>OPINIONS</strong></h5>
+          <h5 className="card-title mt-5">
+            <strong>OPINIONS</strong>
+          </h5>
           <p className="card-text binfo">
             Whether about places, restaurants, bars, music ... get what you are
             looking for.
@@ -119,29 +124,23 @@ const inicio = () => {
             <img src={paris2} className=" d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h1 className="tituloslide">PARIS</h1>
-              <p>
-              That trip you want so much is waiting for you!
-              </p>
+              <p>That trip you want so much is waiting for you!</p>
             </div>
           </div>
           <div className="carousel-item">
             <img src={miami2} className=" d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h1 className="tituloslide">MIAMI</h1>
-              <p>
-              That trip you want so much is waiting for you!
-              </p>
+              <p>That trip you want so much is waiting for you!</p>
             </div>
           </div>
           <div className="carousel-item">
             <Linkrouter to="/ciudad">
-            <img src={bsas2} className=" d-block w-100" alt="..." />
+              <img src={bsas2} className=" d-block w-100" alt="..." />
             </Linkrouter>
             <div className="carousel-caption d-none d-md-block">
               <h1 className="tituloslide">BUENOS AIRES</h1>
-              <p>
-              That trip you want so much is waiting for you!
-              </p>
+              <p>That trip you want so much is waiting for you!</p>
             </div>
           </div>
         </div>
@@ -184,7 +183,6 @@ const inicio = () => {
                 longer.
               </p>
             </div>
-
           </div>
         </div>
         <div className="col">
@@ -219,4 +217,4 @@ const inicio = () => {
   );
 };
 
-export default inicio;
+export default Inicio;
