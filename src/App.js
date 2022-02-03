@@ -7,8 +7,21 @@ import Ciudad from './components/paginas/Ciudad'
 import Review from './components/paginas/Review'
 import Usuarios from './components/paginas/Usuarios'
 import Footer2 from './components/footer/Footer2'
+import axios from 'axios'
+import { useEffect } from 'react';
+
 
 function App() {
+
+  async function test(){
+    await axios.get("http://localhost:4000/api/datos")
+    .then(response=>console.log(response))
+  }
+
+  useEffect(() => {
+    test()
+  });
+
   return (
     
       <BrowserRouter>
