@@ -1,12 +1,13 @@
 import React from "react";
-import paris from "../../img/cities/paris.jpg";
-import bsas from "../../img/cities/bsas.jpg";
-import miami from "../../img/cities/miami.jpg";
 import { Link as Linkrouter } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const carousel = () => {
+
+const carousel = (props) => {
+  const cities = props.cities
+  console.log(cities)
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -35,12 +36,17 @@ const carousel = () => {
         autoPlaySpeed={1000}
         transitionDuration={500}
       >
-        <div>
+
+        {cities.map((city) => {
+
+
+        return(
+          <div>
           <div className="content nodraggable">
             {" "}
             <Linkrouter to="/ciudad" className="nodraggable">
               <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={bsas} alt="img" />
+              <img className="imgcard" src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city}/>
               <div className="content-details fadeIn-bottom nodraggable">
                 <h3 className="content-title nodraggable">More info</h3>
                 <p className="content-text nodraggable">
@@ -49,97 +55,14 @@ const carousel = () => {
               </div>
             </Linkrouter>{" "}
           </div>
-          <h3 className="titulo">Buenos Aires</h3>
-          <p className="subtitulo">Argentina</p>
-        </div>
-        <div>
-          <div className="content nodraggable">
-            {" "}
-            <Linkrouter to="/" className="nodraggable">
-              <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={miami} alt="img" />
-              <div className="content-details fadeIn-bottom nodraggable">
-                <h3 className="content-title nodraggable">More info</h3>
-                <p className="content-text nodraggable">
-                  <i className="fa fa-map-marker"></i>Click here!
-                </p>
-              </div>
-            </Linkrouter>{" "}
+          <h3 className="titulo">{city.city}</h3>
+          <p className="subtitulo">{city.country}</p>
           </div>
-          <h3 className="titulo">Miami</h3>
-          <p className="subtitulo">United States</p>
+          )})}
+
+        </Carousel> 
         </div>
-        <div>
-          <div className="content nodraggable">
-            {" "}
-            <Linkrouter to="/" className="nodraggable">
-              <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={paris} alt="img" />
-              <div className="content-details fadeIn-bottom nodraggable">
-                <h3 className="content-title nodraggable">More info</h3>
-                <p className="content-text nodraggable">
-                  <i className="fa fa-map-marker"></i>Click here!
-                </p>
-              </div>
-            </Linkrouter>{" "}
-          </div>
-          <h3 className="titulo">Paris</h3>
-          <p className="subtitulo">France</p>
-        </div>
-        <div>
-          <div className="content nodraggable">
-            {" "}
-            <Linkrouter to="/" className="nodraggable">
-              <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={miami} alt="img" />
-              <div className="content-details fadeIn-bottom nodraggable">
-                <h3 className="content-title nodraggable">More info</h3>
-                <p className="content-text nodraggable">
-                  <i className="fa fa-map-marker"></i>Click here!
-                </p>
-              </div>
-            </Linkrouter>{" "}
-          </div>
-          <h3 className="titulo">Miami</h3>
-          <p className="subtitulo">United States</p>
-          <div>
-            <div className="content nodraggable">
-              {" "}
-              <Linkrouter to="/ciudad" className="nodraggable">
-                <div className="content-overlay"></div>{" "}
-                <img className="imgcard content-image" src={bsas} alt="img" />
-                <div className="content-details fadeIn-bottom nodraggable">
-                  <h3 className="content-title nodraggable">More info</h3>
-                  <p className="content-text nodraggable">
-                    <i className="fa fa-map-marker"></i>Click here!
-                  </p>
-                </div>
-              </Linkrouter>{" "}
-            </div>
-            <h3 className="titulo">Buenos Aires</h3>
-            <p className="subtitulo">Argentina</p>
-          </div>
-        </div>
-        <div>
-          <div className="content nodraggable">
-            {" "}
-            <Linkrouter to="/" className="nodraggable">
-              <div className="content-overlay"></div>{" "}
-              <img className="imgcard content-image" src={paris} alt="img" />
-              <div className="content-details fadeIn-bottom nodraggable">
-                <h3 className="content-title nodraggable">More info</h3>
-                <p className="content-text nodraggable">
-                  <i className="fa fa-map-marker"></i>Click here!
-                </p>
-              </div>
-            </Linkrouter>{" "}
-          </div>
-          <h3 className="titulo">Paris</h3>
-          <p className="subtitulo">France</p>
-        </div>
-      </Carousel>
-      ;
-    </div>
+
   );
 };
 
