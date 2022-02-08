@@ -1,6 +1,6 @@
 import React from "react";
 import plane from "../../img/header/plane.png";
-import {Link as Linkrouter} from "react-router-dom"
+import {Link as Linkrouter} from "react-router-dom";
 
 
 const Ciudades = (data) => {
@@ -54,8 +54,8 @@ const Ciudades = (data) => {
         </div>
       </div>
 
-      <div className="filtrociudades m-auto d-flex justify-content-center align-items-center col-sm-12 col-md-12 col-lg-12">
-        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1 m-4">
+      <div className="filtrociudades m-auto d-flex justify-content-center align-items-center col-sm-10 col-md-10 col-lg-12">
+        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
           <input
             className="form-check-input"
             type="checkbox"
@@ -63,11 +63,11 @@ const Ciudades = (data) => {
             id="flexSwitchCheckDefault"
           />
           <label className="form-check-label" for="flexSwitchCheckDefault">
-            Countries
+            America
           </label>
         </div>
 
-        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1 m-4">
+        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
           <input
             className="form-check-input"
             type="checkbox"
@@ -75,33 +75,63 @@ const Ciudades = (data) => {
             id="flexSwitchCheckDefault"
           />
           <label className="form-check-label" for="flexSwitchCheckDefault">
-            Continent
+            Asia
           </label>
         </div>
+
+        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label className="form-check-label" for="flexSwitchCheckDefault">
+            Europe
+          </label>
+        </div>
+
+
+
+        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label className="form-check-label" for="flexSwitchCheckDefault">
+            Oceania
+          </label>
+        </div>
+
+
       </div>
 
-      {cities.map((city) => {
-        return(
           
-          <div>
-          <div className="content nodraggable">
-            {" "}
-            <Linkrouter to="/ciudad" className="nodraggable">
-              <div className="content-overlay"></div>{" "}
-              <img className="imgcard" src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city}/>
-              <div className="content-details fadeIn-bottom nodraggable">
-                <h3 className="content-title nodraggable">More info</h3>
-                <p className="content-text nodraggable">
-                  <i className="fa fa-map-marker"></i>Click here!
-                </p>
-              </div>
-            </Linkrouter>{" "}
-          </div>
-          <h3 className="titulo">{city.city}</h3>
-          <p className="subtitulo">{city.country}</p>
-        </div>
+<div className="allcities">
+                { cities.map((city)=> {
+                    return(
+                <div>
+                    <div className="content m-4">
+                        {" "}
+                        <Linkrouter to="/ciudad">
+                            <div className="content-overlay"></div>{" "}
+                            <img src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city} className="imgcard"/>
 
-          )})}
+                            {/* <img className="imgcard" src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city} /> */}
+                            <div className="content-details fadeIn-bottom">
+                                <h3 className="content-title">More info</h3>
+                                <p className="content-text">
+                                    <i className="fa fa-map-marker"></i>Click here!
+                                </p>
+                            </div>
+                        </Linkrouter>{" "}
+                    </div>
+                    <h3 className="titulo">{city.city}</h3>
+                    <p className="subtitulo">{city.continent}</p>
+                </div>)})}
+            </div>
 
           </div>
 
