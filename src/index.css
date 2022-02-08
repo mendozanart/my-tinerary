@@ -164,6 +164,14 @@ code {
   }
 
 
+  .imgcard {
+    border-radius: 2vh;
+    width:27vw !important;
+    height:40vh !important;
+  }
+  
+
+
 
     /*************************** review ************************************/
 
@@ -325,6 +333,99 @@ code {
   text-align: center;
   margin: 1vw;
 }
+
+
+
+
+/* *********************** cards  ***************************/
+
+
+
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.content {
+  position: relative;
+  width: 60vw;
+  max-width: 400vw;
+  margin: auto;
+  overflow: hidden
+}
+
+.content .content-overlay {
+  background: #ff9100b9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 60vw;
+}
+
+.imgcard {
+  border-radius: 2vh;
+  width:60vw !important;
+  height:20vh !important;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15vw;
+  margin-bottom: 0.5vh;
+  text-transform: uppercase
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 2vh;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
 
 
 }
@@ -496,6 +597,9 @@ code {
 
 
 
+
+
+
   /*************************** review ************************************/
 
 
@@ -657,6 +761,98 @@ code {
 }
 
 
+/* *********************** cards  ***************************/
+
+
+
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.content {
+  position: relative;
+  width: 40vw;
+  max-width: 400vw;
+  margin: auto;
+  overflow: hidden
+}
+
+.content .content-overlay {
+  background: #ff9100b9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 40vw;
+}
+
+.imgcard {
+  border-radius: 2vh;
+  width:40vw;
+  height:20vh;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15vw;
+  margin-bottom: 0.5vh;
+  text-transform: uppercase
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 2vh;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+
+
+
 
 }
 
@@ -722,6 +918,98 @@ code {
     padding-left: 74vw;
     position: absolute;
   }
+
+
+
+  /* *********************** cards  ***************************/
+
+
+
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.content {
+  position: relative;
+  width: 27vw;
+  max-width: 400vw;
+  margin: auto;
+  overflow: hidden
+}
+
+.content .content-overlay {
+  background: #ff9100b9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 27vw;
+}
+
+.imgcard {
+  border-radius: 2vh;
+  width:27vw;
+  height:40vh;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15vw;
+  margin-bottom: 0.5vh;
+  text-transform: uppercase
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 2vh;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
 
 }
 
@@ -890,92 +1178,6 @@ code {
 
 
 
-/* *********************** cards  ***************************/
-
-
-
-
-.title {
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 1vh;
-}
-
-.content {
-  position: relative;
-  width: 27vw;
-  max-width: 400vw;
-  margin: auto;
-  overflow: hidden
-}
-
-.content .content-overlay {
-  background: #ff9100b9;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 5%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s
-}
-
-.content:hover .content-overlay {
-  opacity: 1;
-}
-
-.content-image {
-  width: 27vw;
-}
-
-.imgcard {
-  border-radius: 2vh;
-}
-
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  width: 100;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s
-}
-
-.content:hover .content-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1
-}
-
-.content-details h3 {
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15vw;
-  margin-bottom: 0.5vh;
-  text-transform: uppercase
-}
-
-.content-details p {
-  color: #fff;
-  font-size: 2vh;
-}
-
-.fadeIn-bottom {
-  top: 80%;
-}
 
 
 

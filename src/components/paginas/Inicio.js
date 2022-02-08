@@ -11,7 +11,10 @@ import handl from "../../img/cards/handl.png";
 import hando from "../../img/cards/hando.png";
 import girl from "../../img/header/girl.png";
 
-const Inicio = () => {
+const Inicio = (data) => {
+  const cities = data.data
+
+
   return (
     <div>
       <div className="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">

@@ -8,29 +8,27 @@ import Review from './components/paginas/Review'
 import Usuarios from './components/paginas/Usuarios'
 import Footer2 from './components/footer/Footer2'
 import axios from 'axios'
-import { useEffect } from 'react';
+
 
 
 function App() {
+  const data = [];
 
-  async function test(){
-    await axios.get("http://localhost:4000/api/datos")
-    .then(response=>console.log(response))
-  }
+  axios.get("http://localhost:4000/api/datos")
+  .then(response=>data.push(...response.data.response.cities))
 
-  useEffect(() => {
-    test()
-  });
+  console.log(data)
+
 
   return (
     
       <BrowserRouter>
       <Navbar2/>
       <Routes>
-      <Route path='*' element={<Inicio/>}/> 
-      <Route path='/ciudades' element={<Ciudades/>}/>
+      <Route path='*' element={<Inicio data = {data}/>}/> 
+      <Route path='/ciudades' element={<Ciudades data = {data}/>}/>
       <Route path='/review' element={<Review/>}/>
-      <Route path='/ciudad' element={<Ciudad/>}/>
+      <Route path='/ciudad' element={<Ciudad data = {data}/>}/>
       <Route path='/usuarios' element={<Usuarios/>}/> 
       </Routes>
       <Footer2/>

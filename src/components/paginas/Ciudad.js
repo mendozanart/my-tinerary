@@ -5,7 +5,9 @@ import Carousel from "../carousel/Carousel";
 import Carouselcity from "../carousel/Carouselcity";
 import Like from "../like/Like";
 
-const Ciudad = () => {
+const Ciudad = (data) => {
+  const cities = data.data
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -75,7 +77,7 @@ const Ciudad = () => {
       </div>
 
       <h1 className="titulo mt-5 mb-5">Find more cities to visit</h1>
-      <Carousel />
+      <Carousel cities = {cities} />
     </div>
   );
 };

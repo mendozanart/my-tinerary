@@ -1,8 +1,14 @@
 import React from "react";
 import plane from "../../img/header/plane.png";
-import Carousel from "../carousel/Carousel";
+import {Link as Linkrouter} from "react-router-dom"
 
-const Ciudades = () => {
+
+const Ciudades = (data) => {
+  const cities = data.data
+
+  console.log(data)
+  console.log(cities)
+
   return (
     <div>
       <div className="banner-image2 w-100 vh-100 d-flex justify-content-center align-items-center">
@@ -74,8 +80,31 @@ const Ciudades = () => {
         </div>
       </div>
 
-      <Carousel />
-    </div>
+      {cities.map((city) => {
+        return(
+          
+          <div>
+          <div className="content nodraggable">
+            {" "}
+            <Linkrouter to="/ciudad" className="nodraggable">
+              <div className="content-overlay"></div>{" "}
+              <img className="imgcard" src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city}/>
+              <div className="content-details fadeIn-bottom nodraggable">
+                <h3 className="content-title nodraggable">More info</h3>
+                <p className="content-text nodraggable">
+                  <i className="fa fa-map-marker"></i>Click here!
+                </p>
+              </div>
+            </Linkrouter>{" "}
+          </div>
+          <h3 className="titulo">{city.city}</h3>
+          <p className="subtitulo">{city.country}</p>
+        </div>
+
+          )})}
+
+          </div>
+
   );
 };
 
