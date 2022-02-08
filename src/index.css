@@ -427,6 +427,13 @@ code {
 }
 
 
+.allcities {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+
 
 }
 
@@ -851,7 +858,12 @@ code {
 }
 
 
-
+.allcities {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
 
 
 }
@@ -1009,6 +1021,13 @@ code {
 .fadeIn-bottom {
   top: 80%;
 }
+
+.allcities {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
 
 
 }
@@ -1357,6 +1376,11 @@ border-radius: 4vh !important;
 
 .motorb {
   padding-left: 10vw;
+}
+
+
+.cardcities {
+  border-style: none;
 }
 
 
