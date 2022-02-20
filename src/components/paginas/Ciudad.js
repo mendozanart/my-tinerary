@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
-import bsas from "../../img/cities/bsas2.PNG";
 import usuario from "../../img/persons/usuario.jpg";
 import Carousel from "../carousel/Carousel";
 import Carouselcity from "../carousel/Carouselcity";
