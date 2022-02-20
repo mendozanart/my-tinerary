@@ -20,8 +20,13 @@ const Ciudad = () => {
   }, []);
 
   return (
+
+    cityselected.map (data =>{
+      console.log(data);
+
+      return (
     <div>
-      <img src={bsas} className=" d-block w-100" alt="..." />
+      <img src={process.env.PUBLIC_URL + `/img/cities/${data.img}`} alt={data.city} className="banner-image2"/>
 
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
         <div className="p-4">
@@ -29,9 +34,9 @@ const Ciudad = () => {
 
           <div className="ubicity">
             <h2 className="titulocity">
-              <strong>Buenos Aires</strong>
+              <strong>{data.city}</strong>
             </h2>
-            <h5 className="locationcity">Argentina, South America.</h5>
+            <h5 className="locationcity">{data.country}, {data.region} - {data.continent}.</h5>
           </div>
           <div className="textocuidad">
             <h4 className="mb-3">
@@ -51,10 +56,10 @@ const Ciudad = () => {
               <strong>Schedule:</strong> 9:00 - 15:30
             </h6>
             <h6>
-              <strong>Lenguage:</strong> Spanish
+              <strong>Lenguage:</strong> {data.language}
             </h6>
             <h6>
-              <strong>Currency:</strong> $ - Peso ARS
+              <strong>Currency:</strong> {data.currency}
             </h6>
             <h6>
               <strong>Price:</strong> $ 4,187.72
@@ -96,6 +101,8 @@ const Ciudad = () => {
       <h1 className="titulo mt-5 mb-5">Find more cities to visit</h1>
       <Carousel/>
     </div>
+
+)})
   );
 };
 
