@@ -1,10 +1,12 @@
 export const initialState = {
-    cities:[]
+    cities:[],
+    itineraries:[]
 
 }
 
 export const actionTypes = {
-    CITIESDB: "CITIESDB"
+    CITIESDB: "CITIESDB",
+    ITINERARIESDB : "ITINERARIESDB"
 }
 
 const reducer = (state, action) => {
@@ -14,9 +16,17 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 cities: action.cities
-            }  
+            }
+            case "ITINERARIESDB":
+                return {
+                    ...state,
+                    itineraries: action.itineraries
+                }
+
+
         default: return state
     }
 }
+
 
 export default reducer;

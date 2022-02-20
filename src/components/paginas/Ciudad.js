@@ -8,10 +8,11 @@ import Like from "../like/Like";
 
 const Ciudad = () => {
 
-  const [{cities}, dispatch] = useStateValue ()
+  const [{cities, itineraries}, dispatch] = useStateValue ()
   const {id} = useParams()
   const cityselected = cities.filter(city=> city._id === id)
-  console.log(cityselected);
+  
+  console.log(itineraries);
 
 
   useEffect(() => {
