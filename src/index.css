@@ -306,14 +306,21 @@ code {
   }
 
   .icousuario {
+    margin-top: 4px;
+    margin-right: 7px;
     width: 40px !important;
     height: 40px !important;
     border-radius: 4vh !important;
     }
     
-    .txtusuario{
-      padding-left: 2vw !important;
+
+    .txtusuario2{
+      padding-left: 1vw !important;
       padding-top: 1vh !important;
+    }
+
+    .txt1{
+      font-size: 15px;
     }
 
 
@@ -432,6 +439,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
   }
 
 
@@ -741,14 +749,21 @@ code {
 }
 
 .icousuario {
+  margin-top: 4px;
+  margin-right: 7px;
   width: 40px !important;
   height: 40px !important;
   border-radius: 4vh !important;
   }
   
-  .txtusuario{
-    padding-left: 2vw !important;
+
+  .txtusuario2{
+    padding-left: 1vw !important;
     padding-top: 1vh !important;
+  }
+
+  .txt1{
+    font-size: 15px;
   }
 
 /* *********************** footer  ***************************/
@@ -1344,10 +1359,17 @@ height: 57px;
 border-radius: 4vh !important;
 }
 
+
 .txtusuario{
   padding-left: 1vw;
   padding-top: 3vh;
 }
+
+.txtusuario2{
+  padding-left: 1vw;
+  padding-top: 1vh;
+}
+
 
 
 /* *********************** paginas - ciudades  ***************************/
@@ -1482,6 +1504,10 @@ border-radius: 4vh !important;
 }
 
 
+
+.bordeinicio {
+  border-style: none;
+}
 
 
 

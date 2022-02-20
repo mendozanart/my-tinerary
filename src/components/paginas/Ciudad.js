@@ -1,12 +1,19 @@
 import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { useStateValue } from "../../StateProvider";
 import bsas from "../../img/cities/bsas2.PNG";
 import usuario from "../../img/persons/usuario.jpg";
 import Carousel from "../carousel/Carousel";
 import Carouselcity from "../carousel/Carouselcity";
 import Like from "../like/Like";
 
-const Ciudad = (data) => {
-  const cities = data.data
+const Ciudad = () => {
+
+  const [{cities}, dispatch] = useStateValue ()
+  const {id} = useParams()
+  const cityselected = cities.filter(city=> city._id === id)
+  console.log(cityselected);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -39,11 +46,18 @@ const Ciudad = (data) => {
               have beautiful places to eat, theater, cinemas and night to go out
               to dance, like the City for those over 35 years
             </h6>
+
+            <h6>
+              <strong>Schedule:</strong> 9:00 - 15:30
+            </h6>
             <h6>
               <strong>Lenguage:</strong> Spanish
             </h6>
             <h6>
-              <strong>Prices:</strong> $$$
+              <strong>Currency:</strong> $ - Peso ARS
+            </h6>
+            <h6>
+              <strong>Price:</strong> $ 4,187.72
             </h6>
             <div className="col-sm-6 col-md-10 col-lg-10">
               <Carouselcity />
@@ -58,10 +72,13 @@ const Ciudad = (data) => {
                 alt="..."
               />
             </div>
-            <div className="txtusuario">
-              <h6>Natalie Burgess</h6>
+            <div className="txtusuario2">
+              <div><h6><strong>Natalie Burgess </strong>| January 3, 2022</h6></div>
+              <div className="txt1"><p>Amazing Experience! Will bring my family back!</p></div>
             </div>
           </div>
+
+
 
           <div className="ciudadcomentario">
             <input
@@ -77,7 +94,7 @@ const Ciudad = (data) => {
       </div>
 
       <h1 className="titulo mt-5 mb-5">Find more cities to visit</h1>
-      <Carousel cities = {cities} />
+      <Carousel/>
     </div>
   );
 };

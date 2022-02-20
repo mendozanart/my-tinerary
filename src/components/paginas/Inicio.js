@@ -11,8 +11,8 @@ import handl from "../../img/cards/handl.png";
 import hando from "../../img/cards/hando.png";
 import girl from "../../img/header/girl.png";
 
-const Inicio = (data) => {
-  const cities = data.data
+const Inicio = () => {
+
 
 
   return (
@@ -176,7 +176,7 @@ const Inicio = (data) => {
 
       <div className="row row-cols-1 row-cols-md-3 col-10 m-auto mt-3 mb-4 g-4">
         <div className="col">
-          <div className="card h-100">
+          <div className="card h-100 bordeinicio">
             <img src={van} className="imgtop card-img-top" alt="van" />
             <div className="card-body">
               <h4 className="titulocard card-title">Road trip</h4>
@@ -189,7 +189,7 @@ const Inicio = (data) => {
           </div>
         </div>
         <div className="col">
-          <div className="card h-100">
+          <div className="card h-100 bordeinicio">
             <img src={rest} className="imgtop card-img-top" alt="rest" />
             <div className="card-body">
               <h4 className="titulocard card-title">
@@ -203,7 +203,7 @@ const Inicio = (data) => {
           </div>
         </div>
         <div className="col">
-          <div className="card h-100">
+          <div className="card h-100 bordeinicio">
             <img src={camp} className="imgtop card-img-top" alt="camp" />
             <div className="card-body">
               <h4 className="titulocard card-title">Best place to camp</h4>
