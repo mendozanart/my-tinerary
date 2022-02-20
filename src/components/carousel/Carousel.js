@@ -1,12 +1,14 @@
 import React from "react";
 import { Link as Linkrouter } from "react-router-dom";
+import { useStateValue } from "../../StateProvider";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
-const carousel = (props) => {
-  const cities = props.cities
-  console.log(cities)
+const Carousel2 = () => {
+
+  const [{cities}, dispatch] = useStateValue ()
+  console.log(cities);
 
   const responsive = {
     superLargeDesktop: {
@@ -44,7 +46,7 @@ const carousel = (props) => {
           <div>
           <div className="content nodraggable">
             {" "}
-            <Linkrouter to="/ciudad" className="nodraggable">
+            <Linkrouter to={`/ciudad/${city._id}`} className="nodraggable">
               <div className="content-overlay"></div>{" "}
               <img className="imgcard" src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city}/>
               <div className="content-details fadeIn-bottom nodraggable">
@@ -66,4 +68,4 @@ const carousel = (props) => {
   );
 };
 
-export default carousel;
+export default Carousel2;

@@ -1,5 +1,8 @@
 import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { actionTypes } from './reducer';
+import { useStateValue } from './StateProvider';
+import { useEffect } from 'react';
 import Navbar2 from './components/navegacion/Navbar2'
 import Inicio from './components/paginas/Inicio'
 import Ciudades from './components/paginas/Ciudades'
@@ -12,12 +15,25 @@ import axios from 'axios'
 
 
 function App() {
-  const data = [];
+  const [{cities}, dispatch] = useStateValue ()
 
-  axios.get("http://localhost:4000/api/datos")
-  .then(response=>data.push(...response.data.response.cities))
+  useEffect(() => {
 
-  console.log(data)
+    axios.get("http://localhost:4000/api/datos")
+    .then(response=>
+      dispatch ({
+        type: actionTypes.CITIESDB,
+        cities : response.data.response.cities
+      }));
+
+
+  }, []);
+
+
+
+  console.log(cities);
+
+
 
 
   return (
@@ -25,10 +41,10 @@ function App() {
       <BrowserRouter>
       <Navbar2/>
       <Routes>
-      <Route path='*' element={<Inicio data = {data}/>}/> 
-      <Route path='/ciudades' element={<Ciudades data = {data}/>}/>
+      <Route path='*' element={<Inicio/>}/> 
+      <Route path='/ciudades' element={<Ciudades/>}/>
       <Route path='/review' element={<Review/>}/>
-      <Route path='/ciudad' element={<Ciudad data = {data}/>}/>
+      <Route path='/ciudad/:id' element={<Ciudad/>}/>
       <Route path='/usuarios' element={<Usuarios/>}/> 
       </Routes>
       <Footer2/>

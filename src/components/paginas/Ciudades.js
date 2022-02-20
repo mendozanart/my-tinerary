@@ -1,13 +1,12 @@
 import React from "react";
 import plane from "../../img/header/plane.png";
 import {Link as Linkrouter} from "react-router-dom";
+import { useStateValue } from "../../StateProvider";
 
 
-const Ciudades = (data) => {
-  const cities = data.data
+const Ciudades = () => {
 
-  console.log(data)
-  console.log(cities)
+  const [{cities}, dispatch] = useStateValue ()
 
   return (
     <div>
@@ -115,7 +114,7 @@ const Ciudades = (data) => {
                 <div>
                     <div className="content m-4">
                         {" "}
-                        <Linkrouter to="/ciudad">
+                        <Linkrouter to={`/ciudad/${city._id}`}>
                             <div className="content-overlay"></div>{" "}
                             <img src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city} className="imgcard"/>
 
@@ -129,7 +128,7 @@ const Ciudades = (data) => {
                         </Linkrouter>{" "}
                     </div>
                     <h3 className="titulo">{city.city}</h3>
-                    <p className="subtitulo">{city.continent}</p>
+                    <p className="subtitulo">{city.country}</p>
                 </div>)})}
             </div>
 
