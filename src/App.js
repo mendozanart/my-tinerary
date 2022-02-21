@@ -11,6 +11,7 @@ import Review from './components/paginas/Review'
 import Usuarios from './components/paginas/Usuarios'
 import Footer2 from './components/footer/Footer2'
 import axios from 'axios'
+import Conexion from './components/paginas/Conexion';
 
 
 
@@ -53,6 +54,7 @@ function App() {
       <Route path='/review' element={<Review/>}/>
       <Route path='/ciudad/:id' element={<Ciudad/>}/>
       <Route path='/usuarios' element={<Usuarios/>}/> 
+      <Route path='/conexion' element={<Conexion/>}/>
       </Routes>
       <Footer2/>
       </BrowserRouter>
