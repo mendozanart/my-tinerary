@@ -11,11 +11,13 @@ import Review from './components/paginas/Review'
 import Usuarios from './components/paginas/Usuarios'
 import Footer2 from './components/footer/Footer2'
 import axios from 'axios'
+import Conexion from './components/paginas/Conexion';
 
 
 
 function App() {
-  const [{cities}, dispatch] = useStateValue ()
+  const [{cities, itineraries}, dispatch] = useStateValue ()
+  console.log(itineraries);
 
   useEffect(() => {
 
@@ -26,8 +28,14 @@ function App() {
         cities : response.data.response.cities
       }));
 
+      axios.get("http://localhost:4000/api/itinerarios")
+      .then(response=>
+        dispatch ({
+          type: actionTypes.ITINERARIESDB,
+          itineraries : response.data.response.itineraries
+        }));
 
-  },);
+      },[]);
 
 
 
@@ -46,6 +54,7 @@ function App() {
       <Route path='/review' element={<Review/>}/>
       <Route path='/ciudad/:id' element={<Ciudad/>}/>
       <Route path='/usuarios' element={<Usuarios/>}/> 
+      <Route path='/conexion' element={<Conexion/>}/>
       </Routes>
       <Footer2/>
       </BrowserRouter>
