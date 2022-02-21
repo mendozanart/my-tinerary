@@ -169,6 +169,15 @@ code {
     width:27vw !important;
     height:40vh !important;
   }
+
+
+  .headercity{
+    position: absolute;
+    color: rgba(255, 255, 255, 0) !important;
+    font-size: 30vh;
+    margin-top: 10%;
+    margin-left: 30%;
+  }
   
 
 
@@ -322,23 +331,7 @@ code {
     .txt1{
       font-size: 15px;
     }
-   
 
-    .headercity{
-      position: absolute;
-      font-size: 7vh !important;
-      color: rgba(255, 255, 255, 0) !important;
-      margin-top: 50% !important;
-      margin-left: 10% !important;
-    }
-    
-    .banner-image2{
-      background: rgb(255,204,34);
-      background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
-      background-size: cover !important;
-      height: 90vh !important;
-      width: 100vw !important;
-    }
 
   
 /* *********************** footer  ***************************/
@@ -626,6 +619,14 @@ code {
   width: 30vw !important;
 }
 
+.headercity{
+  position: absolute;
+  color: rgba(255, 255, 255, 0) !important;
+  font-size: 30vh;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
 
 
 
@@ -782,22 +783,6 @@ code {
     font-size: 15px;
   }
 
-  .headercity{
-    position: absolute;
-    font-size: 12vh !important;
-    color: rgba(255, 255, 255, 0) !important;
-    margin-top: 30% !important;
-    margin-left: 20% !important;
-  }
-  
-  .banner-image2{
-    background: rgb(255,204,34);
-    background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
-    background-size: cover !important;
-    height: 90vh !important;
-    width: 100vw !important;
-  }
-
 /* *********************** footer  ***************************/
 
 
@@ -932,10 +917,6 @@ code {
 
   /* *********************** navegacion ***************************/
 
-  .nav-link {
-    color: #555454 !important;
-  }
-
   .navd {
     width: 20vw;
     margin: 10vw;
@@ -984,18 +965,10 @@ code {
 
   .headercity{
     position: absolute;
+    color: rgb(255, 253, 253) !important;
     font-size: 30vh;
-    color: #fff;
     margin-top: 10%;
-    margin-left: 30% !important;
-  }
-  
-  .banner-image2{
-    background: rgb(255,204,34);
-    background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
-    background-size: cover !important;
-    height: 90vh !important;
-    width: 100vw !important;
+    margin-left: 30%;
   }
 
 
@@ -1118,7 +1091,7 @@ code {
 /* *********************** navegacion ***************************/
 
 .nav-link {
-  color: #555454 !important;
+  color: #5a5a5a !important;
 }
 
 .bradio{
@@ -1128,7 +1101,7 @@ code {
 
 .bradio2{
   border-radius: 5vw;
-  color: rgb(112, 25, 25);
+  color: #ffffff;
 }
 
 
@@ -1424,22 +1397,22 @@ border-radius: 4vh !important;
 
 
 
-/* *********************** paginas - ciudad  ***************************/
+/* *********************** paginas - ciudades  ***************************/
 
 .headercity{
   position: absolute;
-  font-size: 25vh;
-  color: rgb(255, 255, 255);
+  color: #fff;
+  font-size: 30vh;
   margin-top: 10%;
-  margin-left: 35% !important;
+  margin-left: 30%;
 }
 
 .banner-image2{
   background: rgb(255,204,34);
   background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
-  background-size: cover !important;
-  height: 90vh !important;
-  width: 99vw !important;
+  background-size: cover;
+  height: 80vh;
+  width: 99vw;
 }
 
 .filtrociudades {
