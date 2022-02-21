@@ -26,7 +26,14 @@ const Ciudad = () => {
 
       return (
     <div>
+
+      
+      <h1 className="headercity">{data.city}</h1>
       <img src={process.env.PUBLIC_URL + `/img/cities/${data.img}`} alt={data.city} className="banner-image2"/>
+
+      
+     
+
 
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
         <div className="p-4">
