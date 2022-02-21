@@ -4,7 +4,7 @@ import conexion from "../../img/header/conexion1.png";
 const Conexion = () => {
   return (
     <div>
-      <div className="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div className="banner-image3 w-10respon0 vh-100 d-flex justify-content-center align-items-center">
         <div className="header">
           <div className="textoheader3 col-sm-12 col-md-6 col-lg-5">
             <h1 className="tituloheader">YOUR ACCOUNT</h1>
@@ -20,7 +20,7 @@ const Conexion = () => {
         </div>
       </div>
 
-      <div className="card text-center col-lg-11 m-auto mb-5 ">
+      <div className="card text-center col-sm-10 col-md-10 col-lg-11 m-auto mb-5 ">
         <div className="card-header">
           <ul className="nav nav-tabs card-header-tabs">
             <li className="nav-item">
