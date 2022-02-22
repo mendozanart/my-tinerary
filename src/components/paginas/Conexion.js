@@ -25,7 +25,7 @@ const Conexion = () => {
           <ul className="nav nav-tabs card-header-tabs">
             <li className="nav-item">
               <a className="nav-link active" aria-current="true" href="#">
-              Activity
+              Favorites
               </a>
             </li>
             <li className="nav-item">
@@ -39,9 +39,9 @@ const Conexion = () => {
           </ul>
         </div>
         <div className="card-body">
-          <h5 className="card-title">Your lastests travels</h5>
+          <h5 className="card-title">Your favorites itineraries</h5>
           <p className="card-text">
-          Here you can find a list of your last trips.
+          Here you can find a list of your favorites itineraries.
           Do you want to take a trip?
           </p>
           <a href="#" class="btn btn-warning bradio2">

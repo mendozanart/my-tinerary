@@ -1002,7 +1002,7 @@ code {
 
   .headercity{
     position: absolute;
-    color: rgb(255, 253, 253) !important;
+    color: rgba(255, 253, 253, 0) !important;
     font-size: 30vh;
     margin-top: 10%;
     margin-left: 30%;
