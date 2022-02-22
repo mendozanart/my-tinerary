@@ -28,12 +28,6 @@ function App() {
         cities : response.data.response.cities
       }));
 
-      axios.get("http://localhost:4000/api/itinerarios")
-      .then(response=>
-        dispatch ({
-          type: actionTypes.ITINERARIESDB,
-          itineraries : response.data.response.itineraries
-        }));
 
       },[]);
 

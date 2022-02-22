@@ -311,7 +311,20 @@ code {
     display: flex;
     flex-direction: column;
     position: absolute;
-    padding-left: 70vw;
+    padding-top: 11vh !important;
+    padding-left: 68vw;
+  }
+
+  .save {
+    display: flex;
+    flex-direction: column;
+    padding-left: 74.5vw;
+    position: absolute;
+  }
+
+  .save2{
+    width: 12vw !important;
+    height: 4vh !important;
   }
 
   .icousuario {
@@ -762,7 +775,7 @@ code {
   display: flex;
   flex-direction: column;
   position: absolute;
-  padding-left: 70vw;
+  padding-left: 75vw !important;
 }
 
 .icousuario {
@@ -781,6 +794,18 @@ code {
 
   .txt1{
     font-size: 15px;
+  }
+
+  .save {
+    display: flex;
+    flex-direction: column;
+    padding-left: 74.5vw;
+    position: absolute;
+  }
+
+  .save2{
+    width: 6vw !important;
+    height: 3.5vh !important;
   }
 
 /* *********************** footer  ***************************/
@@ -963,9 +988,21 @@ code {
     position: absolute;
   }
 
+  .save {
+    display: flex;
+    flex-direction: column;
+    padding-left: 77.3vw;
+    position: absolute;
+  }
+
+  .save2{
+    width: 3.5vw !important;
+    height: 5.5vh !important;
+  }
+
   .headercity{
     position: absolute;
-    color: rgb(255, 253, 253) !important;
+    color: rgba(255, 253, 253, 0) !important;
     font-size: 30vh;
     margin-top: 10%;
     margin-left: 30%;

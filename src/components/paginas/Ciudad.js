@@ -6,6 +6,7 @@ import usuario from "../../img/persons/usuario.jpg";
 import Carousel from "../carousel/Carousel";
 import Carouselcity from "../carousel/Carouselcity";
 import Like from "../like/Like";
+import Save from "../save/Save"
 
 const Ciudad = () => {
 
@@ -22,8 +23,6 @@ const Ciudad = () => {
         )
       },[]);
   
-      console.log(itineraries)
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -58,6 +57,7 @@ const Ciudad = () => {
 
           {itineraries.map(itinerarie =>
       <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
+        <Save/>
       <div className="p-4">
         <div className="textocuidad">
           <h4 className="mb-3">
