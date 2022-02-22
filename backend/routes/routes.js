@@ -7,7 +7,7 @@ const {ObtenerItinerarios} = itinerariesController
 Router.route("/datos") //url de consulta
 .get(ObtenerDatos)
 
-Router.route("/itinerarios") //url de consulta
+Router.route("/itinerarios/:city") //url de consulta
 .get(ObtenerItinerarios)
 
 module.exports = Router

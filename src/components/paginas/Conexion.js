@@ -44,7 +44,7 @@ const Conexion = () => {
           Here you can find a list of your last trips.
           Do you want to take a trip?
           </p>
-          <a href="#" class="btn btn-warning">
+          <a href="#" class="btn btn-warning bradio2">
             Find a new place to go!
           </a>
         </div>
