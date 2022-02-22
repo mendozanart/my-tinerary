@@ -5,9 +5,11 @@ const itinerariesController = {
         console.log(req)
         console.log(res)
         let itineraries
+        console.log(req.params)
+        const city = req.params.city
         let error = null
         try {
-            itineraries = await Itineraries.find()
+            itineraries = await Itineraries.find({city:city})
         } catch (err) {
             error = err
             console.log(error)

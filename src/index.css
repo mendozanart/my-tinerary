@@ -959,7 +959,7 @@ code {
   .likes {
     display: flex;
     flex-direction: column;
-    padding-left: 74vw;
+    padding-left: 77vw;
     position: absolute;
   }
 
@@ -1289,6 +1289,11 @@ code {
 
 
 /* *********************** paginas - ciudad ***************************/
+
+.ubicity2{
+  margin-left: 8vw;
+  margin-top: 7vh;
+}
 
 
 .slidecards {

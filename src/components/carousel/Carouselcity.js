@@ -1,10 +1,11 @@
 import React from "react";
-import mural1 from "../../img/itinerary/mural1.jpg";
-import mural2 from "../../img/itinerary/mural2.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const Carouselcity = () => {
+const Carouselcity = (props) => {
+  let itinerary = props.itinerarie
+  console.log (itinerary)
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -35,19 +36,11 @@ const Carouselcity = () => {
       >
         <div>
           {" "}
-          <img
-            src={mural1}
-            className="fciudad d-block w-100 p-2 mt-4 mb-4"
-            alt="..."
-          />
+          <img src={process.env.PUBLIC_URL + `/img/itinerary/${itinerary.img[0].img1}`} alt={itinerary.city} className="fciudad d-block w-100 p-2 mt-4 mb-4"/>
         </div>
         <div>
           {" "}
-          <img
-            src={mural2}
-            className="fciudad d-block w-100 p-2 mt-4 mb-4"
-            alt="..."
-          />
+          <img src={process.env.PUBLIC_URL + `/img/itinerary/${itinerary.img[0].img2}`} alt={itinerary.city} className="fciudad d-block w-100 p-2 mt-4 mb-4"/>
         </div>
       </Carousel>
     </div>
