@@ -54,7 +54,7 @@ const Ciudades = () => {
       </div>
 
       <div className="filtrociudades m-auto d-flex justify-content-center align-items-center col-sm-10 col-md-10 col-lg-12">
-        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
           <input
             className="form-check-input"
             type="checkbox"
@@ -66,7 +66,7 @@ const Ciudades = () => {
           </label>
         </div>
 
-        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
           <input
             className="form-check-input"
             type="checkbox"
@@ -78,7 +78,7 @@ const Ciudades = () => {
           </label>
         </div>
 
-        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
           <input
             className="form-check-input"
             type="checkbox"
@@ -92,7 +92,7 @@ const Ciudades = () => {
 
 
 
-        <div className="form-check form-switch fswitch col-sm-3 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
           <input
             className="form-check-input"
             type="checkbox"
