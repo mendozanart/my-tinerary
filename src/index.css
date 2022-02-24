@@ -22,7 +22,7 @@ code {
   /* *********************** navegacion ***************************/
 
   .navd {
-    width: 50vw !important;
+    width: 70vw !important;
     padding: 3vw;
     border-radius: 4vw;
     align-items: center;
@@ -33,11 +33,11 @@ code {
   }
 
   .blogin {
-    padding-left: 13vw !important;
+    padding-left: 22vw !important;
   }
   
   .blogin2 {
-    padding-left: 9vw !important;
+    padding-left: 15vw !important;
   }
 
   .prueba{

@@ -1,7 +1,22 @@
+import axios from "axios";
 import React from "react";
 import registro from "../../img/header/registro.png";
 
 const Usuarios = () => {
+  
+  async function NewUser(event){
+    event.preventDefault()
+    const NuevoUsuario = {email : event.target[0].value,
+      firstname : event.target[1].value,
+      lastname : event.target[2].value,
+      password : event.target[3].value,
+      repassword : event.target[4].value
+    }
+
+    await axios.post("http://localhost:4000/api/usuarios",{NuevoUsuario})
+    .then(response => alert(response.data.response))
+
+  }
   return (
     <div>
       <div className="banner-image4 w-100 vh-100 d-flex justify-content-center align-items-center">
@@ -25,7 +40,7 @@ const Usuarios = () => {
 
       <div className="regform col-sm-10 col-md-10 col-lg-10 m-auto">
         <div className="formulario col-sm-10 col-md-10 col-lg-10 m-auto">
-          <form>
+          <form onSubmit={NewUser}>
             <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
               <label for="exampleInputEmail1" className="form-label">
                 Email
