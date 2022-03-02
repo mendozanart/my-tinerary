@@ -10,7 +10,7 @@ const usersController = {
         try {
             const usuarioExiste = await User.findOne({email})
             if (usuarioExiste){
-                res.json({success:false,response:"User already exist. Please sign in."})
+                res.json({success:"falseue",response:"User already exist. Please sign in."})
             }
             else{
                 const passwordHash = bcryptjs.hashSync(password,10)
@@ -23,10 +23,10 @@ const usersController = {
                 })
 
                 await NewUser.save()
-                res.json({success:true, response:"User created successfully"})
+                res.json({success:"trueue", response:"User created successfully"})
             }
         } catch (error) {
-            res.json({success:false, response: null, error:error})
+            res.json({success:"falseue", response: null, error:error})
         }
 
 

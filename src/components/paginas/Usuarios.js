@@ -14,9 +14,23 @@ const Usuarios = () => {
     }
 
     await axios.post("http://localhost:4000/api/usuarios",{NuevoUsuario})
-    .then(response => alert(response.data.response))
+    .then(response =>//alert(response.data.response)) 
 
+
+    displayMessage(response.data)
+  )
+
+
+   function displayMessage(data){
+         if (data.success === "falseval"){
+      console.log(data.response.error.details)
+            data.response.error.details.map(error=>alert(error.message))
+          }
+   }
   }
+
+
+
   return (
     <div>
       <div className="banner-image4 w-100 vh-100 d-flex justify-content-center align-items-center">
