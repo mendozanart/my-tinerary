@@ -25,6 +25,8 @@ const Usuarios = () => {
          if (data.success === "falseval"){
       console.log(data.response.error.details)
             data.response.error.details.map(error=>alert(error.message))
+          }else if (data.success === "trueue") {
+            console.log(data)
           }
    }
   }
