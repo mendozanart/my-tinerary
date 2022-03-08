@@ -70,10 +70,10 @@ const usersController = {
                     repassword: passwordHash,
                     uniqueText,
                     emailVerificado,
+                    connected:false,
                 })
 
                 if (!emailVerificado){
-
                     await NewUser.save()
                     await sendEmail(email, uniqueText) // experamos creacion de usuario nuevo
                     res.json({success:"trueue", response:"We send you an email to verify your email"})
@@ -82,9 +82,11 @@ const usersController = {
             }
 
 
-        } catch (error) {
+        } 
+        
+        catch (error) {
             res.json({success:"falseue", response: null, error:error})
-        }
+        }},
 
         accesoUsuario: async (req,res) =>{
 
@@ -94,7 +96,7 @@ const usersController = {
                 const usuario = await User.findOne({email})
                 
                 if (!usuario) {
-                    res.jason({success:false,from:"controller",error:"Wrong username or password"})
+                    res.json({success:false,from:"controller",error:"Wrong username or password"})
                 }else {
                     if(usuario.emailVerificado){
                         let passwordCoincide = bcryptjs.compareSync(password,usuario.password)
@@ -105,6 +107,7 @@ const usersController = {
                                 firstname : usuario.firstname,
                                 lastname : usuario.lastname,
                             }
+                        usuario.connected = true
                         await usuario.save()
                         res.json({success:true,from:"controller",response:{token,datosUser}})
                         }
@@ -113,12 +116,17 @@ const usersController = {
                     else {res.json({success:false, from:"controller", error:"Please check your email to validate it"})}
                 }
             }
-            catch(error) {console.log(error);res.json({success: false, response:null, error:error}))}
+            catch(error) {console.log(error);res.json({success: false, response:null, error:error})}
+        },
+
+        cerrarSesion: async (req,res) => {
+            const email = req.body.closeUser
+            const user = await User.findOne({email})
+            user.connected = false
+            await user.save()
+            res.json({success:true, response: "Closed session"})
         }
     }
-
-
-    }
-
+    
 
 module.exports = usersController

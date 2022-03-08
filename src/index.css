@@ -465,6 +465,17 @@ code {
   }
 
 
+
+/******************** conexion *****************/
+
+.bradio6{
+  margin-left: 17vw !important;
+  border-radius: 5vw;
+  background-color: rgb(113, 0, 165);
+  border-style: none;
+}
+
+
 }
 
 
@@ -923,6 +934,16 @@ code {
   }
 
 
+  /******************** conexion *****************/
+
+.bradio6{
+  margin-left: 32vw !important;
+  border-radius: 5vw;
+  background-color: rgb(113, 0, 165);
+  border-style: none;
+}
+
+
 }
 
 
@@ -1157,6 +1178,13 @@ code {
   
   border-radius: 5vw;
   background-color: #e29a00;
+  border-style: none;
+}
+
+.bradio6{
+  margin-left: 39vw;
+  border-radius: 5vw;
+  background-color: rgb(113, 0, 165);
   border-style: none;
 }
 

@@ -5,7 +5,7 @@ const usersControllers = require("../controlers/usersControllers.js")
 const validator = require("../controlers/validator.js")
 const {ObtenerDatos} = citiesController //destructuracion del controlador
 const {ObtenerItinerarios} = itinerariesController
-const {nuevoUsuario, verifyEmail, accesoUsuario} = usersControllers
+const {nuevoUsuario, verifyEmail, accesoUsuario, cerrarSesion } = usersControllers
 
 Router.route("/datos") //url de consulta
 .get(ObtenerDatos)
@@ -21,5 +21,8 @@ Router.route("/verify/:uniqueText") //url de consulta
 
 Router.route("/signin") //url de consulta
 .post(accesoUsuario)
+
+Router.route("/signout") //url de consulta
+.post(cerrarSesion)
 
 module.exports = Router

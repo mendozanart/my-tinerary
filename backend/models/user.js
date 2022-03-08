@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema ({
     repassword:{type:String,require:true},
     uniqueText:{type:String,require:true},
     emailVerificado: {type:Boolean,require:true},
+    connected: {type:Boolean,require:true},
 })
 
 const User = mongoose.model("Users",userSchema)
