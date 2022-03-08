@@ -131,7 +131,7 @@ function Navbar2() {
                 />
               </div>
               <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
-                <LinkRouter to="">
+                <LinkRouter to="/conexion">
                 <button
                   type="submit"
                   className="btn btn-warning text-white bradio5 mt-3"
