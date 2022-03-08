@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { Link as LinkRouter } from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
@@ -16,6 +17,30 @@ function Navbar2() {
   window.addEventListener("scroll", changeNavbarColor);
 
   const [color] = useState("prueba");
+
+
+  async function loginUser(event){
+    event.preventDefault()
+    const userData = {email : event.target[0].value,
+      password : event.target[1].value,
+    }
+
+    await axios.post("http://localhost:4000/api/signin",{userData})
+    .then(response =>//alert(response.data.response)) 
+
+
+    displayMessage(response.data)
+  )
+
+
+   function displayMessage(data){
+     if(!data.success){
+      console.log(data.response)
+    } else {
+      console.log(data.response)
+    }
+  }
+}
 
   return (
     <>
@@ -80,6 +105,7 @@ function Navbar2() {
               className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
+              <form onSubmit={loginUser}>
               <div className="col-sm-10 col-md-10 col-lg-10 mb-3 mt-3 m-auto">
                 <label for="exampleInputEmail1" className="form-label">
                   Email
@@ -105,7 +131,7 @@ function Navbar2() {
                 />
               </div>
               <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
-                <LinkRouter to="/conexion">
+                <LinkRouter to="">
                 <button
                   type="submit"
                   className="btn btn-warning text-white bradio5 mt-3"
@@ -128,6 +154,7 @@ function Navbar2() {
                   Sign up
                 </LinkRouter>
               </div>
+              </form>
             </ul>
           </div>
         </div>

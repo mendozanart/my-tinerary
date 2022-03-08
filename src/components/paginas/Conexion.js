@@ -1,7 +1,48 @@
 import React from "react";
+import axios from "axios";
 import conexion from "../../img/header/conexion1.png";
+import { Link as LinkRouter } from "react-router-dom";
+import { actionTypes } from "../../reducer";
+import { useStateValue } from '../../StateProvider';
 
 const Conexion = () => {
+
+  const [{user}, dispatch] = useStateValue ()
+
+  async function loginUser(event){
+    event.preventDefault()
+    const userData = {email : event.target[0].value,
+      password : event.target[1].value,
+    }
+
+    await axios.post("http://localhost:4000/api/signin",{userData})
+    .then(response =>//alert(response.data.response)) 
+
+
+    displayMessage(response.data),
+
+
+  )
+
+
+   function displayMessage(data){
+     if(!data.success){
+      console.log(data.response)
+    } else {
+      console.log(data.response)
+    }
+
+
+    dispatch ({
+      type: actionTypes.USER,
+      user : data.response
+    })
+
+  }
+}
+
+
+
   return (
     <div>
       <div className="banner-image3 w-10respon0 vh-100 d-flex justify-content-center align-items-center">
@@ -50,6 +91,18 @@ const Conexion = () => {
         </div>
       </div>
 
+      <form onSubmit={loginUser}>
+      <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
+                <LinkRouter to="">
+                <button
+                  type="submit"
+                  className="btn btn-warning text-white bradio6 mt-1 mb-5"
+                >
+                  Log-out
+                </button>
+                </LinkRouter>
+              </div>
+      </form>
 
     </div>
   );
