@@ -15,7 +15,7 @@ const Conexion = () => {
       password : event.target[1].value,
     }
 
-    await axios.post("http://localhost:4000/api/signin",{userData})
+    await axios.post("http://localhost:4000/api/signout",{userData})
     .then(response =>//alert(response.data.response)) 
 
 
