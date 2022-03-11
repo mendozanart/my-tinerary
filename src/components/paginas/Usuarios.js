@@ -10,7 +10,7 @@ const Usuarios = () => {
       firstname : event.target[1].value,
       lastname : event.target[2].value,
       password : event.target[3].value,
-      repassword : event.target[4].value
+      from : "signup",
     }
 
     await axios.post("http://localhost:4000/api/usuarios",{NuevoUsuario})
@@ -25,7 +25,9 @@ const Usuarios = () => {
          if (data.success === "falseval"){
       console.log(data.response.error.details)
             data.response.error.details.map(error=>alert(error.message))
-          }else if (data.success === "trueue") {
+          }else if (data.success === true) {
+            console.log(data)
+          }else if (data.success === false) {
             console.log(data)
           }
    }

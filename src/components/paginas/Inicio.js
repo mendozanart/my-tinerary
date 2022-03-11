@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import paris2 from "../../img/cities/paris2.PNG";
 import bsas2 from "../../img/cities/bsas2.PNG";
 import miami2 from "../../img/cities/miami2.PNG";
@@ -13,7 +13,9 @@ import girl from "../../img/header/girl.png";
 
 const Inicio = () => {
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

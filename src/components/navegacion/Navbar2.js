@@ -4,6 +4,7 @@ import { Link as LinkRouter } from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
 import Login from "./Login";
+import Facebook from "../navegacion/Facebook";
 
 function Navbar2() {
   const [colorChange, setColorchange] = useState(false);
@@ -131,7 +132,7 @@ function Navbar2() {
                 />
               </div>
               <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
-                <LinkRouter to="">
+                <LinkRouter to="/conexion">
                 <button
                   type="submit"
                   className="btn btn-warning text-white bradio5 mt-3"
@@ -142,6 +143,7 @@ function Navbar2() {
               </div>
               <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
                 <Login />
+                <Facebook/>
               </div>
               <p className="google col-sm-10 col-md-10 col-lg-10 mt-5 m-auto">
                 You don't have an account?

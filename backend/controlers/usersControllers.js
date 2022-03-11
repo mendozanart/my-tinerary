@@ -51,12 +51,23 @@ const usersController = {
     nuevoUsuario:async(req,res)=>{
         console.log(req)
         console.log(res)
-        let {email, firstname, lastname, password} = req.body.NuevoUsuario
+        let {email, firstname, lastname, password, from} = req.body.NuevoUsuario
         console.log(req.body)
         try {
             const usuarioExiste = await User.findOne({email})
             if (usuarioExiste){
-                res.json({success:"falseue",response:"User already exist. Please sign in."})
+                res.json({success:false,response:"User already exist. Please sign in."})
+                if(from!=="signup") {
+                    const passwordHash = bcryptjs.hashSync(password,10)
+                    usuarioExiste.password = passwordHash
+                    usuarioExiste.emailVerificado = true
+                    usuarioExiste.from = from
+                    usuarioExiste.connected = false
+                    usuarioExiste.save()
+                    res.json({success:true, response:"Actualizamos tu signup para que lo realices con " + from})
+                } else {
+                    res.json({success:false, response:"El nombre de usuario ya esta en uso"})
+                }
             }
             else{
                 const uniqueText = crypto.randomBytes(15).toString("hex") // 15 caracteres hexagecimal
@@ -67,19 +78,30 @@ const usersController = {
                     lastname,
                     email,
                     password: passwordHash,
-                    repassword: passwordHash,
                     uniqueText,
                     emailVerificado,
                     connected:false,
+                    from,
                 })
 
-                if (!emailVerificado){
+                if(from!=="signup"){
+                    NewUser.emailVerificado = true
+                    NewUser.from = from
+                    NewUser.connected = false
                     await NewUser.save()
-                    await sendEmail(email, uniqueText) // experamos creacion de usuario nuevo
-                    res.json({success:"trueue", response:"We send you an email to verify your email"})
+                    res.json({success:true, data:{NewUser}, response:"Felicitaciones se ha creado tu usuario con" + from})
+                }else{
+                    NewUser.emailVerificado = false
+                    NewUser.from = from
+                    NewUser.connected = false
+                    await NewUser.save()
+                    await sendEmail(email, uniqueText)
+                    res.json({success:true, response:"We send you an email to verify your email"})
                 }
 
+
             }
+            
 
 
         } 

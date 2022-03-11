@@ -15,7 +15,7 @@ const Conexion = () => {
       password : event.target[1].value,
     }
 
-    await axios.post("http://localhost:4000/api/signin",{userData})
+    await axios.post("http://localhost:4000/api/signout",{userData})
     .then(response =>//alert(response.data.response)) 
 
 
@@ -93,7 +93,7 @@ const Conexion = () => {
 
       <form onSubmit={loginUser}>
       <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
-                <LinkRouter to="">
+                <LinkRouter to="/inicio">
                 <button
                   type="submit"
                   className="btn btn-warning text-white bradio6 mt-1 mb-5"
