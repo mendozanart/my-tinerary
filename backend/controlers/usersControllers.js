@@ -64,9 +64,9 @@ const usersController = {
                     usuarioExiste.from = from
                     usuarioExiste.connected = false
                     usuarioExiste.save()
-                    res.json({success:true, response:"Actualizamos tu signup para que lo realices con " + from})
+                    res.json({success:true, response:"We update your signup so that you can do it with " + from})
                 } else {
-                    res.json({success:false, response:"El nombre de usuario ya esta en uso"})
+                    res.json({success:false, response:"Username is already in use"})
                 }
             }
             else{
@@ -89,7 +89,7 @@ const usersController = {
                     NewUser.from = from
                     NewUser.connected = false
                     await NewUser.save()
-                    res.json({success:true, data:{NewUser}, response:"Felicitaciones se ha creado tu usuario con" + from})
+                    res.json({success:true, data:{NewUser}, response:"Congratulations, your user has been created with" + from})
                 }else{
                     NewUser.emailVerificado = false
                     NewUser.from = from
@@ -125,9 +125,10 @@ const usersController = {
                         if (passwordCoincide){
                             const token = jwt.sign({...usuario}, process.env.SECRETKEY)
                             const datosUser = {
-                                email : usuario.email,
                                 firstname : usuario.firstname,
                                 lastname : usuario.lastname,
+                                email : usuario.email,
+                                id : usuario._id
                             }
                         usuario.connected = true
                         await usuario.save()
@@ -142,7 +143,8 @@ const usersController = {
         },
 
         cerrarSesion: async (req,res) => {
-            const email = req.body.closeUser
+            const email = req.body.email
+            console.log (req.body.email)
             const user = await User.findOne({email})
             user.connected = false
             await user.save()
