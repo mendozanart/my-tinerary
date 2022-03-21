@@ -5,8 +5,12 @@ import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
 import Login from "./Login";
 import Facebook from "../navegacion/Facebook";
+import { actionTypes } from "../../reducer";
+import { useStateValue } from "../../StateProvider";
 
 function Navbar2() {
+  const [{ user }, dispatch] = useStateValue();
+
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
     if (window.scrollY >= 10) {
@@ -19,29 +23,31 @@ function Navbar2() {
 
   const [color] = useState("prueba");
 
+  async function loginUser(event) {
+    event.preventDefault();
+    const userData = {
+      email: event.target[0].value,
+      password: event.target[1].value,
+    };
 
-  async function loginUser(event){
-    event.preventDefault()
-    const userData = {email : event.target[0].value,
-      password : event.target[1].value,
-    }
+    await axios
+      .post("http://localhost:4000/api/signIn", { userData })
+      .then((response) => displayMessage(response.data));
 
-    await axios.post("http://localhost:4000/api/signin",{userData})
-    .then(response =>//alert(response.data.response)) 
+    function displayMessage(data) {
+      if (!data.success) {
+        console.log(alert(data.error));
+      } else {
+        console.log(data.response);
+      }
 
-
-    displayMessage(response.data)
-  )
-
-
-   function displayMessage(data){
-     if(!data.success){
-      console.log(data.response)
-    } else {
-      console.log(data.response)
+      dispatch({
+        type: actionTypes.USER,
+        user: data.response,
+      });
+      console.log(user);
     }
   }
-}
 
   return (
     <>
@@ -106,44 +112,51 @@ function Navbar2() {
               className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
+
+
+
               <form onSubmit={loginUser}>
-              <div className="col-sm-10 col-md-10 col-lg-10 mb-3 mt-3 m-auto">
-                <label for="exampleInputEmail1" className="form-label">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="form-control bradio"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" className="form-text text-white">
-                  We will not share your email with anyone.
+                <div className="col-sm-10 col-md-10 col-lg-10 mb-3 mt-3 m-auto">
+                  <label htmlFor="exampleInputEmail1" className="form-label">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control bradio"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" className="form-text text-white">
+                    We will not share your email with anyone.
+                  </div>
                 </div>
-              </div>
-              <div className="col-sm-10 col-md-10 col-lg-10 mb-3 m-auto">
-                <label for="exampleInputPassword1" className="form-label">
-                  Password
-                </label>
-                <input
-                  type="password"
-                  className="form-control bradio"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
-                <LinkRouter to="/conexion">
-                <button
-                  type="submit"
-                  className="btn btn-warning text-white bradio5 mt-3"
-                >
-                  Log-in
-                </button>
-                </LinkRouter>
-              </div>
+                <div className="col-sm-10 col-md-10 col-lg-10 mb-3 m-auto">
+                  <label htmlFor="exampleInputPassword1" className="form-label">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    className="form-control bradio"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
+                  <LinkRouter to="">
+                    <button
+                      type="submit"
+                      className="btn btn-warning text-white bradio5 mt-3"
+                    >
+                      Log-in
+                    </button>
+                  </LinkRouter>
+                </div>
+              </form>
+
+              
+
               <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
                 <Login />
-                <Facebook/>
+                <Facebook />
               </div>
               <p className="google col-sm-10 col-md-10 col-lg-10 mt-5 m-auto">
                 You don't have an account?
@@ -156,7 +169,6 @@ function Navbar2() {
                   Sign up
                 </LinkRouter>
               </div>
-              </form>
             </ul>
           </div>
         </div>

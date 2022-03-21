@@ -8,10 +8,12 @@ import Carouselcity from "../carousel/Carouselcity";
 import Like from "../like/Like";
 import Save from "../save/Save"
 
+
 const Ciudad = () => {
 
   const [itineraries, setItineraries] = useState([])
   const [{cities}] = useStateValue ()
+  const [{user}, dispatch] = useStateValue ()
   const {id} = useParams()
   const cityselected = cities.filter(city=> city._id === id)
 
@@ -27,6 +29,22 @@ const Ciudad = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const submitComment = async (event) => {
+    event.preventDefault()
+    console.log (event.target[0].value)
+
+    const dataComments = {
+      itinerary: itineraries._id,
+      message: event.target[0].value,
+      user: user.datosUser.id
+    }
+    console.log (dataComments)
+
+    await axios.post("http://localhost:4000/api/comentarios",{dataComments})
+
+
+  }
 
   return (
 
@@ -92,14 +110,15 @@ const Ciudad = () => {
           </div>
 
           <div className="ciudadcomentario">
-            <input
-              type="text"
+            <form onSubmit={submitComment}>
+            <textarea
+              name="textarea"
               className="form-control form-input col-sm-6 col-md-10 mt-3 bradio"
-              placeholder="Leave your comment..."
-            />{" "}
+              placeholder="Leave your comment...">{" "}</textarea>
             <button type="button" class="btn btn-warning mt-2 bradio2">
               Submit
             </button>
+            </form>
           </div>
         </div>
       </div>

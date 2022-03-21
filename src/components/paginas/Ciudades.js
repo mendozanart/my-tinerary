@@ -2,11 +2,19 @@ import React from "react";
 import plane from "../../img/header/plane.png";
 import {Link as Linkrouter} from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
+import { actionTypes } from "../../reducer";
 
 
 const Ciudades = () => {
 
-  const [{cities}, dispatch] = useStateValue ()
+  const [{filterCity}, dispatch] = useStateValue ()
+
+  const imputSearch = (event) => {
+    dispatch({
+      type: actionTypes.FILTER,
+      value: event.target.value
+    })
+  }
 
   return (
     <div>
@@ -40,6 +48,7 @@ const Ciudades = () => {
                     type="text"
                     className="form-control form-input bradio"
                     placeholder="Search cities, restaurants.."
+                    onChange={imputSearch}
                   />{" "}
                 </div>
                 <div className="bbusqueda col-sm-4 col-md-3 col-lg-5 mt-1">
@@ -65,6 +74,19 @@ const Ciudades = () => {
             America
           </label>
         </div>
+
+        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label className="form-check-label" for="flexSwitchCheckDefault">
+            Africa
+          </label>
+        </div>
+
 
         <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
           <input
@@ -109,7 +131,7 @@ const Ciudades = () => {
 
           
 <div className="allcities">
-                { cities.map((city)=> {
+                { filterCity?.map((city)=> {
                     return(
                 <div>
                     <div className="content m-4">

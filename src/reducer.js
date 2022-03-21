@@ -2,13 +2,15 @@
 export const initialState = {
     cities:[],
     itineraries:[],
-    user:[]
+    user:null,
+    filterCity:[]
 }
 
 export const actionTypes = {
     CITIESDB: "CITIESDB",
     ITINERARIESDB : "ITINERARIESDB",
-    USER:"USER"
+    USER:"USER",
+    FILTER:"FILTER"
 }
 
 const reducer = (state, action) => {
@@ -17,7 +19,8 @@ const reducer = (state, action) => {
         case "CITIESDB":
             return {
                 ...state,
-                cities: action.cities
+                cities: action.cities, 
+                filterCity: action.cities
             }
             case "ITINERARIESDB":
                 return {
@@ -29,6 +32,12 @@ const reducer = (state, action) => {
                         ...state,
                         user: action.user
                     }
+                    case "FILTER":
+                        const filterCity = state.cities.filter(city=>city.city.toLowerCase().startsWith(action.value.toLowerCase().trim()))
+                        return {
+                            ...state,
+                            filterCity: filterCity
+                        }
 
 
         default: return state

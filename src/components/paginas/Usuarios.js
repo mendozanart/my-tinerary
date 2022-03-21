@@ -33,6 +33,8 @@ const Usuarios = () => {
    }
   }
 
+  
+
 
 
   return (
@@ -60,7 +62,7 @@ const Usuarios = () => {
         <div className="formulario col-sm-10 col-md-10 col-lg-10 m-auto">
           <form onSubmit={NewUser}>
             <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
-              <label for="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputEmail1" className="form-label">
                 Email
               </label>
               <input
@@ -77,7 +79,7 @@ const Usuarios = () => {
               </div>
             </div>
             <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
-              <label for="exampleInputName1" className="form-label">
+              <label htmlFor="exampleInputName1" className="form-label">
                 Name
               </label>
               <input
@@ -87,7 +89,7 @@ const Usuarios = () => {
               />
             </div>
             <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
-              <label for="exampleInputLastName1" className="form-label">
+              <label htmlFor="exampleInputLastName1" className="form-label">
                 {" "}
                 Last Name
               </label>
@@ -98,24 +100,13 @@ const Usuarios = () => {
               />
             </div>
             <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
-              <label for="exampleInputPassword1" className="form-label">
+              <label htmlFor="exampleInputPassword1" className="form-label">
                 Password
               </label>
               <input
                 type="password"
                 className="form-control bradio col-sm-10 col-md-10 col-lg-10"
                 id="exampleInputPassword1"
-              />
-            </div>
-            <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
-              <label for="exampleInputRPassword1" className="form-label">
-                {" "}
-                Repeat Password
-              </label>
-              <input
-                type="rpassword"
-                className="form-control bradio col-sm-10 col-md-10 col-lg-10"
-                id="exampleInputRPassword1"
               />
             </div>
             <div className="btnsign">

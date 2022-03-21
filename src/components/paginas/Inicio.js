@@ -41,30 +41,6 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div class="container motorb col-sm-8 col-md-10 col-lg-10 mb-5 mt-5 m-auto">
-        <div className="row height d-flex justify-content-center align-items-center">
-          <div className="col-sm-4 col-md-10 col-lg-5">
-            <div className="form">
-              {" "}
-              <i className="fa fa-search"></i>{" "}
-              <div className="mbusqueda">
-                <div className="">
-                  <input
-                    type="text"
-                    className="form-control form-input bradio"
-                    placeholder="Search cities, restaurants.."
-                  />{" "}
-                </div>
-                <div className="bbusqueda col-sm-4 col-md-3 col-lg-5 mt-1">
-                  <button type="button" class="btn btn-warning bradio2">
-                    let's go!
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 infobanners">
         <div className="infocard col-sm-2 col-md-2 col-lg-3 m-5">
