@@ -11,6 +11,8 @@ import Save from "../save/Save"
 
 const Ciudad = () => {
 
+  const [comments, setComments] = useState ()
+
   const [itineraries, setItineraries] = useState([])
   const [{cities}] = useStateValue ()
   const [{user}, dispatch] = useStateValue ()
@@ -42,9 +44,17 @@ const Ciudad = () => {
     console.log (dataComments)
 
     await axios.post("http://localhost:4000/api/comentarios",{dataComments})
-
+    .then(response => setComments(response.data.response.comment))
 
   }
+
+  useEffect(() => {
+    let id = itineraries._id
+    axios.get("http://localhost:4000/api/comentarios",{id})
+    .then(response=> setComments(response.data.response.comment)
+      )
+    },[]);
+
 
   return (
 
@@ -95,6 +105,8 @@ const Ciudad = () => {
 
         <Carouselcity itinerarie = {itinerarie}/>
 
+        {comments?.map(item =>
+
         <div className="usuariocity mt-4">
             <div className="icousuario">
               <img
@@ -104,10 +116,12 @@ const Ciudad = () => {
               />
             </div>
             <div className="txtusuario2">
-              <div><h6><strong>Natalie Burgess </strong>| January 3, 2022</h6></div>
-              <div className="txt1"><p>Amazing Experience! Will bring my family back!</p></div>
+              <div><h6><strong>{item.user.firstname} {item.user.lastname}</strong>| January 3, 2022</h6></div>
+              <div className="txt1"><p>{item.comment}</p></div>
             </div>
           </div>
+
+)}
 
           <div className="ciudadcomentario">
             <form onSubmit={submitComment}>

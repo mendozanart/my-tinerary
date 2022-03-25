@@ -56,7 +56,6 @@ const usersController = {
         try {
             const usuarioExiste = await User.findOne({email})
             if (usuarioExiste){
-                res.json({success:false,response:"User already exist. Please sign in."})
                 if(from!=="signup") {
                     const passwordHash = bcryptjs.hashSync(password,10)
                     usuarioExiste.password = passwordHash
@@ -153,4 +152,6 @@ const usersController = {
     }
     
 
+
+    
 module.exports = usersController
