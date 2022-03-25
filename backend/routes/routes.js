@@ -5,7 +5,7 @@ const comentariosController = require ("../controlers/comentariosControllers.js"
 const usersControllers = require("../controlers/usersControllers.js")
 const validator = require("../controlers/validator.js")
 const {ObtenerDatos} = citiesController //destructuracion del controlador
-const {cargaComentarios} = comentariosController
+const {cargaComentarios, obtenerComentarios} = comentariosController
 const {ObtenerItinerarios} = itinerariesController
 const {nuevoUsuario, verifyEmail, accesoUsuario, cerrarSesion } = usersControllers
 
@@ -29,6 +29,8 @@ Router.route("/signOut") //url de consulta
 
 Router.route("/comentarios") //url de consulta
 .post(cargaComentarios)
+.get(obtenerComentarios)
+
 
 
 module.exports = Router

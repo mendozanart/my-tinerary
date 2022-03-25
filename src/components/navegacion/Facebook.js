@@ -37,7 +37,7 @@ return(
     <div className='google mt-3'>
 <FacebookLogin
     appId="1686526751789048"
-    autoLoad={true}
+    autoLoad={false}
     fields="name,email,picture"
     callback={responseFacebook} />
     </div>

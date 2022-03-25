@@ -15,10 +15,40 @@ const commentControllers = {
     new Comments ({
         title: itinerary,
         user: user,
-        comment: comment,
-    })
+        comment: message,
+    }).save()
 
-}
+    let comentario
+
+    try {
+        comentario = await Comments.find({title:itinerary}).populate("user")
+    } catch (error) {
+        console.log(error)
+    }
+
+    res.json({success:true, response:{comentario}})
+
+},
+
+
+    obtenerComentarios: async (req, res) => {
+
+        let {id} = req.body.id;
+
+        let comentario
+
+    try {
+        comentario = await Comments.find({title:id}).populate("user")
+    } catch (error) {
+        console.log(error)
+    }
+
+    res.json({success:true, response:{comentario}})
+
+    }
+
+
+    
 
 }
 
