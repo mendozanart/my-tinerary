@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkRouter, useNavigate } from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
-import Login from "./Login";
-import Facebook from "../navegacion/Facebook";
+import Desconected from "../navbar/Desconected";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 
@@ -23,16 +22,23 @@ function Navbar2() {
 
   const [color] = useState("prueba");
 
+  const navigate = useNavigate();
+
   async function loginUser(event) {
+    console.log("evento", event);
     event.preventDefault();
     const userData = {
       email: event.target[0].value,
       password: event.target[1].value,
     };
+    console.log("userdata", userData);
 
     await axios
       .post("http://localhost:4000/api/signIn", { userData })
-      .then((response) => displayMessage(response.data));
+      .then((response) => {
+        displayMessage(response.data);
+        navigate("conexion");
+      });
 
     function displayMessage(data) {
       if (!data.success) {
@@ -104,73 +110,17 @@ function Navbar2() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <LinkRouter to="/usuarios">
-                <img src={person} width="35" alt="logo" />
-              </LinkRouter>
+              <img src={person} width="35" alt="logo" />
             </button>
             <ul
               className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
-
-
-
-              <form onSubmit={loginUser}>
-                <div className="col-sm-10 col-md-10 col-lg-10 mb-3 mt-3 m-auto">
-                  <label htmlFor="exampleInputEmail1" className="form-label">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control bradio"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                  <div id="emailHelp" className="form-text text-white">
-                    We will not share your email with anyone.
-                  </div>
-                </div>
-                <div className="col-sm-10 col-md-10 col-lg-10 mb-3 m-auto">
-                  <label htmlFor="exampleInputPassword1" className="form-label">
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    className="form-control bradio"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-                <div className="blogin col-sm-10 col-md-10 col-lg-10 mb-1">
-                  <LinkRouter to="">
-                    <button
-                      type="submit"
-                      className="btn btn-warning text-white bradio5 mt-3"
-                    >
-                      Log-in
-                    </button>
-                  </LinkRouter>
-                </div>
-              </form>
-
-              
-
-              <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
-                <Login />
-                <Facebook />
-              </div>
-              <p className="google col-sm-10 col-md-10 col-lg-10 mt-5 m-auto">
-                You don't have an account?
-              </p>
-              <div className="blogin2 m-auto mb-3 col-10">
-                <LinkRouter
-                  className="btn btn-warning col-sm-10 col-md-10 col-lg-10 bradio5 text-white mt-2 "
-                  to="/usuarios"
-                >
-                  Sign up
-                </LinkRouter>
-              </div>
+              <Desconected />
             </ul>
           </div>
+
+          
         </div>
       </nav>
     </>

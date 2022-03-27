@@ -36,7 +36,7 @@ const Ciudades = () => {
         </div>
       </div>
 
-      <div class="container motorb col-sm-10 col-md-10 col-lg-10 mb-5 mt-5 m-auto">
+      <div className="container motorb col-sm-10 col-md-10 col-lg-10 mb-5 mt-5 m-auto">
         <div className="row height d-flex justify-content-center align-items-center">
           <div className="col-sm-1 col-md-10 col-lg-5">
             <div className="form">
@@ -52,7 +52,7 @@ const Ciudades = () => {
                   />{" "}
                 </div>
                 <div className="bbusqueda col-sm-4 col-md-3 col-lg-5 mt-1">
-                  <button type="button" class="btn btn-warning bradio2">
+                  <button type="button" className="btn btn-warning bradio2">
                     let's go!
                   </button>
                 </div>
