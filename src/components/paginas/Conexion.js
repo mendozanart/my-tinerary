@@ -2,16 +2,21 @@ import React from "react";
 import axios from "axios";
 import conexion from "../../img/header/conexion1.png";
 import { useStateValue } from "../../StateProvider";
+import { useNavigate } from 'react-router-dom';
 
 const Conexion = () => {
   const [{ user }, dispatch] = useStateValue();
+  const navigate = useNavigate();
 
   async function cerrarSesion() {
     const email = user.datosUser.email;
     console.log(email);
     await axios
       .post("http://localhost:4000/api/signOut", { email })
-      .then((response) => console.log(response));
+      .then((response) => {
+        console.log(response);
+        navigate('/');
+      });
   }
 
   return (
@@ -58,7 +63,7 @@ const Conexion = () => {
             Here you can find a list of your favorites itineraries. Do you want
             to take a trip?
           </p>
-          <a href="#" class="btn btn-warning bradio2">
+          <a href="#" className="btn btn-warning bradio2">
             Find a new place to go!
           </a>
         </div>

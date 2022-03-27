@@ -129,7 +129,7 @@ const Ciudad = () => {
               name="textarea"
               className="form-control form-input col-sm-6 col-md-10 mt-3 bradio"
               placeholder="Leave your comment...">{" "}</textarea>
-            <button type="button" class="btn btn-warning mt-2 bradio2">
+            <button type="button" className="btn btn-warning mt-2 bradio2">
               Submit
             </button>
             </form>
