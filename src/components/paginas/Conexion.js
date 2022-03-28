@@ -3,6 +3,7 @@ import axios from "axios";
 import conexion from "../../img/header/conexion1.png";
 import { useStateValue } from "../../StateProvider";
 import { useNavigate } from 'react-router-dom';
+import { actionTypes } from "../../reducer";
 
 const Conexion = () => {
   const [{ user }, dispatch] = useStateValue();
@@ -13,9 +14,16 @@ const Conexion = () => {
     console.log(email);
     await axios
       .post("http://localhost:4000/api/signOut", { email })
-      .then((response) => {
+      .then(response => {
         console.log(response);
         navigate('/');
+
+        localStorage.removeItem("token")
+        dispatch({
+          type:actionTypes.USER,
+          user:null
+        })
+
       });
   }
 

@@ -28,8 +28,27 @@ function App() {
         cities : response.data.response.cities
       }));
 
+      if (localStorage.getItem("token")!==null) {
+        const token = localStorage.getItem("token")
+          axios.get("http://localhost:4000/api/signInToken", {
+          headers:{
+            'Authorization':'Bearer ' + token
+          }
+        })
 
-      },[]);
+        .then(user=>{
+          if (user.data.success) {
+            dispatch({
+              type:actionTypes.USER,
+              user:user.data.respuesta
+            })
+          }else {
+            localStorage.removeItem("token")
+        }
+
+      })
+
+  }},[]);
 
 
 

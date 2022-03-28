@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { Link as LinkRouter } from "react-router-dom";
+import axios from "axios";
+import { Link as LinkRouter} from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
-import Desconected from "../navbar/Desconected";
-
+import Disconnected from "../navbar/Disconnected";
+import Connected from "../navbar/Connected";
+import { actionTypes } from "../../reducer";
+import { useStateValue } from "../../StateProvider";
 
 function Navbar2() {
-
+  const [{ user }, dispatch] = useStateValue();
 
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
@@ -21,6 +24,35 @@ function Navbar2() {
   const [color] = useState("prueba");
 
 
+  async function loginUser(event) {
+    console.log("evento", event);
+    event.preventDefault();
+    const userData = {
+      email: event.target[0].value,
+      password: event.target[1].value,
+    };
+    console.log("userdata", userData);
+
+    await axios
+      .post("http://localhost:4000/api/signIn", { userData })
+      .then((response) => {
+        displayMessage(response.data);
+      });
+
+    function displayMessage(data) {
+      if (!data.success) {
+        console.log(alert(data.error));
+      } else {
+        console.log(data.response);
+      }
+
+      dispatch({
+        type: actionTypes.USER,
+        user: data.response,
+      });
+      console.log(user);
+    }
+  }
 
   return (
     <>
@@ -83,11 +115,12 @@ function Navbar2() {
               className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
-              <Desconected />
+              <Disconnected />
+
             </ul>
           </div>
 
-
+          
         </div>
       </nav>
     </>

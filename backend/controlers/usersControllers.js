@@ -121,16 +121,16 @@ const usersController = {
                 }else {
                     if(usuario.emailVerificado){
                         let passwordCoincide = bcryptjs.compareSync(password,usuario.password)
-                        if (passwordCoincide){
-                            const token = jwt.sign({...usuario}, process.env.SECRETKEY)
+                        if (passwordCoincide){    
                             const datosUser = {
                                 firstname : usuario.firstname,
                                 lastname : usuario.lastname,
                                 email : usuario.email,
-                                id : usuario._id
+                                id : usuario._id,
                             }
                         usuario.connected = true
                         await usuario.save()
+                        const token = jwt.sign({...datosUser}, process.env.SECRETKEY,{expiresIn:60*60*24})
                         res.json({success:true,from:"controller",response:{token,datosUser}})
                         }
                         else {res.json({success:false, from:"controller", error:"Wrong username or password"})}
@@ -148,9 +148,26 @@ const usersController = {
             user.connected = false
             await user.save()
             res.json({success:true, response: "Closed session"})
+        },
+
+
+        verificarToken: async (req,res) =>{
+            if (!req.error) {
+                res.json({success:true, 
+                    respuesta: {
+                    firstname: req.user.firstname,
+                    lastname: req.user.lastname,
+                    email: req.user.email,
+                    id: req.user.id}, response:"Welcome back " + req.user.firstname})
+            }else{
+                res.json({success:false, response:"Please Signin Again."})
+            }
         }
+
+
     }
     
+
 
 
     

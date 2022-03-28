@@ -13,9 +13,9 @@ const commentControllers = {
     console.log(req.body.dataComments)
 
     new Comments ({
-        title: itinerary,
+        itinerario: itinerary,
         user: user,
-        comment: message,
+        mensaje: message,
     }).save()
 
     let comentario
@@ -33,7 +33,8 @@ const commentControllers = {
 
     obtenerComentarios: async (req, res) => {
 
-        let {id} = req.body.id;
+        console.log(req.body)
+        let id = req.params.id;
 
         let comentario
 
@@ -49,6 +50,7 @@ const commentControllers = {
 
 
     
+
 
 }
 
