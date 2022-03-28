@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link as LinkRouter, useNavigate } from "react-router-dom";
+import { Link as LinkRouter} from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
-import Desconected from "../navbar/Desconected";
+import Disconnected from "../navbar/Disconnected";
+import Connected from "../navbar/Connected";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 
@@ -22,7 +23,6 @@ function Navbar2() {
 
   const [color] = useState("prueba");
 
-  const navigate = useNavigate();
 
   async function loginUser(event) {
     console.log("evento", event);
@@ -37,7 +37,6 @@ function Navbar2() {
       .post("http://localhost:4000/api/signIn", { userData })
       .then((response) => {
         displayMessage(response.data);
-        navigate("conexion");
       });
 
     function displayMessage(data) {
@@ -116,7 +115,8 @@ function Navbar2() {
               className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
-              <Desconected />
+              <Disconnected />
+
             </ul>
           </div>
 
