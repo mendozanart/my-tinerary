@@ -155,10 +155,11 @@ const usersController = {
             if (!req.error) {
                 res.json({success:true, 
                     respuesta: {
+                    datosUser:{
                     firstname: req.user.firstname,
                     lastname: req.user.lastname,
                     email: req.user.email,
-                    id: req.user.id}, response:"Welcome back " + req.user.firstname})
+                    id: req.user.id}}, response:"Welcome back " + req.user.firstname})
             }else{
                 res.json({success:false, response:"Please Signin Again."})
             }

@@ -5,18 +5,31 @@ import usuario from "../../img/persons/usuario.jpg";
 
 
 const Comments = (props) => {
-
+  
+  var date = useState()
   const [comments, setComments] = useState ()
   const [{ user }, dispatch] = useStateValue();
   const [reload, setReload] = useState(false)
   const submitComment = async (event) => {
     event.preventDefault();
 
+    function fecha() {
+      var registro = new Date()
+      var dia = registro.getDate()
+      var mes = registro.getMonth() +1
+      var year = registro.getFullYear()
+      date = mes + "." + dia + "." + year
+    }
+
+    fecha()
     const dataComments = {
         title: props.itinerario,
         message: event.target[0].value,
-        user: user.datosUser.id
+        user: user.datosUser.id,
+        date:date
       };
+
+
 
       await axios.post("http://localhost:4000/api/comentarios",{dataComments})
       .then(response=>setComments(response.data.response.comentario))
@@ -32,9 +45,11 @@ const Comments = (props) => {
       )
     },[reload]);
 
+    console.log(comments)
+
   return (
     <div>
-
+      
       {comments?.map(item=> 
       <div className="usuariocity mt-4">
         <div className="icousuario">
@@ -43,11 +58,11 @@ const Comments = (props) => {
         <div className="txtusuario2">
           <div>
             <h6>
-              <strong>Ana Mendoza </strong>| January 3, 2022
+              <strong>{item.user.firstname} {item.user.lastname} </strong>| {item.date}
             </h6>
           </div>
           <div className="txt1">
-            <p>{item.comment}</p>
+            <p>{item.mensaje}</p>
           </div>
         </div>
       </div>

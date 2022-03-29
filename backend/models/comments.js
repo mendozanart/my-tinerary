@@ -2,9 +2,10 @@ const mongoose = require("mongoose")
 
 const commentsSchema = new mongoose.Schema ({
 
-    itinerario: {type:mongoose.Types.ObjectId, ref:"Itineraries", require:true},
+    title: {type:mongoose.Types.ObjectId, ref:"Itineraries", require:true},
     user:{type:mongoose.Types.ObjectId, ref:"Users", require:true},
-    comment: {type:String, require:true},
+    mensaje: {type:String, require:true},
+    date: {type:String, require:true},
 })
 
 const Comment = mongoose.model("Comments",commentsSchema)
