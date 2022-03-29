@@ -9,19 +9,20 @@ const commentControllers = {
 
     cargaComentarios:async(req,res)=>{
 
-    let {itinerary, message, user} = req.body.dataComments;
+    let {title, message, user,date} = req.body.dataComments;
     console.log(req.body.dataComments)
 
     new Comments ({
-        itinerario: itinerary,
+        title: title,
         user: user,
         mensaje: message,
+        date:date
     }).save()
 
     let comentario
 
     try {
-        comentario = await Comments.find({title:itinerary}).populate("user")
+        comentario = await Comments.find({title:title}).populate("user")
     } catch (error) {
         console.log(error)
     }
@@ -29,6 +30,7 @@ const commentControllers = {
     res.json({success:true, response:{comentario}})
 
 },
+
 
 
     obtenerComentarios: async (req, res) => {
