@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import plane from "../../img/header/plane.png";
 import {Link as Linkrouter} from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
@@ -7,14 +7,25 @@ import { actionTypes } from "../../reducer";
 
 const Ciudades = () => {
 
+  const [{cities}] = useStateValue ()
   const [{filterCity}, dispatch] = useStateValue ()
+
+  //useEffect(() => {
+  //  window.scrollTo(0, 0);
+  //  dispatch({
+  //    type: actionTypes.CITIESDB,
+  //    citiesNew: cities
+  //  })
+  //}, [])
+
 
   const imputSearch = (event) => {
     dispatch({
       type: actionTypes.FILTER,
-      value: event.target.value
+      value: event.target.value,
     })
   }
+
 
   return (
     <div>
