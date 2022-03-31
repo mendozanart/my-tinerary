@@ -116,7 +116,7 @@ function Navbar2() {
               aria-labelledby="dropdownMenuButton1"
             >
               <Disconnected />
-
+              <Connected/>
             </ul>
           </div>
 

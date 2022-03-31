@@ -48,10 +48,46 @@ const commentControllers = {
 
     res.json({success:true, response:{comentario}})
 
+    },
+
+    borrarComentario: async (req, res) => {
+
+        console.log(req.body)
+        let id = req.params.id;
+
+        let comentario
+
+    try {
+        comentario = await Comments.findOneAndDelete({_id:id})
+    } catch (error) {
+        console.log(error)
+    }
+
+    res.json({success:true, response:{comentario}, message:"The comment has been deleted."})
+
+    },
+
+    modificarComentario: async (req, res) => {
+
+        console.log(req.body)
+        let id = req.params.id;
+        console.log(req.body)
+        let newComments = {comment:req.body.data};
+
+        let comentario
+
+    try {
+        comentario = await Comments.findOneAndUpdate({_id:id}, newComments)
+    } catch (error) {
+        console.log(error)
+    }
+
+    res.json({success:true, response:{comentario}, message:"The comment has been modified."})
+
     }
 
 
-    
+
 
 
 }

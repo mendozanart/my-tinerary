@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { useStateValue } from "../../StateProvider";
 import usuario from "../../img/persons/usuario.jpg";
+import dots from "../../img/icons/dots.png";
+
 
 
 const Comments = (props) => {
@@ -10,6 +12,7 @@ const Comments = (props) => {
   const [comments, setComments] = useState ()
   const [{ user }, dispatch] = useStateValue();
   const [reload, setReload] = useState(false)
+  const [cambio, setCambio] = useState();
   const submitComment = async (event) => {
     event.preventDefault();
 
@@ -20,6 +23,7 @@ const Comments = (props) => {
       var year = registro.getFullYear()
       date = mes + "." + dia + "." + year
     }
+
 
     fecha()
     const dataComments = {
@@ -37,13 +41,32 @@ const Comments = (props) => {
   };
 
 
-
   useEffect(() => {
     let id = props.itinerario
     axios.get(`http://localhost:4000/api/comentarios/${id}`)
     .then(response=> setComments(response.data.response.comentario)
       )
     },[reload]);
+
+
+
+    const borrarComentario = async (id) =>{
+      axios.delete(`http://localhost:4000/api/comentarios/${id}`)
+      setReload(!reload)
+    }
+
+    const handleChange = (event) => {
+      setCambio(event.target.value)
+    }
+    
+    const modificar = async (id) =>{
+      console.log(id)
+      console.log(cambio)
+      let data = cambio
+      axios.put(`http://localhost:4000/api/comentarios/${id}`,{data})
+      .then(response=>console.log(response))
+      setReload(!reload)
+    }
 
     console.log(comments)
 
@@ -62,9 +85,32 @@ const Comments = (props) => {
             </h6>
           </div>
           <div className="txt1">
-            <p>{item.mensaje}</p>
+
+            <input className="cinput" onKeyUp={handleChange} defaultValue={item.mensaje}></input>
+
           </div>
         </div>
+
+        <div className="dropdown">
+            <button
+              className="btn btn-transparency"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src={dots} width="25" alt="logo" />
+            </button>
+            <ul
+              className="dropdown-menu"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li><button onChange={()=>modificar(item._id)} type="button" className="btn" aria-label="modif">Modify</button></li>
+              <li><button onClick={()=>borrarComentario(item._id)} type="button" className="btn" aria-label="eli">Eliminate</button></li>
+            </ul>
+          </div>
+
+
       </div>
 
       )}
@@ -72,6 +118,7 @@ const Comments = (props) => {
       <div className="ciudadcomentario">
         <form onSubmit={submitComment}>
           <textarea
+            type="submit"
             name="textarea"
             className="form-control form-input col-sm-6 col-md-10 mt-3 bradio"
             placeholder="Leave your comment..."

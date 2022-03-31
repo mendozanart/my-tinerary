@@ -1067,6 +1067,10 @@ code {
     margin-left: 30%;
   }
 
+.cinput{
+  
+}
+
 
 
   /* *********************** cards  ***************************/
@@ -1248,6 +1252,8 @@ code {
 .prueba{
   background-color:transparent;
 }
+
+
 
 
 
@@ -1645,6 +1651,14 @@ border-radius: 4vh !important;
   font-size: 50px;
 }
 
+.signupfacebook{
+  margin-left: 40vw !important;
+}
+
+.signupfacebookbtn{
+  margin-left: 8vw !important;
+  margin-bottom: 8vh !important;
+}
 
 
 /* *********************** footer  ***************************/
