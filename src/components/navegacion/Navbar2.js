@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import axios from "axios";
 import { Link as LinkRouter} from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
+import usuario from "../../img/persons/usuario.jpg";
 import Disconnected from "../navbar/Disconnected";
 import Connected from "../navbar/Connected";
 import { actionTypes } from "../../reducer";
@@ -101,6 +102,8 @@ function Navbar2() {
             </ul>
           </div>
 
+          {!user ? 
+          
           <div className="dropdown dropstart">
             <button
               className="btn btn-transparency dropstart"
@@ -115,10 +118,34 @@ function Navbar2() {
               className="navd dropdown-menu dropstart"
               aria-labelledby="dropdownMenuButton1"
             >
-              <Disconnected />
-              <Connected/>
+            <Disconnected /> 
             </ul>
           </div>
+
+
+              : 
+              
+              <div className="dropdown dropstart">
+            <button
+              className="btn btn-transparency dropstart"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src={usuario} className="icousuario d-block w-100" width="35" alt="logo" />
+            </button>
+            <ul
+              className="navd dropdown-menu dropstart"
+              aria-labelledby="dropdownMenuButton1"
+            > 
+            <Connected/>
+            </ul>
+          </div>
+
+
+            }
+
 
           
         </div>
