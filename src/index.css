@@ -55,7 +55,7 @@ code {
   
   .bradio8{
     border-radius: 5vw;
-    margin-left: 17vw !important;
+    margin-left: 14vw !important;
   }
   
   .connectedtext{
@@ -304,6 +304,15 @@ code {
       .btnsign {
         margin-left: 17vw;
       }
+
+      .signupfacebook{
+        margin-left: 40vw !important;
+      }
+      
+      .signupfacebookbtn{
+        margin-left: 8vw !important;
+        margin-bottom: 8vh !important;
+      }
       
 
 
@@ -550,7 +559,7 @@ code {
   
   .bradio8{
     border-radius: 5vw;
-    margin-left: 8vw !important;
+    margin-left: 7vw !important;
   }
   
   .connectedtext{
@@ -798,7 +807,15 @@ code {
     .btnsign {
       margin-left: 17vw;
     }
+
+    .signupfacebook{
+      margin-left: 40vw !important;
+    }
     
+    .signupfacebookbtn{
+      margin-left: 8vw !important;
+      margin-bottom: 8vh !important;
+    }
 
 
 /*************************** ciudad **************************************/
@@ -1241,7 +1258,7 @@ code {
 
 .bradio8{
   border-radius: 5vw;
-  margin-left: 5vw;
+  margin-left: 4vw;
 }
 
 .connectedtext{
@@ -1260,8 +1277,8 @@ code {
 /* *********************** header ***************************/
 
 .banner-image{
-  background: rgb(255,163,34);
-  background: linear-gradient(90deg, rgba(255,163,34,1) 0%, rgba(255,204,34,1) 62%); 
+  background: rgb(255,193,7);
+  background: linear-gradient(228deg, rgba(255,193,7,1) 0%, rgba(255,193,7,1) 100%); 
   background-size: cover;
   max-height: 100vh;
 }

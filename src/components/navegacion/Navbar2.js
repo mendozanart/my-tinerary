@@ -25,43 +25,14 @@ function Navbar2() {
   const [color] = useState("prueba");
 
 
-  async function loginUser(event) {
-    console.log("evento", event);
-    event.preventDefault();
-    const userData = {
-      email: event.target[0].value,
-      password: event.target[1].value,
-    };
-    console.log("userdata", userData);
-
-    await axios
-      .post("http://localhost:4000/api/signIn", { userData })
-      .then((response) => {
-        displayMessage(response.data);
-      });
-
-    function displayMessage(data) {
-      if (!data.success) {
-        console.log(alert(data.error));
-      } else {
-        console.log(data.response);
-      }
-
-      dispatch({
-        type: actionTypes.USER,
-        user: data.response,
-      });
-      console.log(user);
-    }
-  }
-
   return (
     <>
       <nav
         className={
           colorChange
             ? "navbar navbar-expand-lg navbar-dark bg-warning fixed-top"
-            : "colorChange navbar navbar-expand-lg navbar-light fixed-top"
+            : "navbar navbar-expand-lg navbar-dark bg-warning fixed-top"
+            //"colorChange navbar navbar-expand-lg navbar-light fixed-top"
         }
       >
         <div className="container-fluid">
@@ -80,7 +51,7 @@ function Navbar2() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className={"collapse navbar-collapse" + color}
+            className={"collapse navbar-collapse"}
             id="navbarNavDropdown"
           >
             <ul className="navbar-nav m-auto">
@@ -112,7 +83,7 @@ function Navbar2() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <img src={person} width="35" alt="logo" />
+              <img src={person} width="50" alt="logo" />
             </button>
             <ul
               className="navd dropdown-menu dropstart"
@@ -133,7 +104,7 @@ function Navbar2() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <img src={usuario} className="icousuario d-block w-100" width="35" alt="logo" />
+              <img src={usuario} className="icousuario" width="35" alt="logo" />
             </button>
             <ul
               className="navd dropdown-menu dropstart"
