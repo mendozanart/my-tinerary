@@ -51,6 +51,7 @@ const Comments = (props) => {
 
 
     const borrarComentario = async (id) =>{
+      console.log("borrarid", id)
       axios.delete(`http://localhost:4000/api/comentarios/${id}`)
       setReload(!reload)
     }
@@ -60,11 +61,11 @@ const Comments = (props) => {
     }
     
     const modificar = async (id) =>{
-      console.log(id)
-      console.log(cambio)
+      console.log("id",id)
+      console.log("cambio",cambio)
       let data = cambio
       axios.put(`http://localhost:4000/api/comentarios/${id}`,{data})
-      .then(response=>console.log(response))
+      .then(response=>console.log("resmodificar",response))
       setReload(!reload)
     }
 
@@ -105,7 +106,7 @@ const Comments = (props) => {
               className="dropdown-menu"
               aria-labelledby="dropdownMenuButton1"
             >
-              <li><button onChange={()=>modificar(item._id)} type="button" className="btn" aria-label="modif">Modify</button></li>
+              <li><button onClick={()=>modificar(item._id)} type="button" className="btn" aria-label="modif">Modify</button></li>
               <li><button onClick={()=>borrarComentario(item._id)} type="button" className="btn" aria-label="eli">Eliminate</button></li>
             </ul>
           </div>
