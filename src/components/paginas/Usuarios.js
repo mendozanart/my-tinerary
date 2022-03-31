@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import registro from "../../img/header/registro.png";
+import Facebook from "../navegacion/Facebook";
 
 const Usuarios = () => {
   
@@ -120,6 +121,16 @@ const Usuarios = () => {
           </form>
         </div>
       </div>
+      
+      <div>
+      <div>
+      <p className="signupfacebook">Signup with your Facebook account</p>
+      </div>
+      <div className="col-sm-10 col-md-10 col-lg-10 signupfacebookbtn">
+            <Facebook />
+            </div>
+      </div>
+
     </div>
   );
 };

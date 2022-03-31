@@ -82,8 +82,6 @@ const Disconnected = () => {
       </form>
 
       <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
-        <Login />
-        <Facebook />
       </div>
       <p className="google col-sm-10 col-md-10 col-lg-10 mt-5 m-auto">
         You don't have an account?
