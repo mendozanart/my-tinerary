@@ -72,7 +72,7 @@ const commentControllers = {
         console.log(req.body)
         let id = req.params.id;
         console.log(req.body)
-        let newComments = {comment:req.body.data};
+        let newComments = {mensaje:req.body.data};
 
         let comentario
 
