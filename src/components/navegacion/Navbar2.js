@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { Link as LinkRouter} from "react-router-dom";
 import logo from "../../img/logo.png";

@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Link as LinkRouter} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
@@ -32,7 +33,7 @@ const Connected = () => {
     <div>
       <div className="col-sm-10 col-md-10 col-lg-10 mb-3 mt-3 m-auto">
         <p className="connectedtext">Ana, welcome to your account!</p>
-        <button type="button" className="btn btn-outline-warning bradio8">Your Page</button>
+        <LinkRouter to="/conexion"><button type="button" className="btn btn-outline-warning bradio8">Your Page</button></LinkRouter>
         <button type="button" className="btn btn-warning bradio7" onClick={() => cerrarSesion()}>Log out</button>
       </div>
     </div>
