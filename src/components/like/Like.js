@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import Icon from "../like/Icon"
 import Text from "../like/Text"
@@ -8,8 +9,8 @@ export default class Like extends React.Component {
         this.state = {
             isLiked : false,
         }
-        
     }
+
 
     buttonLike = () => {
         this.setState({
@@ -17,7 +18,18 @@ export default class Like extends React.Component {
         })
     }
 
-    render () {
+
+    render (props) {
+
+        //const [{ user }, dispatch] = useStateValue();
+
+
+
+        //const likeDislike= async ()=>{
+        //await axios.put(`http://localhost:4000/api//likesDislike/${user.id}`)
+        //}
+
+        
         return (
             <div>
                 <div className="likes">
@@ -27,5 +39,6 @@ export default class Like extends React.Component {
             </div>
         )
     }
+
 
 }
