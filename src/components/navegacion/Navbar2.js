@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link as LinkRouter} from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
-import usuario from "../../img/persons/usuario.jpg";
+import avatar from "../../img/persons/avatar1.png";
 import Disconnected from "../navbar/Disconnected";
 import Connected from "../navbar/Connected";
 import { useStateValue } from "../../StateProvider";
@@ -102,7 +102,7 @@ function Navbar2() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <img src={usuario} className="icousuario" width="35" alt="logo" />
+              <img src={avatar} className="icousuario" width="35" alt="logo" />
             </button>
             <ul
               className="navd dropdown-menu dropstart"

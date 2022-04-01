@@ -10,7 +10,7 @@ const responseFacebook = async (response) => {
   const NuevoUsuario = {email : response.email,
     firstname : response.name,
     lastname : "facebook",
-    password : response.id + "Ab",
+    password : response.id + "aB",
     from : "Facebook",
   }
 

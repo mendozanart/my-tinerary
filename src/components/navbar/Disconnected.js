@@ -1,8 +1,6 @@
 import React from "react";
 import axios from "axios";
 import { Link as LinkRouter, useNavigate } from "react-router-dom";
-import Login from "../navegacion/Login";
-import Facebook from "../navegacion/Facebook";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 import FacebookLogin from 'react-facebook-login';
@@ -12,8 +10,34 @@ const Disconnected = () => {
 
   const navigate = useNavigate();
 
-  const responseFacebook = (response) =>{
+  const responseFacebook = async (response) =>{
     console.log(response)
+    const userData = {
+      email: response.email,
+      password: response.id + "aB",
+    };
+    console.log("userdata", userData);
+
+    await axios
+      .post("http://localhost:4000/api/signIn", { userData })
+      .then((response) => {
+        displayMessage(response.data);
+        navigate("/");
+      });
+
+    function displayMessage(data) {
+      if (!data.success) {
+        console.log(alert(data.error));
+      } else {
+        //console.log(data.response);
+        localStorage.setItem("token", data.response.token)
+      }
+
+      dispatch({
+        type: actionTypes.USER,
+        user: data.response,
+      });
+    }
   }
 
   async function loginUser(event) {
