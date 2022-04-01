@@ -7,6 +7,10 @@ import { actionTypes } from "../../reducer";
 
 const Ciudades = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [{cities}] = useStateValue ()
   const [{filterCity}, dispatch] = useStateValue ()
 

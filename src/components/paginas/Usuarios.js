@@ -1,9 +1,13 @@
 import axios from "axios";
-import React from "react";
+import React, {useEffect} from "react";
 import registro from "../../img/header/registro.png";
 import Facebook from "../navegacion/Facebook";
 
 const Usuarios = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   async function NewUser(event){
     event.preventDefault()

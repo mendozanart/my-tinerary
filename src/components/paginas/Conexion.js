@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import axios from "axios";
 import conexion from "../../img/header/conexion1.png";
 import { useStateValue } from "../../StateProvider";
@@ -6,6 +6,11 @@ import { useNavigate } from 'react-router-dom';
 import { actionTypes } from "../../reducer";
 
 const Conexion = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [{ user }, dispatch] = useStateValue();
   const navigate = useNavigate();
 

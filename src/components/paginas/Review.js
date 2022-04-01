@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import lugagge from "../../img/header/luggage.png";
 import person1 from "../../img/persons/person1.jpg";
 import person2 from "../../img/persons/person2.jpg";
@@ -6,6 +6,11 @@ import person3 from "../../img/persons/person3.jpg";
 import star from "../../img/icons/star.png";
 
 const Review = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
