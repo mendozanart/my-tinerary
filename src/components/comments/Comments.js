@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { useStateValue } from "../../StateProvider";
-import usuario from "../../img/persons/usuario.jpg";
+import avatar from "../../img/persons/avatar1.png";
 import dots from "../../img/icons/dots.png";
 
 
@@ -77,7 +77,7 @@ const Comments = (props) => {
       {comments?.map(item=> 
       <div className="usuariocity mt-4">
         <div className="icousuario">
-          <img src={usuario} className="icousuario d-block w-100" alt="..." />
+          <img src={avatar} className="icousuario d-block w-100" alt="..." />
         </div>
         <div className="txtusuario2">
           <div>
