@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import { useStateValue } from "../../StateProvider";
 import paris2 from "../../img/cities/paris2.PNG";
 import bsas2 from "../../img/cities/bsas2.PNG";
 import miami2 from "../../img/cities/miami2.PNG";
@@ -12,6 +13,9 @@ import hando from "../../img/cards/hando.png";
 import girl from "../../img/header/girl.png";
 
 const Inicio = () => {
+
+
+  const [{ user }, {cities}, dispatch] = useStateValue();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,12 +32,18 @@ const Inicio = () => {
             <h4 className="subtituloheader">
               Get to know people's favorite places around the world
             </h4>
+            {!user ? 
             <Linkrouter
               className="btn btn-danger mt-3 bradio4 mb-2"
               to="/usuarios"
             >
               Sign up
-            </Linkrouter>
+            </Linkrouter> :             <Linkrouter
+              className="btn btn-danger mt-3 bradio4 mb-2"
+              to="/ciudades"
+            >
+              Let's go!
+            </Linkrouter>}
           </div>
           <div className="imgheader col-sm-6 col-md-6 col-lg-6 col-lg-5">
             <img src={girl} className="d-block w-100 mt-5" alt="..." />
@@ -101,6 +111,7 @@ const Inicio = () => {
           ></button>
         </div>
         <div className="carousel-inner">
+
           <div className="carousel-item active">
             <img src={paris2} className=" d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">

@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { Link as LinkRouter} from "react-router-dom";
 import logo from "../../img/logo.png";
 import person from "../../img/icons/person.png";
 import usuario from "../../img/persons/usuario.jpg";
 import Disconnected from "../navbar/Disconnected";
 import Connected from "../navbar/Connected";
-import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 
 function Navbar2() {
