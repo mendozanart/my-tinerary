@@ -39,7 +39,6 @@ const Ciudad = () => {
         />
 
         <div className="ubicity2">
-          <Like />
           <h2 className="titulocity">
             <strong>{data.city}</strong>
           </h2>
@@ -56,7 +55,7 @@ const Ciudad = () => {
 
         {itineraries.map((itinerarie) => (
           <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
-            <Save />
+            <Like likes={itinerarie.likes}/>
             <div className="p-4">
               <div className="textocuidad">
                 <h4 className="mb-3">

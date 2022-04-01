@@ -5,11 +5,16 @@ import Login from "../navegacion/Login";
 import Facebook from "../navegacion/Facebook";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
+import FacebookLogin from 'react-facebook-login';
 
 const Disconnected = () => {
   const [{ user }, dispatch] = useStateValue();
 
   const navigate = useNavigate();
+
+  const responseFacebook = (response) =>{
+    console.log(response)
+  }
 
   async function loginUser(event) {
     console.log("evento", event);
@@ -41,6 +46,8 @@ const Disconnected = () => {
       });
       console.log(user);
     }
+
+
   }
 
   return (
@@ -80,6 +87,14 @@ const Disconnected = () => {
           </button>
         </div>
       </form>
+
+      <div className='google mt-3'>
+    <FacebookLogin
+    appId="1686526751789048"
+    autoLoad={false}
+    fields="name,email,picture"
+    callback={responseFacebook} />
+    </div>
 
       <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
       </div>

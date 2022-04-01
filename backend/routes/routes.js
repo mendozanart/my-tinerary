@@ -5,7 +5,7 @@ const itinerariesController = require ("../controlers/itinerariosControllers.js"
 const comentariosController = require ("../controlers/comentariosControllers.js")
 const usersControllers = require("../controlers/usersControllers.js")
 const validator = require("../controlers/validator.js")
-const {ObtenerDatos} = citiesController //destructuracion del controlador
+const {ObtenerDatos, likeDislike} = citiesController //destructuracion del controlador
 const {cargaComentarios, obtenerComentarios, borrarComentario, modificarComentario} = comentariosController
 const {ObtenerItinerarios} = itinerariesController
 const {nuevoUsuario, verifyEmail, accesoUsuario, cerrarSesion, verificarToken } = usersControllers
@@ -38,6 +38,9 @@ Router.route("/comentarios/:id")
 
 Router.route("/signInToken")
 .get(passport.authenticate("jwt",{session:false}),verificarToken)
+
+Router.route("/likesDislike/:id")
+.put(passport.authenticate("jwt",{session:false}),likeDislike)
 
 
 

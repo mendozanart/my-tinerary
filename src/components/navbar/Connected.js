@@ -6,6 +6,7 @@ import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
 
 const Connected = () => {
+
   const [{ user }, dispatch] = useStateValue();
   const navigate = useNavigate();
 
@@ -28,16 +29,17 @@ const Connected = () => {
   }
 
   
-
-  return (
+    return (
     <div>
       <div className="col-sm-10 col-md-10 col-lg-10 mb-3 mt-3 m-auto">
-        <p className="connectedtext">Ana, welcome to your account!</p>
+        <p className="connectedtext">{user.datosUser.firstname}, welcome to your account!</p>
         <LinkRouter to="/conexion"><button type="button" className="btn btn-outline-warning bradio8">Your Account</button></LinkRouter>
         <button type="button" className="btn btn-warning bradio7" onClick={() => cerrarSesion()}>Log out</button>
       </div>
     </div>
-  );
+    
+    )
+
 };
 
 export default Connected;
