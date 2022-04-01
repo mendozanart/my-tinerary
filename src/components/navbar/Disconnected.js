@@ -24,7 +24,7 @@ const Disconnected = () => {
       .post("http://localhost:4000/api/signIn", { userData })
       .then((response) => {
         displayMessage(response.data);
-        navigate("conexion");
+        navigate("/");
       });
 
     function displayMessage(data) {

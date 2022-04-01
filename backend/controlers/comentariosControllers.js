@@ -1,8 +1,5 @@
-const nodemailer = require("nodemailer")
-const crypto = require("crypto")
 const Comments = require("../models/comments.js")
-const bcryptjs = require("bcryptjs")
-const jwt = require("jsonwebtoken")
+
 
 
 const commentControllers = {
