@@ -11,7 +11,7 @@ const Ciudades = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [{cities}] = useStateValue ()
+  //const [{cities}] = useStateValue ()
   const [{filterCity}, dispatch] = useStateValue ()
 
   //useEffect(() => {
@@ -73,7 +73,7 @@ const Ciudades = () => {
                   <input
                     type="text"
                     className="form-control form-input bradio"
-                    placeholder="Search cities, restaurants.."
+                    placeholder="Search cities..."
                     onChange={imputSearch}
                   />{" "}
                 </div>
@@ -89,7 +89,7 @@ const Ciudades = () => {
       </div>
 
       <div className="filtrociudades m-auto d-flex justify-content-center align-items-center col-sm-10 col-md-10 col-lg-12">
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
@@ -98,11 +98,11 @@ const Ciudades = () => {
             onChange={filtrocontinente}
           />
           <label className="form-check-label" for="america">
-            America
+             America
           </label>
         </div>
 
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
@@ -111,12 +111,12 @@ const Ciudades = () => {
             onChange={filtrocontinente}
           />
           <label className="form-check-label" for="africa">
-            Africa
+             Africa
           </label>
         </div>
 
 
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
@@ -125,11 +125,11 @@ const Ciudades = () => {
             onChange={filtrocontinente}
           />
           <label className="form-check-label" for="asia">
-            Asia
+             Asia
           </label>
         </div>
 
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
@@ -138,13 +138,13 @@ const Ciudades = () => {
             onChange={filtrocontinente}
           />
           <label className="form-check-label" for="europe">
-            Europe
+             Europe
           </label>
         </div>
 
 
 
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
@@ -153,7 +153,7 @@ const Ciudades = () => {
             onChange={filtrocontinente}
           />
           <label className="form-check-label" for="oceania">
-            Oceania
+             Oceania
           </label>
         </div>
 

@@ -196,6 +196,31 @@ code {
     margin-top: 10%;
     margin-left: 30%;
   }
+
+  .bradio2{
+    border-radius: 5vw;
+    color: #ffffff;
+  }
+
+  .mbusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    
+  }
+
+  .bradio{
+    border-radius: 5vw;
+    width: 200px;
+  }
+
+  .fswitch{
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+  }
   
 
 
@@ -697,8 +722,11 @@ code {
   margin-left: 30%;
 }
 
-
-
+.fswitch{
+  margin: 4%;
+  display: flex;
+  flex-direction: row;
+}
 
 
 
@@ -1084,10 +1112,14 @@ code {
     margin-left: 30%;
   }
 
-.cinput{
-  
-}
 
+  /************************ ciudades****************************/
+
+  .fswitch{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+  }
 
 
   /* *********************** cards  ***************************/
