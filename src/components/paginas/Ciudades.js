@@ -11,7 +11,7 @@ const Ciudades = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [{cities}] = useStateValue ()
+  //const [{cities}] = useStateValue ()
   const [{filterCity}, dispatch] = useStateValue ()
 
   //useEffect(() => {
@@ -29,7 +29,18 @@ const Ciudades = () => {
       value: event.target.value,
     })
   }
+  const filtrocontinente = (event)=>{
+    const checked = document.getElementById(event.target.id).checked;
+    console.log('checkbox',document.getElementById(event.target.id),checked)
+    
 
+      dispatch({
+        type: actionTypes.FILTERCONTINENT,
+        value: event.target.id,
+        id:checked
+      })
+    
+  }
 
   return (
     <div>
@@ -61,8 +72,8 @@ const Ciudades = () => {
                 <div className="">
                   <input
                     type="text"
-                    className="form-control form-input bradio"
-                    placeholder="Search cities, restaurants.."
+                    className="form-control form-input bradiobusqueda"
+                    placeholder="Search cities..."
                     onChange={imputSearch}
                   />{" "}
                 </div>
@@ -78,66 +89,71 @@ const Ciudades = () => {
       </div>
 
       <div className="filtrociudades m-auto d-flex justify-content-center align-items-center col-sm-10 col-md-10 col-lg-12">
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="america"
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
-            America
+          <label className="form-check-label" for="america">
+             America
           </label>
         </div>
 
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="africa"
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
-            Africa
-          </label>
-        </div>
-
-
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="flexSwitchCheckDefault"
-          />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
-            Asia
-          </label>
-        </div>
-
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="flexSwitchCheckDefault"
-          />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
-            Europe
+          <label className="form-check-label" for="africa">
+             Africa
           </label>
         </div>
 
 
-
-        <div className="form-check form-switch fswitch col-sm-10 col-md-3 col-lg-1">
+        <div className="form-check form-switch fswitch">
           <input
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="asia"            
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
-            Oceania
+          <label className="form-check-label" for="asia">
+             Asia
+          </label>
+        </div>
+
+        <div className="form-check form-switch fswitch">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="europe"
+            onChange={filtrocontinente}
+          />
+          <label className="form-check-label" for="europe">
+             Europe
+          </label>
+        </div>
+
+
+
+        <div className="form-check form-switch fswitch">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="oceania"
+            onChange={filtrocontinente}
+          />
+          <label className="form-check-label" for="oceania">
+             Oceania
           </label>
         </div>
 

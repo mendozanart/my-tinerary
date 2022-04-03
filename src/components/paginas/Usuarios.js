@@ -63,8 +63,8 @@ const Usuarios = () => {
         </div>
       </div>
 
-      <div className="regform col-sm-10 col-md-10 col-lg-10 m-auto">
-        <div className="formulario col-sm-10 col-md-10 col-lg-10 m-auto">
+
+        <div className="formulario col-sm-10 col-md-10 col-lg-10">
           <form onSubmit={NewUser}>
             <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
               <label htmlFor="exampleInputEmail1" className="form-label">
@@ -72,7 +72,7 @@ const Usuarios = () => {
               </label>
               <input
                 type="email"
-                className="form-control bradio col-sm-10 col-md-10 col-lg-10"
+                className="form-control bradiobarrauser col-sm-10 col-md-10 col-lg-10"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -80,7 +80,6 @@ const Usuarios = () => {
                 id="emailHelp"
                 className="form-text col-sm-10 col-md-10 col-lg-10"
               >
-                We will not share your email with anyone.
               </div>
             </div>
             <div className="mb-3 m-auto col-sm-10 col-md-10 col-lg-10">
@@ -89,7 +88,7 @@ const Usuarios = () => {
               </label>
               <input
                 type="name"
-                className="form-control bradio col-sm-10 col-md-10 col-lg-10"
+                className="form-control bradiobarrauser col-sm-10 col-md-10 col-lg-10"
                 id="exampleInputName1"
               />
             </div>
@@ -100,7 +99,7 @@ const Usuarios = () => {
               </label>
               <input
                 type="lastName"
-                className="form-control bradio col-sm-10 col-md-10 col-lg-10"
+                className="form-control bradiobarrauser col-sm-10 col-md-10 col-lg-10"
                 id="exampleInputLastName1"
               />
             </div>
@@ -110,29 +109,31 @@ const Usuarios = () => {
               </label>
               <input
                 type="password"
-                className="form-control bradio col-sm-10 col-md-10 col-lg-10"
+                className="form-control bradiobarrauser col-sm-10 col-md-10 col-lg-10"
                 id="exampleInputPassword1"
               />
             </div>
             <div className="btnsign">
               <button
                 type="submit"
-                className="btn btn-warning mt-3 m-auto bradio2"
+                className="btn btn-warning mt-3 bradiouser"
               >
                 Sign up
               </button>
             </div>
           </form>
         </div>
-      </div>
+
       
-      <div>
-      <div>
-      <p className="signupfacebook">Signup with your Facebook account</p>
+      <div className="col-sm-10 col-md-10 col-lg-10">
+
+      <p className="siface">Signup with your Facebook account</p>
+
+      <div className="siface2">
+      <Facebook />
       </div>
-      <div className="col-sm-10 col-md-10 col-lg-10 signupfacebookbtn">
-            <Facebook />
-            </div>
+
+
       </div>
 
     </div>

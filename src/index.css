@@ -196,7 +196,36 @@ code {
     margin-top: 10%;
     margin-left: 30%;
   }
+
+  .bradio2{
+    border-radius: 5vw;
+    color: #ffffff;
+  }
+
+  .mbusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    
+  }
+
+  .bradio{
+    border-radius: 5vw;
+    width: 200px;
+  }
+
+  .fswitch{
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+  }
   
+  .bradiobusqueda{
+    width: 200px !important;
+    border-radius: 30px;
+  }
 
 
 
@@ -293,13 +322,32 @@ code {
       
       .formulario{
         border-radius: 10vh;
-        padding-top: 7vh !important;
-        padding-bottom: 3vh;
-        margin-left: 5vw;
+        padding-left: 70px !important;
         width: 40vw;
         height: 90vh;
         
       }
+
+      .bradiobarrauser{
+        width: 60vw !important;
+        border-radius: 30px;
+      }
+
+      .bradiouser{
+        border-radius: 5vw;
+        color: #ffffff;
+        width: 90px;
+      }
+
+      .siface{
+        padding-left: 10vw !important;
+      }
+      
+      .siface2{
+        padding-left: 2vw !important;
+        padding-bottom: 10vh;
+      }
+      
       
       .btnsign {
         margin-left: 17vw;
@@ -697,8 +745,16 @@ code {
   margin-left: 30%;
 }
 
+.fswitch{
+  margin: 4%;
+  display: flex;
+  flex-direction: row;
+}
 
-
+.bradiobusqueda{
+  width: 400px !important;
+  border-radius: 30px;
+}
 
 
 
@@ -796,26 +852,38 @@ code {
     
     .formulario{
       border-radius: 10vh;
-      padding-top: 7vh !important;
-      padding-bottom: 3vh;
-      margin-left: 5vw;
+      padding-left: 200px !important;
       width: 40vw;
       height: 90vh;
       
     }
+
+    .bradiouser{
+      border-radius: 5vw;
+      color: #ffffff;
+      width: 150px;
+    }
+
+    .bradiobarrauser{
+      width: 50vw;
+      border-radius: 30px;
+    }
+
+    .siface{
+      padding-left: 32vw !important;
+    }
+    
+    .siface2{
+      padding-left: 15vw !important;
+      padding-bottom: 10vh;
+    }
+    
     
     .btnsign {
       margin-left: 17vw;
     }
 
-    .signupfacebook{
-      margin-left: 40vw !important;
-    }
-    
-    .signupfacebookbtn{
-      margin-left: 8vw !important;
-      margin-bottom: 8vh !important;
-    }
+
 
 
 /*************************** ciudad **************************************/
@@ -1029,6 +1097,10 @@ code {
      
   }
 
+  .nav-item{
+    font-size: 18px;
+  }
+
 
   .blogin {
     padding-left: 7.5vw;
@@ -1038,7 +1110,13 @@ code {
     padding-left: 3vw;
   }
 
+  
 
+ /********************** inicio *********************************/
+.imgcardinicio{
+  width:27vw;
+  height:40vh;
+}
 
   /************************ ciudad *****************************/
 
@@ -1084,10 +1162,16 @@ code {
     margin-left: 30%;
   }
 
-.cinput{
-  
-}
 
+  /************************ ciudades****************************/
+
+  .fswitch{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  
 
 
   /* *********************** cards  ***************************/
@@ -1189,7 +1273,43 @@ code {
 
 }
 
+/*************** usuarios ********************/
 
+.formulario{
+  border-radius: 10vh;
+  padding-left: 380px;
+  padding-top: 100px;
+  width: 40vw;
+  height: 90vh;
+  
+}
+
+.bradiouser{
+  border-radius: 5vw;
+  color: #ffffff;
+  width: 150px;
+}
+
+.bradiobarrauser{
+  width: 50vw;
+  border-radius: 30px;
+}
+
+.siface{
+  padding-left: 37vw;
+}
+
+.siface2{
+  padding-left: 10vw;
+  padding-bottom: 10vh;
+}
+
+/************** ciudades *******************/
+
+.bradiobusqueda{
+  width: 300px;
+  border-radius: 30px;
+}
 
 
 
@@ -1640,15 +1760,7 @@ border-radius: 4vh !important;
   
 }
 
-.formulario{
-  border-radius: 10vh;
-  padding-top: 7vh !important;
-  padding-bottom: 3vh;
-  margin-left: 5vw;
-  width: 40vw;
-  height: 90vh;
-  
-}
+
 
 .btnsign {
   margin-left: 17vw;
@@ -1699,58 +1811,6 @@ border-radius: 4vh !important;
 .bordeinicio {
   border-style: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
