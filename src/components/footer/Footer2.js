@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         <div className="row mt-4">
           <div className="col-sm-12 col-md-12 col-lg-12 text-center">
-            <p className="copyright">© 2013 Mytinerary. All rights reserved.</p>
+            <p className="copyright">© 2022 Mytinerary. All rights reserved.</p>
           </div>
         </div>
       </div>

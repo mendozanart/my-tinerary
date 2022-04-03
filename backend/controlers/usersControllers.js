@@ -23,7 +23,14 @@ async function sendEmail(email, uniqueText){
         from: sender,
         to: email,
         subject: "User verification email",
-        html: `<div className="fondoemail">Click <a href=http://localhost:4000/api/verify/${uniqueText}>here</a> to verify your email.</div>`
+        html: `<div style="width: 400px; height: 200px; margin-left: 20%;">
+        <div style="width: 100%; height:100%; background-color: rgb(255,204,34); border-radius: 2rem;">
+            <h2 style="font-size: 30px;text-align: center;font-family: 'Poppins', sans-serif;  color: rgb(79, 53, 163); font-weight: 800;">EMAIL VALIDATION</h2>
+            <h2 style="font-size: 20px;text-align: center;font-family: 'Poppins', sans-serif;  color: rgb(99, 99, 99); font-weight: 100;">Start your new adventure</h2>
+            <a href=http://localhost:4000/api/verify/${uniqueText} style=" color: rgb(255, 85, 0); font-size: 20px;text-align: center;font-family: 'Poppins', sans-serif; text-decoration: none;margin-left: 35%; font-weight: 700;">Click Here!</a>
+            <h6 style="color: #096684; font-size: 12px;text-align: center;font-family: 'Poppins', sans-serif; color: rgb(79, 53, 163);">© 2022 Mytinerary. All rights reserved.</h6>
+        </div>
+    </div>`
     }
 
     await transporter.sendMail(mailOptions,function(error,response){
