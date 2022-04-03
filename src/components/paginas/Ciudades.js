@@ -72,7 +72,7 @@ const Ciudades = () => {
                 <div className="">
                   <input
                     type="text"
-                    className="form-control form-input bradio"
+                    className="form-control form-input bradiobusqueda"
                     placeholder="Search cities..."
                     onChange={imputSearch}
                   />{" "}
