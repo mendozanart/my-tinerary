@@ -23,7 +23,7 @@ async function sendEmail(email, uniqueText){
         from: sender,
         to: email,
         subject: "User verification email",
-        html: `Click <a href=http://localhost:4000/api/verify/${uniqueText}>here</a> to verify your email.`
+        html: `<div className="fondoemail">Click <a href=http://localhost:4000/api/verify/${uniqueText}>here</a> to verify your email.</div>`
     }
 
     await transporter.sendMail(mailOptions,function(error,response){

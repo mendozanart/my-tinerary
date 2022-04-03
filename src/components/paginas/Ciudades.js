@@ -29,7 +29,18 @@ const Ciudades = () => {
       value: event.target.value,
     })
   }
+  const filtrocontinente = (event)=>{
+    const checked = document.getElementById(event.target.id).checked;
+    console.log('checkbox',document.getElementById(event.target.id),checked)
+    
 
+      dispatch({
+        type: actionTypes.FILTERCONTINENT,
+        value: event.target.id,
+        id:checked
+      })
+    
+  }
 
   return (
     <div>
@@ -83,9 +94,10 @@ const Ciudades = () => {
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="america"
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
+          <label className="form-check-label" for="america">
             America
           </label>
         </div>
@@ -95,9 +107,10 @@ const Ciudades = () => {
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="africa"
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
+          <label className="form-check-label" for="africa">
             Africa
           </label>
         </div>
@@ -108,9 +121,10 @@ const Ciudades = () => {
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="asia"            
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
+          <label className="form-check-label" for="asia">
             Asia
           </label>
         </div>
@@ -120,9 +134,10 @@ const Ciudades = () => {
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="europe"
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
+          <label className="form-check-label" for="europe">
             Europe
           </label>
         </div>
@@ -134,9 +149,10 @@ const Ciudades = () => {
             className="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="oceania"
+            onChange={filtrocontinente}
           />
-          <label className="form-check-label" for="flexSwitchCheckDefault">
+          <label className="form-check-label" for="oceania">
             Oceania
           </label>
         </div>
