@@ -3,7 +3,9 @@ export const initialState = {
     cities:[],
     itineraries:[],
     user:null,
-    filterCity:[]
+    filterCity:[],
+    filterContinent:[]
+
 }
 
 export const actionTypes = {

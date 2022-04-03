@@ -1097,6 +1097,10 @@ code {
      
   }
 
+  .nav-item{
+    font-size: 18px;
+  }
+
 
   .blogin {
     padding-left: 7.5vw;
@@ -1106,7 +1110,13 @@ code {
     padding-left: 3vw;
   }
 
+  
 
+ /********************** inicio *********************************/
+.imgcardinicio{
+  width:27vw;
+  height:40vh;
+}
 
   /************************ ciudad *****************************/
 

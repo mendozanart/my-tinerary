@@ -11,11 +11,36 @@ import hand1 from "../../img/cards/hand1.png";
 import handl from "../../img/cards/handl.png";
 import hando from "../../img/cards/hando.png";
 import girl from "../../img/header/girl.png";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Inicio = () => {
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
-  const [{ user }, {cities}, dispatch] = useStateValue();
+
+  const [{ user }] = useStateValue();
+  const [{cities}, dispatch] = useStateValue ()
+  console.log(cities);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -83,85 +108,43 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div
-        id="carouselExampleCaptions"
-        className="carousel slide col-12 mb-2 m-auto"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner">
+      <h1 className="titulo mt-5 mb-5"> Get to know new cities </h1>
 
-          <div className="carousel-item active">
-            <img src={paris2} className=" d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h1 className="tituloslide">PARIS</h1>
-              <p>That trip you want so much is waiting for you!</p>
-            </div>
+      <div>
+      <Carousel
+        responsive={responsive}
+        draggable={true}
+        autoPlaySpeed={1000}
+        transitionDuration={500}
+      >
+
+        {cities.map((city) => {
+
+
+        return(
+          <div>
+          <div className="content nodraggable">
+            {" "}
+            <Linkrouter to={`/ciudad/${city._id}`} className="nodraggable">
+              <div className="content-overlay"></div>{" "}
+              <img className="imgcard" src={process.env.PUBLIC_URL + `/img/cities/${city.img}`} alt={city.city}/>
+              <div className="content-details fadeIn-bottom nodraggable">
+                <h3 className="content-title nodraggable titulo">{city.city}</h3>
+                <p className="content-text nodraggable subtitulo">
+                  <i className="fa fa-map-marker"></i>{city.country}
+                </p>
+              </div>
+            </Linkrouter>{" "}
           </div>
-          <div className="carousel-item">
-            <img src={miami2} className=" d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h1 className="tituloslide">MIAMI</h1>
-              <p>That trip you want so much is waiting for you!</p>
-            </div>
+
           </div>
-          <div className="carousel-item">
-            <Linkrouter to="/ciudad">
-              <img src={bsas2} className=" d-block w-100" alt="..." />
-            </Linkrouter>
-            <div className="carousel-caption d-none d-md-block">
-              <h1 className="tituloslide">BUENOS AIRES</h1>
-              <p>That trip you want so much is waiting for you!</p>
-            </div>
-          </div>
+          )})}
+
+        </Carousel> 
         </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-      <h1 className="titulo mt-5 mb-4"> Find your activities </h1>
+
+
+        <h1 className="titulo mt-5 mb-5"> Find your activities </h1>
 
       <div className="row row-cols-1 row-cols-md-3 col-10 m-auto mt-3 mb-4 g-4">
         <div className="col">
