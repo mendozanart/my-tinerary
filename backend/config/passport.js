@@ -18,8 +18,10 @@ module.exports = passport.use(
         .then(user => {
           console.log(user)
           if (user) {
+            console.log("if")
             return done(null, user)
           }  else {
+            console.log("else")
             // eslint-disable-next-line no-undef
             return done(error, false)
           }

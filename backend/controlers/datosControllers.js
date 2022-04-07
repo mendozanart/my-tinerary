@@ -25,7 +25,9 @@ const citiesController = {
     
     likeDislike: async (req,res) => {
         const id = req.params.id;
-        const user = req.body.user
+        const user = req.user.id
+        console.log(id)
+        console.log(user)
         let itineraries
 
         try {
@@ -45,7 +47,7 @@ const citiesController = {
         }
 
 
-    },// pide un requrimiento y da una respuesta
+    },
 }
 
 module.exports = citiesController
