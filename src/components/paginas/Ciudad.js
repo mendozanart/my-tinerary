@@ -55,7 +55,7 @@ const Ciudad = () => {
 
         {itineraries.map((itinerarie) => (
           <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
-            <Like likes={itinerarie.likes}/>
+            <Like likes={itinerarie.likes} id={itinerarie._id}/>
             <div className="p-4">
               <div className="textocuidad">
                 <h4 className="mb-3">
