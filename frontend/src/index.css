@@ -1,0 +1,1816 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Poppins', sans-serif;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* responsive-movil */
+
+@media (min-width: 200px) and (max-width: 767px){
+
+  /* *********************** navegacion ***************************/
+
+  .navd {
+    width: 70vw !important;
+    padding: 3vw;
+    border-radius: 4vw;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: rgb(120,0,175);
+    background: linear-gradient(163deg, rgba(120,0,175,1) 0%, rgba(79,53,163,1) 100%);  ;
+  }
+
+  .blogin {
+    padding-left: 22vw !important;
+  }
+  
+  .blogin2 {
+    padding-left: 15vw !important;
+  }
+
+  .prueba{
+    background-color: rgb(255,163,34) !important;
+  }
+
+  .bradio7{
+    margin-left: 20vw !important;
+    margin-top: 1vh !important;
+    border-radius: 5vw;
+    background-color: rgb(255, 215, 40);
+    color: rgb(113, 0, 165);
+    border-style: none;
+  }
+  
+  .bradio8{
+    border-radius: 5vw;
+    margin-left: 14vw !important;
+  }
+  
+  .connectedtext{
+    margin-left: 2vw;
+  }
+
+  /*********************************** header *******************************/
+
+  .banner-image{
+    background: rgb(255,163,34);
+    background: linear-gradient(90deg, rgba(255,163,34,1) 0%, rgba(255,204,34,1) 62%); 
+    background-size: cover;
+    max-height: 90vh !important;
+  }
+
+  .textoheader {
+    margin-top: 5vh !important;
+    margin-left: 8vw;
+  }
+
+  .tituloheader{
+    text-align: left;
+    color:rgb(113, 0, 165) ;
+    font-size: 4vh !important;
+  
+  }
+  
+  .subtituloheader{
+    text-align: left;
+    color:rgba(85, 85, 85, 0.644) ;
+    margin-top: 2vh;
+    font-size: 2vh !important;
+  }
+
+
+  .imgheader {
+    margin-left: 8vw;
+    margin-top: 5vh;
+    width: 50vw !important;
+  }
+
+  /************************** inicio ***************************************/
+
+  .titulo{
+    text-align: center;
+    color: rgb(79, 53, 163);
+    font-size: 3vh !important;
+  }
+
+  .subtitulo {
+    text-align: center;
+    color: rgb(99, 99, 99);
+    font-size: 1.5vh !important; 
+  }
+
+  .tituloslide {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+  }
+  
+  .card {
+    border-radius: 2vh;
+    border-top-left-radius: 2vh !important;
+    border-top-right-radius: 2vh !important;
+  }
+  
+  .infobanners {
+    justify-content: center;
+  }
+  
+  
+  .titulocard{
+    text-align: left;
+    color: rgb(79, 53, 163);
+  }
+  
+  .subtitulocard{
+    text-align: left;
+    color: rgb(99, 99, 99); 
+  }
+  
+  .binfo {
+    text-align: center;
+    font-size: 1.5vh !important;
+  }
+
+
+
+
+  /*************************** ciudades ************************************/
+
+
+  .banner-image2{
+    background: rgb(255,204,34);
+    background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+    background-size: cover;
+    max-height: 55vh !important;
+  }
+
+  .textoheader2 {
+    margin-top: 5vh !important;
+    margin-left: 8vw;
+  }
+
+  .tituloheader{
+    text-align: left;
+    color:rgb(113, 0, 165) ;
+    font-size: 4vh !important;
+  
+  }
+  
+  .subtituloheader{
+    text-align: left;
+    color:rgba(85, 85, 85, 0.644) ;
+    margin-top: 2vh;
+    font-size: 2vh !important;
+  }
+
+
+  .imgheader3 {
+    margin-left: 8vw;
+    margin-top: 4vh !important;
+    width: 45vw !important;
+  }
+
+
+  .imgcard {
+    border-radius: 2vh;
+    width:27vw !important;
+    height:40vh !important;
+  }
+
+
+  .headercity{
+    position: absolute;
+    color: rgba(255, 255, 255, 0) !important;
+    font-size: 30vh;
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+
+  .bradio2{
+    border-radius: 5vw;
+    color: #ffffff;
+  }
+
+  .mbusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    
+  }
+
+  .bradio{
+    border-radius: 5vw;
+    width: 200px;
+  }
+
+  .fswitch{
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+  }
+  
+  .bradiobusqueda{
+    width: 200px !important;
+    border-radius: 30px;
+  }
+
+
+
+    /*************************** review ************************************/
+
+
+    .banner-image3{
+      background: rgb(255,204,34);
+      background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+      background-size: cover;
+      max-height: 70vh !important;
+    }
+  
+    .textoheader3 {
+      margin-top: 5vh !important;
+      margin-left: 8vw;
+    }
+  
+    .tituloheader{
+      text-align: left;
+      color:rgb(113, 0, 165) ;
+      font-size: 4vh !important;
+    
+    }
+    
+    .subtituloheader{
+      text-align: left;
+      color:rgba(85, 85, 85, 0.644) ;
+      margin-top: 2vh;
+      font-size: 2vh !important;
+    }
+  
+  
+    .imgheader2 {
+      margin-left: 8vw;
+      margin-top: 5vh;
+      width: 50vw !important;
+    }
+  
+
+    .tituloreview {
+      color: rgba(226, 92, 30, 0.7) ;
+      font-size: 2.5vh !important;
+    }
+
+    .treview {
+      font-size: 1.5vh !important;
+    }
+
+
+
+      /*************************** usuarios ************************************/
+
+
+      .banner-image4{
+        background: rgb(255,204,34);
+        background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+        background-size: cover;
+        max-height: 55vh !important;
+      }
+    
+      .textoheader4 {
+        margin-top: 5vh !important;
+        margin-left: 8vw;
+      }
+    
+      .tituloheader2{
+        text-align: left;
+        color:rgb(113, 0, 165) ;
+        font-size: 4vh !important;
+      
+      }
+      
+      .subtituloheader{
+        text-align: left;
+        color:rgba(85, 85, 85, 0.644) ;
+        margin-top: 2vh;
+        font-size: 2vh !important;
+      }
+    
+    
+      .imgheader4 {
+        margin-left: 8vw;
+        margin-top: 5vh;
+        width: 50vw !important;
+      }
+
+
+      .regform{
+        justify-content: center !important;
+        
+        
+      }
+      
+      .formulario{
+        border-radius: 10vh;
+        padding-left: 70px !important;
+        width: 40vw;
+        height: 90vh;
+        
+      }
+
+      .bradiobarrauser{
+        width: 60vw !important;
+        border-radius: 30px;
+      }
+
+      .bradiouser{
+        border-radius: 5vw;
+        color: #ffffff;
+        width: 90px;
+      }
+
+      .siface{
+        padding-left: 10vw !important;
+      }
+      
+      .siface2{
+        padding-left: 2vw !important;
+        padding-bottom: 10vh;
+      }
+      
+      
+      .btnsign {
+        margin-left: 17vw;
+      }
+
+      .signupfacebook{
+        margin-left: 40vw !important;
+      }
+      
+      .signupfacebookbtn{
+        margin-left: 8vw !important;
+        margin-bottom: 8vh !important;
+      }
+      
+
+
+  /*************************** ciudad **************************************/
+
+
+  .fciudad {
+    width: 40vw !important;
+    border-radius: 2vh;
+  }
+
+  .icobut {
+    width: 12vw !important;
+  }
+
+  .icobut2{
+    width: 16vw !important;
+    padding-left: 6vw !important;
+    padding-top: 1vh !important;
+  }
+  
+  .textolike {
+    height: 5vh !important;
+    padding-left: 8vw;
+    font-size: 1.5vh;
+  }
+  
+  .likes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 1vh !important;
+    padding-left: 75vw;
+  }
+
+  .save {
+    display: flex;
+    flex-direction: column;
+    padding-left: 74.5vw;
+    position: absolute;
+  }
+
+  .save2{
+    width: 12vw !important;
+    height: 4vh !important;
+  }
+
+  .icousuario {
+    margin-top: 4px;
+    margin-right: 7px;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 4vh !important;
+    }
+    
+
+    .txtusuario2{
+      padding-left: 1vw !important;
+      padding-top: 1vh !important;
+    }
+
+    .txt1{
+      font-size: 15px;
+    }
+
+
+  
+/* *********************** footer  ***************************/
+
+
+.footer2 {
+  background-color:rgb(113, 0, 165) ;
+  color: #fff;
+}
+
+.fmenu {
+  padding-top: 1vh;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1vw;
+}
+
+
+
+
+/* *********************** cards  ***************************/
+
+
+
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.content {
+  position: relative;
+  width: 60vw;
+  max-width: 400vw;
+  margin: auto;
+  overflow: hidden
+}
+
+.content .content-overlay {
+  background: #ff9100b9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 60vw;
+}
+
+.imgcard {
+  border-radius: 2vh;
+  width:60vw !important;
+  height:20vh !important;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15vw;
+  margin-bottom: 0.5vh;
+  text-transform: uppercase
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 2vh;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+
+.allcities {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  }
+
+
+
+/******************** conexion *****************/
+
+.bradio6{
+  margin-left: 17vw !important;
+  border-radius: 5vw;
+  background-color: rgb(113, 0, 165);
+  border-style: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive-tablet */
+
+@media (min-width: 767px) and (max-width: 991px){
+
+  /* *********************** navegacion ***************************/
+
+  .navd {
+    width: 40vw !important;
+    padding: 2vw;
+    border-radius: 4vw;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: rgb(120,0,175);
+    background: linear-gradient(163deg, rgba(120,0,175,1) 0%, rgba(79,53,163,1) 100%);  ; 
+  }
+
+  .blogin {
+    padding-left: 13vw !important;
+  }
+  
+  .blogin2 {
+    padding-left: 4vw !important;
+  }
+
+  
+  .prueba{
+    background-color: rgb(255,163,34) !important;
+  }
+
+  .bradio7{
+    margin-left: 10vw !important;
+    margin-top: 2vh !important;
+    border-radius: 5vw;
+    background-color: rgb(255, 215, 40);
+    color: rgb(113, 0, 165);
+    border-style: none;
+  }
+  
+  .bradio8{
+    border-radius: 5vw;
+    margin-left: 7vw !important;
+  }
+  
+  .connectedtext{
+    margin-left: 2vw;
+  }
+
+
+
+/*********************************** header *******************************/
+
+.banner-image{
+  background: rgb(255,163,34);
+  background: linear-gradient(90deg, rgba(255,163,34,1) 0%, rgba(255,204,34,1) 62%); 
+  background-size: cover;
+  max-height: 72vh !important;
+}
+
+.textoheader {
+  margin-top: 5vh !important;
+  margin-left: 8vw;
+}
+
+.tituloheader{
+  text-align: left;
+  color:rgb(113, 0, 165) ;
+  font-size: 4vh !important;
+
+}
+
+.subtituloheader{
+  text-align: left;
+  color:rgba(85, 85, 85, 0.644) ;
+  margin-top: 2vh;
+  font-size: 2vh !important;
+}
+
+
+.imgheader {
+  margin-left: 8vw;
+  margin-top: 5vh;
+  width: vw !important;
+}
+
+
+
+/*************************** inicio **************************************/
+
+.titulo{
+  text-align: center;
+  color: rgb(79, 53, 163);
+  font-size: 3vh !important;
+}
+
+.subtitulo {
+  text-align: center;
+  color: rgb(99, 99, 99);
+  font-size: 1.5vh !important; 
+}
+
+.tituloslide {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vh !important;
+}
+
+.card {
+  border-radius: 2vh;
+  border-top-left-radius: 2vh !important;
+  border-top-right-radius: 2vh !important;
+}
+
+.infobanners {
+  justify-content: center;
+}
+
+
+.titulocard{
+  text-align: left;
+  color: rgb(79, 53, 163);
+}
+
+.subtitulocard{
+  text-align: left;
+  color: rgb(99, 99, 99); 
+}
+
+.binfo {
+  text-align: center;
+  font-size: 1vh !important;
+}
+
+
+
+
+/*************************** ciudades ************************************/
+
+
+.banner-image2{
+  background: rgb(255,204,34);
+  background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+  background-size: cover;
+  max-height: 55vh !important;
+}
+
+.textoheader2 {
+  margin-top: 5vh !important;
+  margin-left: 7vw !important;
+}
+
+.tituloheader{
+  text-align: left;
+  color:rgb(113, 0, 165) ;
+  font-size: 4vh !important;
+
+}
+
+.subtituloheader{
+  text-align: left;
+  color:rgba(85, 85, 85, 0.644) ;
+  margin-top: 2vh;
+  font-size: 2vh !important;
+}
+
+
+.imgheader3 {
+  margin-left: 8vw;
+  margin-top: 4vh !important;
+  width: 30vw !important;
+}
+
+.headercity{
+  position: absolute;
+  color: rgba(255, 255, 255, 0) !important;
+  font-size: 30vh;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
+.fswitch{
+  margin: 4%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bradiobusqueda{
+  width: 400px !important;
+  border-radius: 30px;
+}
+
+
+
+  /*************************** review ************************************/
+
+
+  .banner-image3{
+    background: rgb(255,204,34);
+    background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+    background-size: cover;
+    max-height: 70vh !important;
+  }
+
+  .textoheader3 {
+    margin-top: 2vh !important;
+    margin-left: 8vw;
+  }
+
+  .tituloheader{
+    text-align: left;
+    color:rgb(113, 0, 165) ;
+    font-size: 4vh !important;
+  
+  }
+  
+  .subtituloheader{
+    text-align: left;
+    color:rgba(85, 85, 85, 0.644) ;
+    margin-top: 2vh;
+    font-size: 2vh !important;
+  }
+
+
+  .imgheader2 {
+    margin-left: 8vw;
+    margin-top: 2vh !important;
+    width: 30vw !important;
+  }
+
+
+  .tituloreview {
+    color: rgba(226, 92, 30, 0.7) ;
+    font-size: 2.5vh !important;
+  }
+
+  .treview {
+    font-size: 1.5vh !important;
+  }
+
+
+
+
+
+    /*************************** usuarios ************************************/
+
+
+    .banner-image4{
+      background: rgb(255,204,34);
+      background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+      background-size: cover;
+      max-height: 55vh !important;
+    }
+  
+    .textoheader4 {
+      margin-top: 5vh !important;
+      margin-left: 8vw;
+    }
+  
+    .tituloheader2{
+      text-align: left;
+      color:rgb(113, 0, 165) ;
+      font-size: 4vh !important;
+    
+    }
+    
+    .subtituloheader{
+      text-align: left;
+      color:rgba(85, 85, 85, 0.644) ;
+      margin-top: 2vh;
+      font-size: 2vh !important;
+    }
+  
+  
+    .imgheader4 {
+      margin-left: 8vw;
+      margin-top: 5vh;
+      width: 30vw !important;
+    }
+
+    .regform{
+      justify-content: center !important;
+      
+      
+    }
+    
+    .formulario{
+      border-radius: 10vh;
+      padding-left: 200px !important;
+      width: 40vw;
+      height: 90vh;
+      
+    }
+
+    .bradiouser{
+      border-radius: 5vw;
+      color: #ffffff;
+      width: 150px;
+    }
+
+    .bradiobarrauser{
+      width: 50vw;
+      border-radius: 30px;
+    }
+
+    .siface{
+      padding-left: 32vw !important;
+    }
+    
+    .siface2{
+      padding-left: 15vw !important;
+      padding-bottom: 10vh;
+    }
+    
+    
+    .btnsign {
+      margin-left: 17vw;
+    }
+
+
+
+
+/*************************** ciudad **************************************/
+
+
+.fciudad {
+  width: 30vw !important;
+  border-radius: 2vh;
+}
+
+.icobut {
+  width: 6vw !important;
+}
+
+.icobut2{
+  width: 7vw !important;
+  padding-left: 3vw !important;
+  padding-top: 1vh !important;
+}
+
+.textolike {
+  height: 5vh !important;
+  padding-left: 4vw;
+  font-size: 1vh;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding-left: 75vw !important;
+}
+
+.icousuario {
+  margin-top: 4px;
+  margin-right: 7px;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 4vh !important;
+  }
+  
+
+  .txtusuario2{
+    padding-left: 1vw !important;
+    padding-top: 1vh !important;
+  }
+
+  .txt1{
+    font-size: 15px;
+  }
+
+  .save {
+    display: flex;
+    flex-direction: column;
+    padding-left: 74.5vw;
+    position: absolute;
+  }
+
+  .save2{
+    width: 6vw !important;
+    height: 3.5vh !important;
+  }
+
+/* *********************** footer  ***************************/
+
+
+.footer2 {
+  background-color:rgb(113, 0, 165) ;
+  color: #fff;
+}
+
+.fmenu {
+  padding-top: 1vh;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1vw;
+}
+
+
+/* *********************** cards  ***************************/
+
+
+
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.content {
+  position: relative;
+  width: 40vw;
+  max-width: 400vw;
+  margin: auto;
+  overflow: hidden
+}
+
+.content .content-overlay {
+  background: #ff9100b9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 40vw;
+}
+
+.imgcard {
+  border-radius: 2vh;
+  width:40vw;
+  height:20vh;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15vw;
+  margin-bottom: 0.5vh;
+  text-transform: uppercase
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 2vh;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+
+.allcities {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+
+
+  /******************** conexion *****************/
+
+.bradio6{
+  margin-left: 32vw !important;
+  border-radius: 5vw;
+  background-color: rgb(113, 0, 165);
+  border-style: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive-pc */
+
+@media (min-width: 991px) and (max-width: 1920px){
+
+  /* *********************** navegacion ***************************/
+
+  .navd {
+    width: 20vw;
+    margin: 10vw;
+    border-radius: 2vw;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: rgb(120,0,175);
+    background: linear-gradient(163deg, rgba(120,0,175,1) 0%, rgba(79,53,163,1) 100%);  ;
+     
+  }
+
+  .nav-item{
+    font-size: 18px;
+  }
+
+
+  .blogin {
+    padding-left: 7.5vw;
+  }
+  
+  .blogin2 {
+    padding-left: 3vw;
+  }
+
+  
+
+ /********************** inicio *********************************/
+.imgcardinicio{
+  width:27vw;
+  height:40vh;
+}
+
+  /************************ ciudad *****************************/
+
+  .fciudad {
+    width: 20vw !important;
+    border-radius: 2vh;
+  }
+   
+  .icobut {
+    width: 3vw !important;
+  }
+  
+  .textolike {
+    height: 1vh !important;
+    padding-left: 4.5vh;
+  
+  }
+  
+  .likes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 77vw;
+    position: absolute;
+  }
+
+  
+
+  .save {
+    display: flex;
+    flex-direction: column;
+    padding-left: 77.3vw;
+    position: absolute;
+  }
+
+  .save2{
+    width: 3.5vw !important;
+    height: 5.5vh !important;
+  }
+
+  .headercity{
+    position: absolute;
+    color: rgba(255, 253, 253, 0) !important;
+    font-size: 30vh;
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+
+  .icobut2{
+    width: 4vw !important;
+    padding-left: 1.5vw !important;
+    padding-top: 1vh !important;
+  }
+
+
+  /************************ ciudades****************************/
+
+  .fswitch{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+
+
+  /* *********************** cards  ***************************/
+
+
+
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.content {
+  position: relative;
+  width: 27vw;
+  max-width: 400vw;
+  margin: auto;
+  overflow: hidden
+}
+
+.content .content-overlay {
+  background: #ff9100b9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 27vw;
+}
+
+.imgcard {
+  border-radius: 2vh;
+  width:27vw;
+  height:40vh;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 100;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15vw;
+  margin-bottom: 0.5vh;
+  text-transform: uppercase
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 2vh;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.allcities {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+
+
+}
+
+/*************** usuarios ********************/
+
+.formulario{
+  border-radius: 10vh;
+  padding-left: 380px;
+  padding-top: 100px;
+  width: 40vw;
+  height: 90vh;
+  
+}
+
+.bradiouser{
+  border-radius: 5vw;
+  color: #ffffff;
+  width: 150px;
+}
+
+.bradiobarrauser{
+  width: 50vw;
+  border-radius: 30px;
+}
+
+.siface{
+  padding-left: 37vw;
+}
+
+.siface2{
+  padding-left: 10vw;
+  padding-bottom: 10vh;
+}
+
+/************** ciudades *******************/
+
+.bradiobusqueda{
+  width: 300px;
+  border-radius: 30px;
+}
+
+
+
+
+
+/* FINAL MEDIA QUERY */
+
+
+
+
+
+
+
+
+
+/* *********************** navegacion ***************************/
+
+.nav-link {
+  color: #5a5a5a !important;
+}
+
+.bradio{
+  border-radius: 5vw;
+  
+}
+
+.bradio2{
+  border-radius: 5vw;
+  color: #ffffff;
+}
+
+
+
+.bradio4{
+  border-radius: 5vw;
+  background-color: #e26d00;
+  border-style: none;
+}
+
+.google {
+  text-align: center;
+}
+
+.bradio5{
+  
+  border-radius: 5vw;
+  background-color: #e29a00;
+  border-style: none;
+}
+
+.bradio6{
+  margin-left: 39vw;
+  border-radius: 5vw;
+  background-color: rgb(113, 0, 165);
+  border-style: none;
+}
+
+.bradio7{
+  margin-left: 6vw;
+  margin-top: 5vh !important;
+  border-radius: 5vw;
+  background-color: rgb(255, 215, 40);
+  color: rgb(113, 0, 165);
+  border-style: none;
+}
+
+.bradio8{
+  border-radius: 5vw;
+  margin-left: 4vw;
+}
+
+.connectedtext{
+  margin-left: 2vw;
+}
+
+
+.prueba{
+  background-color:transparent;
+}
+
+
+
+
+
+/* *********************** header ***************************/
+
+.banner-image{
+  background: rgb(255,193,7);
+  background: linear-gradient(228deg, rgba(255,193,7,1) 0%, rgba(255,193,7,1) 100%); 
+  background-size: cover;
+  max-height: 100vh;
+}
+
+
+.tituloheader{
+  text-align: left;
+  color:rgb(113, 0, 165) ;
+  font-size: 9vh;
+
+}
+
+.subtituloheader{
+  text-align: left;
+  color:rgba(85, 85, 85, 0.644) ;
+  margin-top: 2vh;
+  font-size: 3vh;
+}
+
+.titulo{
+  text-align: center;
+  color: rgb(79, 53, 163);
+  font-size: 5vh;
+}
+
+.subtitulo {
+  text-align: center;
+  color: rgb(99, 99, 99);
+  font-size: 3vh; 
+}
+
+
+.imgtop {
+  border-radius: 2vh;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgheader {
+  margin-left: 8vw;
+  margin-top: 5vh;
+  width: 35vw;
+}
+
+.textoheader {
+  margin-top: 15vh;
+  margin-left: 8vw;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.imgheader2 {
+  margin-left: 5vw !important;
+  margin-top: 30vh;
+  width: 35vw;
+}
+
+.imgheader3 {
+  margin-left: 5vw !important;
+  margin-top: 15vh;
+  width: 35vw;
+}
+
+.imgheader4 {
+  margin-left: 5vw !important;
+  margin-top: 8vh;
+  width: 27vw;
+}
+
+.textoheader2 {
+  margin-top: 20vh;
+  margin-left: 15vw;
+}
+
+.textoheader3 {
+  margin-top: 25vh;
+  margin-left: 5vw;
+}
+
+.textoheader4 {
+  margin-top: 20vh;
+  margin-left: 5vw;
+}
+
+.titulo2 {
+  padding-top: 8vh !important;
+  text-align: center;
+  color: rgb(79, 53, 163);
+}
+
+
+
+
+
+
+
+
+
+
+/* *********************** paginas - inicio  ***************************/
+
+.tituloslide {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vh;
+}
+
+.card {
+  border-radius: 2vh;
+  border-top-left-radius: 2vh !important;
+  border-top-right-radius: 2vh !important;
+}
+
+.infobanners {
+  justify-content: center;
+}
+
+
+.titulocard{
+  text-align: left;
+  color: rgb(79, 53, 163);
+}
+
+.subtitulocard{
+  text-align: left;
+  color: rgb(99, 99, 99); 
+}
+
+.binfo {
+  text-align: center;
+}
+
+.mbusqueda{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+.bbusqueda {
+  padding-left: 1vw;
+}
+
+
+
+/* *********************** paginas - ciudad ***************************/
+
+.ubicity2{
+  margin-left: 8vw;
+  margin-top: 7vh;
+}
+
+
+.slidecards {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.ciudadreview {
+  display: flex;
+  flex-direction: row;
+}
+
+.textociudad{
+  text-align: justify;
+  font-size: 5vh;
+}
+
+.fotociudad{
+  border-radius: 1vh;
+  margin-bottom: 2vh;
+}
+
+
+.cuidadreview{
+  border-style: solid;
+  border-color: #5a5a5a17;
+  border-radius: 2vw;
+  border-width: 0.2vw;
+  margin-left: 8vw;
+  font-size: 1vw;
+}
+
+.ciconos{
+  display: flex;
+  flex-direction: row;
+  margin: 5;
+}
+
+
+.fotociudad {
+  display: flex !important;
+  flex-direction: row;
+}
+
+
+.locationcity {
+  padding-bottom: 4vh;
+}
+
+.stars2 {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4vh;
+}
+
+.titulocity{
+  color: rgb(79, 53, 163) ;
+}
+
+
+
+.usuariocity{
+  display: flex;
+  flex-direction: row;
+}
+
+.icousuario {
+width: 57px;
+height: 57px;
+border-radius: 4vh !important;
+}
+
+
+.txtusuario{
+  padding-left: 1vw;
+  padding-top: 3vh;
+}
+
+.txtusuario2{
+  padding-left: 1vw;
+  padding-top: 1vh;
+}
+
+
+
+/* *********************** paginas - ciudades  ***************************/
+
+.headercity{
+  position: absolute;
+  color: #fff;
+  font-size: 30vh;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
+.banner-image2{
+  background: rgb(255,204,34);
+  background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+  background-size: cover;
+  height: 80vh;
+  width: 99vw;
+}
+
+.filtrociudades {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  color: rgb(79, 53, 163);
+  padding-bottom: 10vh;
+  padding-top: 2vh;
+}
+
+.fswitch{
+  padding-left: 2vw;
+}
+
+
+.motorb {
+  padding-left: 10vw;
+}
+
+
+.cardcities {
+  border-style: none;
+}
+
+
+/* *********************** paginas - review  ***************************/
+
+
+.banner-image3{
+  background: rgb(255,204,34);
+  background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+  background-size: cover;
+  max-height: 100vh;
+  
+}
+
+.tituloreview {
+  color: rgba(226, 92, 30, 0.7) ;
+  font-size: 3vh;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.stars2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.infocard{
+  color: rgb(97, 97, 97);
+  text-align: center;
+  font-size: 2vh;
+}
+
+
+
+/* *********************** paginas - usuarios  ***************************/
+
+
+.banner-image4{
+  background: rgb(255,204,34);
+  background: linear-gradient(0deg, rgba(255,204,34,0.0005135843399859397) 25%, rgba(255,200,34,0.8660598028273809) 100%); 
+  background-size: cover;
+  max-height: 70vh !important;
+}
+
+.regform{
+  justify-content: center !important;
+  
+  
+}
+
+
+
+.btnsign {
+  margin-left: 17vw;
+}
+
+.imgheader2 {
+  margin-left: 8vw;
+  margin-top: 5vh;
+
+}
+
+
+.tituloheader2{
+  padding-top: 10vh;
+  text-align: left;
+  color:rgb(113, 0, 165) ;
+  font-size: 50px;
+}
+
+.signupfacebook{
+  margin-left: 40vw !important;
+}
+
+.signupfacebookbtn{
+  margin-left: 8vw !important;
+  margin-bottom: 8vh !important;
+}
+
+
+/* *********************** footer  ***************************/
+
+
+.footer2 {
+  background-color:rgb(113, 0, 165) ;
+  color: #fff;
+}
+
+.fmenu {
+  padding-top: 1vh;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1vw;
+}
+
+
+
+.bordeinicio {
+  border-style: none;
+}
+
+
+
+
+
