@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.72c3ff9c.css",
-    "main.js": "/static/js/main.e8e86ffd.js",
+    "main.js": "/static/js/main.5c67bbde.js",
     "static/js/787.320c858a.chunk.js": "/static/js/787.320c858a.chunk.js",
     "static/media/rest.jpg": "/static/media/rest.d693755ad63e9ce442e4.jpg",
     "static/media/camp.jpg": "/static/media/camp.ad3f418c3cead7321d13.jpg",
@@ -9,9 +9,6 @@
     "static/media/person1.jpg": "/static/media/person1.22da8646c549836badba.jpg",
     "static/media/van.jpg": "/static/media/van.686a94e42db9ac170e18.jpg",
     "static/media/person3.jpg": "/static/media/person3.27a0151f112b4584be29.jpg",
-    "static/media/paris2.PNG": "/static/media/paris2.872c2d594802cfab0b3b.PNG",
-    "static/media/miami2.PNG": "/static/media/miami2.5eae0bb27d978c3d5d22.PNG",
-    "static/media/bsas2.PNG": "/static/media/bsas2.92d42b6e47a3d5189594.PNG",
     "static/media/conexion1.png": "/static/media/conexion1.00835e612ce070b7b5b6.png",
     "static/media/person.png": "/static/media/person.cdfbbf2cbbccdb429cea.png",
     "static/media/registro.png": "/static/media/registro.a2b9628d48baa64ac9c6.png",
@@ -34,11 +31,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.72c3ff9c.css.map": "/static/css/main.72c3ff9c.css.map",
-    "main.e8e86ffd.js.map": "/static/js/main.e8e86ffd.js.map",
+    "main.5c67bbde.js.map": "/static/js/main.5c67bbde.js.map",
     "787.320c858a.chunk.js.map": "/static/js/787.320c858a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72c3ff9c.css",
-    "static/js/main.e8e86ffd.js"
+    "static/js/main.5c67bbde.js"
   ]
 }

@@ -5,7 +5,6 @@ import axios from "axios";
 import Carousel from "../carousel/Carousel";
 import Carouselcity from "../carousel/Carouselcity";
 import Like from "../like/Like";
-import Save from "../save/Save";
 import Comments from "../comments/Comments";
 
 const Ciudad = () => {

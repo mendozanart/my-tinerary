@@ -1,8 +1,5 @@
 import React, {useEffect} from "react";
 import { useStateValue } from "../../StateProvider";
-import paris2 from "../../img/cities/paris2.PNG";
-import bsas2 from "../../img/cities/bsas2.PNG";
-import miami2 from "../../img/cities/miami2.PNG";
 import van from "../../img/cards/van.jpg";
 import camp from "../../img/cards/camp.jpg";
 import rest from "../../img/cards/rest.jpg";
