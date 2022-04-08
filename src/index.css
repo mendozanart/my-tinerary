@@ -375,6 +375,12 @@ code {
   .icobut {
     width: 12vw !important;
   }
+
+  .icobut2{
+    width: 16vw !important;
+    padding-left: 6vw !important;
+    padding-top: 1vh !important;
+  }
   
   .textolike {
     height: 5vh !important;
@@ -898,6 +904,12 @@ code {
   width: 6vw !important;
 }
 
+.icobut2{
+  width: 7vw !important;
+  padding-left: 3vw !important;
+  padding-top: 1vh !important;
+}
+
 .textolike {
   height: 5vh !important;
   padding-left: 4vw;
@@ -1162,6 +1174,12 @@ code {
     font-size: 30vh;
     margin-top: 10%;
     margin-left: 30%;
+  }
+
+  .icobut2{
+    width: 4vw !important;
+    padding-left: 1.5vw !important;
+    padding-top: 1vh !important;
   }
 
 

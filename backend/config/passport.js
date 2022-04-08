@@ -16,12 +16,9 @@ module.exports = passport.use(
       console.log(process.env.SECRETKEY)
       User.findOne({ _id: jwt_payload.id })
         .then(user => {
-          console.log(user)
           if (user) {
-            console.log("if")
             return done(null, user)
           }  else {
-            console.log("else")
             // eslint-disable-next-line no-undef
             return done(error, false)
           }

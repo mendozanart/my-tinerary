@@ -31,6 +31,7 @@ const Usuarios = () => {
       console.log(data.response.error.details)
             data.response.error.details.map(error=>alert(error.message))
           }else if (data.success === true) {
+            alert("We send you an email for validation")
             console.log(data)
           }else if (data.success === false) {
             console.log(data)

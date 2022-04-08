@@ -11,19 +11,20 @@ const Ciudades = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  //const [{cities}] = useStateValue ()
+  
   const [{filterCity}, dispatch] = useStateValue ()
 
-  //useEffect(() => {
-  //  window.scrollTo(0, 0);
-  //  dispatch({
-  //    type: actionTypes.CITIESDB,
-  //    citiesNew: cities
-  //  })
-  //}, [])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  dispatch({
+    type: actionTypes.FILTER,
+    value: " ",
+  })
+  }, [])
 
 
   const imputSearch = (event) => {
+    console.log(event.target.value)
     dispatch({
       type: actionTypes.FILTER,
       value: event.target.value,

@@ -22,7 +22,8 @@ const Likes = (props) => {
         .then(response=>setLikes(response.data.response))
         }
 
-        const colorheart= likes?.includes(user.datosUser.id) ? (
+
+          const colorheart= likes?.includes(user?.datosUser.id) ? (
             <span>
               <img src={like2} className="icobut btn d-block w-100" alt="..." />
             </span>
@@ -32,15 +33,39 @@ const Likes = (props) => {
             </span>
           )
 
+        // const colorheart= likes?.includes?(user.datosUser.id) ? (
+        //   <span>
+        //     <img src={like2} className="icobut btn d-block w-100" alt="..." />
+        //   </span>
+        // ) : (
+        //   <span>
+        //     <img src={like} className="icobut btn d-block w-100" alt="..." />
+        //   </span>
+        // )
+
+
+        
+
         
         return (
             <div>
-                <div className="likes">
-                <button className="likes2 btn btn-transparency" onClick={likeDislike}>{colorheart}</button>
-                <p className="textolike">{likes?.length}</p>
-                </div>
+      {!user ?
+
+      <div className="likes">
+        <img src={like2} className="icobut2 btn d-block w-100" alt="..." />
+        <p className="textolike">{likes?.length}</p>
+      </div>
+
+: 
+
+      <div className="likes">
+        <button className="likes2 btn btn-transparency" onClick={likeDislike}>{colorheart}</button>
+        <p className="textolike">{likes?.length}</p>
+      </div>
+
+      }
             </div>
         )
-    }
+}
 
     export default Likes;

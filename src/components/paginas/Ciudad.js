@@ -10,7 +10,7 @@ import Comments from "../comments/Comments";
 
 const Ciudad = () => {
   const [itineraries, setItineraries] = useState([]);
-  const [{ cities }] = useStateValue();
+  const [{ cities }, dispatch] = useStateValue();
   const { id } = useParams();
   const cityselected = cities.filter((city) => city._id === id);
 
@@ -25,6 +25,7 @@ const Ciudad = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
 
   return cityselected.map((data) => {
     console.log(data);
@@ -53,7 +54,7 @@ const Ciudad = () => {
           </h6>
         </div>
 
-        {itineraries.map((itinerarie) => (
+        {itineraries?.map((itinerarie) => (
           <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
             <Like likes={itinerarie.likes} id={itinerarie._id}/>
             <div className="p-4">
@@ -84,5 +85,6 @@ const Ciudad = () => {
     );
   });
 };
+
 
 export default Ciudad;
