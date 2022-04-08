@@ -57,7 +57,7 @@ const Comments = (props) => {
     }
 
     const handleChange = (event) => {
-      setCambio(event.target.value)
+      setCambio(event.currentTarget.textContent)
     }
     
     const modificar = async (id) =>{
@@ -88,7 +88,7 @@ const Comments = (props) => {
         </div>
         <div className="txt1">
 
-          <input className="cinput" onKeyUp={handleChange} defaultValue={item.mensaje}></input>
+          <div className="cinput" contentEditable={true} onKeyUp={handleChange} >{item.mensaje}</div>
 
         </div>
       </div>

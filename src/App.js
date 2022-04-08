@@ -16,7 +16,8 @@ import Conexion from './components/paginas/Conexion';
 
 
 function App() {
-  const [{cities, itineraries}, dispatch] = useStateValue ()
+  const [{cities, itineraries, user}, dispatch] = useStateValue ()
+
   console.log(itineraries);
 
   useEffect(() => {
@@ -38,10 +39,11 @@ function App() {
 
 
         .then(user=>{
+          console.log(user.data.datosUser)
           if (user.data.success) {
             dispatch({
               type:actionTypes.USER,
-              user:user.data.respuesta
+              user:user.data.datosUser
             })
           }else {
             localStorage.removeItem("token")
@@ -51,6 +53,8 @@ function App() {
 
   }},[]);
 
+
+  console.log(user)
 
 
   console.log(cities);

@@ -51,11 +51,12 @@ const commentControllers = {
 
         console.log(req.body)
         let id = req.params.id;
-
+        console.log(id)
         let comentario
 
     try {
         comentario = await Comments.findOneAndDelete({_id:id})
+        console.log(comentario)
     } catch (error) {
         console.log(error)
     }

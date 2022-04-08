@@ -160,12 +160,15 @@ const usersController = {
 
         verificarToken: async (req,res) =>{
             if (!req.error) {
-                res.json({success:true, 
-                    datosUser:{
+                
+                const datosUser = {
                     firstname: req.user.firstname,
                     lastname: req.user.lastname,
                     email: req.user.email,
-                    id: req.user.id}, response:"Welcome back " + req.user.firstname})
+                    id: req.user.id}
+
+                res.json({success:true, 
+                    datosUser:{datosUser}, response:"Welcome back " + req.user.firstname})
             }else{
                 res.json({success:false, response:"Please Signin Again."})
             }
