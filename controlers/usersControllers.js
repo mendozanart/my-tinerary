@@ -14,7 +14,7 @@ async function sendEmail(email, uniqueText){
         secure:true,
         auth:{
             user:"mytineraryemail@gmail.com",
-            pass:process.env.NODEMAILER
+            pass:"mytinerary24"
         }
     })
 
