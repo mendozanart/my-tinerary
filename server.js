@@ -4,7 +4,6 @@ const cors = require ("cors")
 const Router = require("./routes/routes")
 const passport = require("passport")
 const app = express()
-require("./config/passport")
 require("./config/database")
 const path = require("path")
 

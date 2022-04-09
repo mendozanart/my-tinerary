@@ -50,7 +50,7 @@ const Disconnected = () => {
     console.log("userdata", userData);
 
     await axios
-      .post("http://localhost:4000/api/signIn", { userData })
+      .post("https://mytinerary-ana.herokuapp.com/api/signIn", { userData })
       .then((response) => {
         displayMessage(response.data);
         navigate("/");
