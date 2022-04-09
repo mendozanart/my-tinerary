@@ -13,13 +13,13 @@ async function sendEmail(email, uniqueText){
         port:465,
         secure:true,
         auth:{
-            user:"mytineraryapplication@gmail.com",
+            user:"mytineraryemail@gmail.com",
             pass:process.env.NODEMAILER
         }
     })
 
     
-    const sender = "mytineraryapplication@gmail.com"
+    const sender = "mytineraryemail@gmail.com"
     const mailOptions = {
         from: sender,
         to: email,
