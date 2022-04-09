@@ -13,8 +13,8 @@ async function sendEmail(email, uniqueText){
         port:465,
         secure:true,
         auth:{
-            user:"mytineraryemail@gmail.com",
-            pass:"mytinerary24"
+            user:'mytineraryemail@gmail.com',
+            pass:'mytinerary24'
         }
     })
 
