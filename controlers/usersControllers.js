@@ -18,6 +18,7 @@ async function sendEmail(email, uniqueText){
         }
     })
 
+    
     const sender = "mytineraryapplication@gmail.com"
     const mailOptions = {
         from: sender,
