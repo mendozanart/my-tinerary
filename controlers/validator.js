@@ -25,10 +25,9 @@ const validator = (req,res,next) => {
             "string.pattern": "The password must be alphanumeric"
         }),
 
-        from: joi.string()
+        from: joi.string(),
 
-
-
+        imagenUser:joi.string().required(),
 
     })
 

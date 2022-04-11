@@ -4,6 +4,7 @@ import registro from "../../img/header/registro.png";
 import Facebook from "../navegacion/Facebook";
 import Login from "../navegacion/Login";
 import swal from "sweetalert";
+import avatar from "../../img/persons/avatar1.png";
 
 const Usuarios = () => {
 
@@ -14,11 +15,13 @@ const Usuarios = () => {
   
   async function NewUser(event){
     event.preventDefault()
+    let imgUser = {avatar}
     const NuevoUsuario = {email : event.target[0].value,
       firstname : event.target[1].value,
       lastname : event.target[2].value,
       password : event.target[3].value,
       from : "signup",
+      imagenUser : imgUser,
     }
 
     await axios.post("https://mytinerary-ana.herokuapp.com/api/usuarios",{NuevoUsuario})
