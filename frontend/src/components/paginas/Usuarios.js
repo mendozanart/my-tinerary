@@ -15,7 +15,7 @@ const Usuarios = () => {
   
   async function NewUser(event){
     event.preventDefault()
-    let imgUser = {avatar}
+    let imgUser = avatar
     const NuevoUsuario = {email : event.target[0].value,
       firstname : event.target[1].value,
       lastname : event.target[2].value,
