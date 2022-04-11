@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import FacebookLogin from 'react-facebook-login';
+import swal from "sweetalert";
 
 function Facebook () {
 
@@ -26,8 +27,19 @@ const responseFacebook = async (response) => {
        if (data.success === "falseval"){
     console.log(data.response.error.details)
           data.response.error.details.map(error=>alert(error.message))
+          swal({
+            icon:"warning",
+            text:"There was a problem with your data. Please try again.",
+            button: "Ok",
+            timer:"3000"
+          })
         }else if (data.success === true) {
           console.log(data)
+          swal({
+            text:"Your user has been created with Facebook",
+            button: "Let's go!",
+            timer:"3000"
+          })
         }
  }
 

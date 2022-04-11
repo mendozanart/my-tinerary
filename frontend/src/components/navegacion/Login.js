@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import GoogleLogin from 'react-google-login';
+import swal from "sweetalert";
 
 
 
@@ -29,8 +30,19 @@ function displayMessage(data){
   if (data.success === "falseval"){
 console.log(data.response.error.details)
      data.response.error.details.map(error=>alert(error.message))
+     swal({
+      icon:"warning",
+      text:"There was a problem with your data. Please try again.",
+      button: "Ok",
+      timer:"3000"
+    })
    }else if (data.success === true) {
      console.log(data)
+     swal({
+      text:"Your user has been created with Google",
+      button: "Let's go!",
+      timer:"3000"
+    })
    }
 }
 
