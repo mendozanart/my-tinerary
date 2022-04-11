@@ -51,7 +51,7 @@ const usersController = {
         if (user) {
             user.emailVerificado =  true
             await user.save()
-            res.redirect("https://mytinerary-ana.herokuapp.com/conexion")
+            res.redirect("https://mytinerary-ana.herokuapp.com/")
         } else{
             res.json({success:false, response:"Your email could not be verified"})
         }

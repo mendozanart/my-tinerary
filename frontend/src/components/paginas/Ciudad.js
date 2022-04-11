@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
 import axios from "axios";
-import Carousel from "../carousel/Carousel";
 import Carouselcity from "../carousel/Carouselcity";
 import Like from "../like/Like";
 import Comments from "../comments/Comments";
@@ -54,7 +53,7 @@ const Ciudad = () => {
         </div>
 
         {itineraries?.map((itinerarie) => (
-          <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5">
+          <div className="cuidadreview col-sm-6 col-md-10 col-lg-10 mt-5 mb-5">
             <Like likes={itinerarie.likes} id={itinerarie._id}/>
             <div className="p-4">
               <div className="textocuidad">
@@ -78,8 +77,8 @@ const Ciudad = () => {
           </div>
         ))}
 
-        <h1 className="titulo mt-5 mb-5">Find more cities to visit</h1>
-        <Carousel />
+        {/*<h1 className="titulo mt-5 mb-5">Find more cities to visit</h1>
+        <Carousel />*/}
       </div>
     );
   });

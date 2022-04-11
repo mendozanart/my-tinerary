@@ -2,6 +2,7 @@ import axios from "axios";
 import React, {useEffect} from "react";
 import registro from "../../img/header/registro.png";
 import Facebook from "../navegacion/Facebook";
+import swal from "sweetalert";
 
 const Usuarios = () => {
 
@@ -32,7 +33,11 @@ const Usuarios = () => {
       console.log(data.response.error.details)
             data.response.error.details.map(error=>alert(error.message))
           }else if (data.success === true) {
-            alert("We send you an email for validation")
+            swal({
+                  text:"We send you an email for validation",
+                  button: "Let's go!",
+                  timer:"3000"
+                })
             console.log(data)
           }else if (data.success === false) {
             console.log(data)
