@@ -78,6 +78,17 @@ const usersController = {
             }
             else{
 
+                if(google){
+                    const passwordHash = bcryptjs.hashSync(password,10)
+                    usuarioExiste.password = passwordHash;
+                    usuarioExiste.emailVerificado = true;
+                    usuarioExiste.google = true;
+                    usuarioExiste.connected = false;
+                    usuarioExiste.save()
+                    res.json({success:true, from:"google", response:"We update your signup so that you can do it with Google"})
+                }else{
+                    res.json({success:false, response:"Username is already in use"})
+                }
 
 
 

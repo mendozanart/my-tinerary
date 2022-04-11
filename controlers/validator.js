@@ -19,7 +19,7 @@ const validator = (req,res,next) => {
             "string.empty":"You must fill in the field"
         }),
 
-        password: joi.string().max(30).min(6).trim().pattern(/(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])/).required().messages({
+        password: joi.string().max(50).min(6).trim().pattern(/(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])/).required().messages({
             "string.pattern.base":"The password must contain at least one uppercase, lowercase and a number",
             "string.min": "The password must have at least 6 characters",
             "string.pattern": "The password must be alphanumeric"
