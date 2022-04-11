@@ -4,6 +4,7 @@ import { Link as LinkRouter, useNavigate } from "react-router-dom";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 import FacebookLogin from 'react-facebook-login';
+import GoogleLogin from 'react-google-login';
 
 const Disconnected = () => {
   const [{ user }, dispatch] = useStateValue();
@@ -38,6 +39,37 @@ const Disconnected = () => {
         user: data.response,
       });
     }
+  }
+
+  const responseGoogle = async (response) =>{
+    console.log(response)
+    const userData = {
+      email: response.profileObj.email,
+      password: response.profileObj.googleId + "aB",
+    };
+    console.log("userdata", userData);
+
+    await axios
+      .post("https://mytinerary-ana.herokuapp.com/api/signIn", { userData })
+      .then((response) => {
+        displayMessage(response.data);
+        navigate("/");
+      });
+
+    function displayMessage(data) {
+      if (!data.success) {
+        console.log(alert(data.error));
+      } else {
+        //console.log(data.response);
+        localStorage.setItem("token", data.response.token)
+      }
+
+      dispatch({
+        type: actionTypes.USER,
+        user: data.response,
+      });
+    }
+
   }
 
   async function loginUser(event) {
@@ -119,6 +151,18 @@ const Disconnected = () => {
     fields="name,email,picture"
     callback={responseFacebook} />
     </div>
+
+
+    <div className='google mt-3'>
+    <GoogleLogin
+    clientId="899087157105-jinlo05larttf6f8gl5439sivs512ho5.apps.googleusercontent.com"
+    buttonText="Login"
+    onSuccess={responseGoogle}
+    onFailure={responseGoogle}
+    cookiePolicy={'single_host_origin'}
+  />
+    </div>
+
 
       <div className="mb-3 col-sm-10 col-md-10 col-lg-10 m-auto">
       </div>

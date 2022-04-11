@@ -77,6 +77,10 @@ const usersController = {
                 }
             }
             else{
+
+
+
+
                 const uniqueText = crypto.randomBytes(15).toString("hex") // 15 caracteres hexagecimal
                 const emailVerificado = false
                 const passwordHash = bcryptjs.hashSync(password,10)

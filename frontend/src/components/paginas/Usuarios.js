@@ -2,6 +2,7 @@ import axios from "axios";
 import React, {useEffect} from "react";
 import registro from "../../img/header/registro.png";
 import Facebook from "../navegacion/Facebook";
+import Login from "../navegacion/Login";
 import swal from "sweetalert";
 
 const Usuarios = () => {
@@ -138,6 +139,7 @@ const Usuarios = () => {
 
       <div className="siface2">
       <Facebook />
+      <Login/>
       </div>
 
 
