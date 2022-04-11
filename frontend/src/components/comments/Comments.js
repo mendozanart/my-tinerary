@@ -52,7 +52,7 @@ const Comments = (props) => {
 
     const borrarComentario = async (id) =>{
       console.log("borrarid", id)
-      await axios.delete(`http://localhost:4000/api/comentarios/${id}`)
+      await axios.delete(`https://mytinerary-ana.herokuapp.com/api/comentarios/${id}`)
       setReload(!reload)
     }
 
@@ -64,7 +64,7 @@ const Comments = (props) => {
       console.log("id",id)
       console.log("cambio",cambio)
       let data = cambio
-      await axios.put(`http://localhost:4000/api/comentarios/${id}`,{data})
+      await axios.put(`https://mytinerary-ana.herokuapp.com/api/comentarios/${id}`,{data})
       .then(response=>console.log("resmodificar",response))
       setReload(!reload)
     }
