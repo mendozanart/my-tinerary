@@ -16,7 +16,6 @@ const responseGoogle = async (response) => {
     lastname : response.profileObj.familyName,
     password : response.profileObj.googleId + "aB",
     from : "Google",
-    google : true
 }
 
 await axios.post("https://mytinerary-ana.herokuapp.com/api/usuarios",{NuevoUsuario})
