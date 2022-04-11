@@ -102,7 +102,7 @@ function Navbar2() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <img src={avatar} className="icousuario" width="35" alt="logo" />
+              <img src={user.datosUser.imagenUser} className="icousuario" width="35" alt="imagenUser" />
             </button>
             <ul
               className="navd dropdown-menu dropstart"
@@ -115,8 +115,7 @@ function Navbar2() {
 
             }
 
-
-          
+ 
         </div>
       </nav>
     </>

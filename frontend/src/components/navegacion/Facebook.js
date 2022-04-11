@@ -13,7 +13,9 @@ const responseFacebook = async (response) => {
     lastname : "facebook",
     password : response.id + "aB",
     from : "Facebook",
+    imagenUser : response.picture.data.url,
   }
+
 
   await axios.post("https://mytinerary-ana.herokuapp.com/api/usuarios",{NuevoUsuario})
   .then(response =>//alert(response.data.response)) 

@@ -59,7 +59,7 @@ const usersController = {
     nuevoUsuario:async(req,res)=>{
         console.log(req)
         console.log(res)
-        let {email, firstname, lastname, password, from} = req.body.NuevoUsuario
+        let {email, firstname, lastname, password, from, imagenUser} = req.body.NuevoUsuario
         console.log(req.body)
         try {
             const usuarioExiste = await User.findOne({email})
@@ -78,9 +78,6 @@ const usersController = {
             }
             else{
 
-
-
-
                 const uniqueText = crypto.randomBytes(15).toString("hex") // 15 caracteres hexagecimal
                 const emailVerificado = false
                 const passwordHash = bcryptjs.hashSync(password,10)
@@ -93,6 +90,7 @@ const usersController = {
                     emailVerificado,
                     connected:false,
                     from,
+                    imagenUser,
                 })
 
                 if(from!=="signup"){
@@ -139,6 +137,7 @@ const usersController = {
                                 lastname : usuario.lastname,
                                 email : usuario.email,
                                 id : usuario._id,
+                                imagenUser: usuario.imagenUser
                             }
                         usuario.connected = true
                         await usuario.save()
@@ -170,7 +169,8 @@ const usersController = {
                     firstname: req.user.firstname,
                     lastname: req.user.lastname,
                     email: req.user.email,
-                    id: req.user.id}
+                    id: req.user.id,
+                    imagenUser: req.user.imagenUser}
 
                 res.json({success:true, 
                     datosUser:{datosUser}, response:"Welcome back " + req.user.firstname})

@@ -9,7 +9,9 @@ const userSchema = new mongoose.Schema ({
     emailVerificado: {type:Boolean,require:true},
     connected: {type:Boolean,require:true},
     from:{type:String,require:true},
+    imagenUser:{type:String,require:false}
 })
+
 
 const User = mongoose.model("Users",userSchema)
 

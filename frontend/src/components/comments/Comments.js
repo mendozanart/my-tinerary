@@ -5,7 +5,6 @@ import avatar from "../../img/persons/avatar1.png";
 import dots from "../../img/icons/dots.png";
 
 
-
 const Comments = (props) => {
   
   var date = useState()
