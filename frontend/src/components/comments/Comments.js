@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { useStateValue } from "../../StateProvider";
-import avatar from "../../img/persons/avatar1.png";
 import dots from "../../img/icons/dots.png";
 
 
@@ -69,8 +68,7 @@ const Comments = (props) => {
       setReload(!reload)
     }
 
-    console.log(comments)
-    console.log(user.datosUser)
+
   return (
     <div>
       
