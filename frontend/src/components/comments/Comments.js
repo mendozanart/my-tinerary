@@ -29,7 +29,8 @@ const Comments = (props) => {
         title: props.itinerario,
         message: event.target[0].value,
         user: user.datosUser.id,
-        date:date
+        date:date,
+        imagenUser : user.datosUser.imagenUser
       };
 
 
@@ -69,7 +70,7 @@ const Comments = (props) => {
     }
 
     console.log(comments)
-    console.log(user)
+    console.log(user.datosUser)
   return (
     <div>
       
@@ -77,7 +78,7 @@ const Comments = (props) => {
 
       user?.datosUser.id === item.user._id ? <div className="usuariocity mt-4">
       <div className="icousuario">
-        <img src={avatar} className="icousuario d-block w-100" alt="..." />
+        <img src={item.user.imagenUser} className="icousuario d-block w-100" alt="..." />
       </div>
       <div className="txtusuario2">
         <div>
@@ -116,7 +117,7 @@ const Comments = (props) => {
         
       <div className="usuariocity mt-4">
         <div className="icousuario">
-          <img src={avatar} className="icousuario d-block w-100" alt="..." />
+          <img src={item.user.imagenUser} className="icousuario d-block w-100" alt="..." />
         </div>
         <div className="txtusuario2">
           <div>

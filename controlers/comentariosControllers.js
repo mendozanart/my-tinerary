@@ -6,14 +6,15 @@ const commentControllers = {
 
     cargaComentarios:async(req,res)=>{
 
-    let {title, message, user,date} = req.body.dataComments;
+    let {title, message, user,date, imagenUser} = req.body.dataComments;
     console.log(req.body.dataComments)
 
     new Comments ({
         title: title,
         user: user,
         mensaje: message,
-        date:date
+        date:date,
+        imagenUser : imagenUser
     }).save()
 
     let comentario
